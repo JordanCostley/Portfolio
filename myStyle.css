@@ -46,7 +46,7 @@
 	clear:both;
 	padding-top:20px;
 	padding-bottom:10px;
-	background-color:#990;
+	background-color:#374d36;
 	border-top-width:2px;
 	border-top-style:solid;
 	border-top-color:#000000;
@@ -54,7 +54,13 @@
 #rowBottom {
 	font-family:Helvetica,Arial,sans-serif;
 	color:#E6EAC0;
+	margin:auto;
+	
 }
 #bottomText {
 	margin-left:2.5%;
+	text-align:center;
+}
+#bottomIcons {
+	padding-left:45%;
 }
