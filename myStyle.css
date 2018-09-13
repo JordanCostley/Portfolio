@@ -30,7 +30,7 @@
 	background-image:url(center.gif);
 	background-repeat:repeat-y;
 	background-position:35%;
-	margin:20px;
+	margin:20px;	
 }
 #columnLeft {
 	float:left;
@@ -54,8 +54,7 @@
 #rowBottom {
 	font-family:Helvetica,Arial,sans-serif;
 	color:#E6EAC0;
-	margin:auto;
-	
+	margin:auto;	
 }
 #bottomText {
 	margin-left:2.5%;
@@ -63,10 +62,22 @@
 }
 #bottomIcons {
 	padding-left:45%;
-	fill: #E6EAC0
 }
+<<<<<<< HEAD
 .nav {
 	font-family:Helvetica,Arial,sans-serif;
 	color:#E6EAC0;
 	margin:auto;
+=======
+.imageRight {
+	float:right;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	clear:right;
+}
+.imageLeft{
+	float:left;
+	padding-right:10px;
+>>>>>>> f5c6e4a3d965ce04f4470edbba72b8bf1f8a1a10
 }
