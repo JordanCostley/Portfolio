@@ -63,12 +63,6 @@
 #bottomIcons {
 	padding-left:45%;
 }
-<<<<<<< HEAD
-.nav {
-	font-family:Helvetica,Arial,sans-serif;
-	color:#E6EAC0;
-	margin:auto;
-=======
 .imageRight {
 	float:right;
 	padding-top:10px;
@@ -79,5 +73,9 @@
 .imageLeft{
 	float:left;
 	padding-right:10px;
->>>>>>> f5c6e4a3d965ce04f4470edbba72b8bf1f8a1a10
+}
+.nav {
+	font-family:Helvetica,Arial,sans-serif;
+	color:#E6EAC0;
+	margin:auto;
 }
