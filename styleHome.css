@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Montserrat-Regular;
+    font-weight: 100;
+    src: url('Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: Montserrat-ExtraBold;
+    font-weight: 100;
+    src: url('Montserrat-ExtraBold.ttf');
+}
+@font-face {
+    font-family: Montserrat-Light;
+    font-weight: 100;
+    src: url('Montserrat-Light.ttf');
+}
+@font-face {
+    font-family: Montserrat-SemiBold;
+    font-weight: 100;
+    src: url('Montserrat-SemiBold.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size:100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+.clearfix:after {
+    content:"";
+    clear: both;
+    display: table;
+}
+body {
+    background-color:#212121;
+}
+#landing {
+    height:100vh;
+}
+.logoMaster {
+    margin: 30px 0px 0px 30px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+.title{
+    font-family: Montserrat-SemiBold, sans-serif;
+    font-size:1.1em;
+    letter-spacing: .1em;
+    text-align: right;
+    padding: 35px 60px 10px 0px;
+    color: white;
+}
+#centerP  {
+    position: absolute;
+    width: 100%;
+    margin-left: 32%;
+    margin-top: 10%;
+    width:475px;
+}
+.greet a {
+    text-decoration: none;
+    color: #cc9423;
+}
+.greet a:hover {
+    color: #d6c197;
+}
+.greet a:vistied {
+    color:#5b23cc;
+}
+#landing h1 {
+    color:white;
+    font-family:Montserrat-ExtraBold, sans-serif;
+    font-size:2.5em;
+    text-align:left;
+    line-height:1.4em;
+    padding:2.5px;
+}
+.MeTower {
+    position: relative;
+    width: 449px;
+    height:582px;
+    float: right;
+    margin: 10em 30em 10em 30em;
+}
+.Underline {
+    position: absolute;
+    float:right;
+    width: 12em;
+    margin-left: 9em;
+}
+.footerL {
+    position: absolute;
+    font-family: Montserrat-SemiBold, sans-serif;
+    font-size:1.1em;
+    letter-spacing: .1em;
+    text-align: center;
+    color: white;
+    bottom: 1em;
+    left: 40.5%;
+}
+.footerL a {
+    color: white;
+    text-decoration: none;
+}
+.footerL a:hover {
+    color: #d6c197;
+}
+#design {
+    background-color:white;
+    height:2600px;
+    left:0;
+    width:100%;
+}
+#photography {
+    height:2600px;
+    left:0;
+    width:100%;
+}
+#footer {
+    background-color: white;
+    height:84px;
+    left:0;
+    width:100%;
+}
+
+
+ 
