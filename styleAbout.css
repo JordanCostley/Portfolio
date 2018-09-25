@@ -19,6 +19,11 @@
     font-weight: 100;
     src: url('Montserrat-SemiBold.ttf');
 }
+@font-face {
+    font-family: Montserrat-MediumItalic;
+    font-weight: 100;
+    src: url('Montserrat-MediumItalic.ttf');
+}
 * {
     margin: 0;
     padding: 0;
@@ -38,6 +43,7 @@ body {
 }
 #landing {
     height:100vh;
+    width:100%;
 }
 .logoMaster {
     margin: 30px 0px 0px 30px;
@@ -72,11 +78,10 @@ body {
     padding:2.5px;
 }
 .MeBridge {
-    position: relative;
-    width: 550px;
-    height:614px;
+    position: absolute;
+    height: 35em;
     float: right;
-    margin: 8em 22.25em 10em 35em;
+    margin: 8em 22.25em 10em 62em;
 }
 .Underline {
     position: absolute;
@@ -93,7 +98,8 @@ body {
     text-align: center;
     color: white;
     bottom: 1em;
-    left: 44%;
+    left: 40%;
+    right: 40%;
 }
 .footerL a {
     color: white;
@@ -105,19 +111,107 @@ body {
 #aboutMe {
     background-color: white;
     position: relative;
-    height:2600px;
+    height:955px;
     left:0;
     width:100%;
 }
 #yellowBar {
     background-color: #cc9423;
-    position: relative;
-    width: 33%;
+    position: absolute;
+    width: 628px;
     height: 100%;
 }
+.meBridgeC {
+    position: absolute;
+    float: right;
+    top:9em;
+    right: -20.5%;
+}
+.aboutMeP {
+    position: absolute;
+    padding-top:11em;
+    padding-left: 17em;
+}
+.aboutMe {
+    font-family: Montserrat-ExtraBold, sans-serif;
+    font-size: 3em;
+    letter-spacing: .1em;
+    color: white;
+}
+.contactInfo {
+    position: absolute;
+    bottom: 2em;
+    left: 35%;
+    right: 35%;
+}
+.contactInfo a {
+    text-decoration: none;
+    color:black;
+}
+.contactInfo a:hover {
+    color: #d6c197;
+}
+.contactInfo h2 {
+    font-family: Montserrat-Regular, sans-serif;
+    color: black;
+    font-size:1em;
+    text-align: center;
+}
+#whiteSection {
+    position: absolute;
+    right:0;
+    padding: 1em 1em 0em 1em;
+    margin-top:13em;
+    width: 1100px;
+}
+.whiteInfo {
+    color: black;
+    text-align: left;
+    line-height: 1.75em;
+    padding-right: 3em;
+}
+.whiteInfo h1 {
+    font-family: Montserrat-SemiBold, sans-serif;
+    font-size: 1.95em;
+}
+.whiteInfo p {
+    font-family: Montserrat-Light, sans-serif;
+    font-size: 1.15em;
+}
+.whiteInfo h3 {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1.15em;
+}
+.whiteInfo h2 a {
+    color: #cc9423;
+    font-family: Montserrat-MediumItalic, sans-serif;
+    text-decoration: none;
+}
+.whiteInfo h2 a:hover {
+    color: #d6c197;
+}
 #footer {
-    background-color: 212121;
-    height:84px;
+    background-color: #212121;
+    height:50px;
     left:0;
     width:100%;
+}
+#footer p {
+    color: white;
+    font-family: Montserrat-SemiBold, sans-serif;
+    margin-top: 1em;
+    left: 40%;
+    right: 40%;
+    text-align: center;
+}
+#footer p a {
+    text-decoration: none;
+    color: white;
+}
+#footer p a:hover {
+    color: #d6c197;
+}
+.logoF {
+    float: left;
+    position: relative;
 }

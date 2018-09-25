@@ -98,7 +98,8 @@ body {
     text-align: center;
     color: white;
     bottom: 1em;
-    left: 40.5%;
+    left: 40%;
+    right: 40%;
 }
 .footerL a {
     color: white;
