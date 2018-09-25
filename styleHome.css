@@ -120,8 +120,28 @@ body {
     width:100%;
 }
 #footer {
+    position: relative;
     background-color: white;
-    height:84px;
+    height:50px;
     left:0;
     width:100%;
+}
+.linksF {
+    position: relative;
+    bottom: 40%;
+    color: #212121;
+    font-family: Montserrat-SemiBold, sans-serif;
+    text-align: center;
+}
+.linksF a {
+    text-decoration: none;
+    color: #212121;
+}
+.linksF a:hover {
+    color: #d6c197;
+}
+.logoF {
+    position: relative;
+    left: 40%;
+    top:.5em;
 }

@@ -39,9 +39,10 @@
     display: table;
 }
 body {
-    background-color:#212121;
+    background-color:blue;
 }
 #landing {
+    background-color: #212121;
     height:100vh;
     width:100%;
 }
@@ -158,10 +159,10 @@ body {
     text-align: center;
 }
 #whiteSection {
-    position: absolute;
+    position: relative;
     right:0;
-    padding: 1em 1em 0em 1em;
-    margin-top:13em;
+    padding: 15em 1em 0em 48em;
+    margin-top:0em;
     width: 1100px;
 }
 .whiteInfo {
@@ -169,6 +170,7 @@ body {
     text-align: left;
     line-height: 1.75em;
     padding-right: 3em;
+    padding-left: 3em;
 }
 .whiteInfo h1 {
     font-family: Montserrat-SemiBold, sans-serif;
@@ -191,27 +193,28 @@ body {
     color: #d6c197;
 }
 #footer {
+    position: relative;
     background-color: #212121;
     height:50px;
     left:0;
     width:100%;
 }
-#footer p {
+.linksF {
+    position: relative;
+    bottom: 40%;
     color: white;
     font-family: Montserrat-SemiBold, sans-serif;
-    margin-top: 1em;
-    left: 40%;
-    right: 40%;
     text-align: center;
 }
-#footer p a {
+.linksF a {
     text-decoration: none;
     color: white;
 }
-#footer p a:hover {
+.linksF a:hover {
     color: #d6c197;
 }
 .logoF {
-    float: left;
     position: relative;
+    left: 40%;
+    top:.5em;
 }
