@@ -55,19 +55,13 @@ body {
 }
 #centerP  {
     position: absolute;
-    margin-left: 32%;
+    margin-left: 28.75%;
     margin-top: 10%;
-    width:475px;
+    width:550px;
+    letter-spacing: .25em;
 }
-.greet a {
-    text-decoration: none;
+.greet span {
     color: #cc9423;
-}
-.greet a:hover {
-    color: #d6c197;
-}
-.greet a:vistied {
-    color:#5b23cc;
 }
 #landing h1 {
     color:white;
@@ -77,18 +71,19 @@ body {
     line-height:1.4em;
     padding:2.5px;
 }
-.MeTower {
+.MeBridge {
     position: relative;
-    width: 449px;
-    height:582px;
+    width: 550px;
+    height:614px;
     float: right;
-    margin: 10em 30em 10em 30em;
+    margin: 8em 22.25em 10em 35em;
 }
 .Underline {
     position: absolute;
     float:right;
-    width: 12em;
-    margin-left: 9em;
+    width: 20em;
+    margin-left: 75%;
+    margin-top: 8%;
 }
 .footerL {
     position: absolute;
@@ -98,7 +93,7 @@ body {
     text-align: center;
     color: white;
     bottom: 1em;
-    left: 40.5%;
+    left: 44%;
 }
 .footerL a {
     color: white;
@@ -107,19 +102,21 @@ body {
 .footerL a:hover {
     color: #d6c197;
 }
-#design {
-    background-color:white;
+#aboutMe {
+    background-color: white;
+    position: relative;
     height:2600px;
     left:0;
     width:100%;
 }
-#photography {
-    height:2600px;
-    left:0;
-    width:100%;
+#yellowBar {
+    background-color: #cc9423;
+    position: relative;
+    width: 33%;
+    height: 100%;
 }
 #footer {
-    background-color: white;
+    background-color: 212121;
     height:84px;
     left:0;
     width:100%;
