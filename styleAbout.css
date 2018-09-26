@@ -98,8 +98,9 @@ body {
     text-align: center;
     color: white;
     bottom: 1em;
-    left: 40%;
-    right: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
 }
 .footerL a {
     color: white;
