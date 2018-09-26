@@ -44,7 +44,6 @@ body {
 #landing {
     background-color: #212121;
     height:100vh;
-    width:100%;
 }
 .logoMaster {
     margin: 30px 0px 0px 30px;
@@ -113,8 +112,7 @@ body {
     background-color: white;
     position: relative;
     height:955px;
-    left:0;
-    width:100%;
+    left:0; 
 }
 #yellowBar {
     background-color: #cc9423;
@@ -163,7 +161,7 @@ body {
     right:0;
     padding: 15em 1em 0em 48em;
     margin-top:0em;
-    width: 1100px;
+    width: 1000px;
 }
 .whiteInfo {
     color: black;
