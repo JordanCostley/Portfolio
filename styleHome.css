@@ -67,9 +67,6 @@ body {
 .greet a:hover {
     color: #d6c197;
 }
-.greet a:vistied {
-    color:#5b23cc;
-}
 #landing h1 {
     color:white;
     font-family:Montserrat-ExtraBold, sans-serif;
@@ -102,9 +99,15 @@ body {
     text-align: center;
     color: white;
     bottom: 1em;
+<<<<<<< HEAD
     width: 500px;
     left: 36%;
     right: 40%;
+=======
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+>>>>>>> ef5169fdf34bcb535fb587cdd061dccd34ae735c
 }
 .footerL a {
     color: white;
