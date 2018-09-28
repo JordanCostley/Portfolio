@@ -100,15 +100,14 @@ body {
     text-align: center;
     color: white;
     bottom: 1em;
-<<<<<<< HEAD
     width: 400px;
     left: 40%;
     right: 40%;
-=======
+}
+.footerLC {
     margin-left: auto;
     margin-right: auto;
     width:100%;
->>>>>>> ef5169fdf34bcb535fb587cdd061dccd34ae735c
 }
 .footerL a {
     color: white;
