@@ -164,6 +164,28 @@ body {
     padding: 10px;
     margin-left: 10%;
 }
+.designC h3 {
+    font-family: Montserrat-SemiBold, sans-serif;
+    font-size: 1.15em;
+    padding-bottom: .5em;
+    padding-top: .5em;
+}
+.designC p {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1em;
+}
+.hP {
+    width: 1100px;
+    line-height: 1.5em;
+}
+.TacoGrande {
+    margin-left: 33%;
+    padding: 10px;
+}
+.tP {
+    width: 1100px;
+    line-height: 1.5em;
+}
 .multiD {
     position: relative;
     padding-left: 7%;
