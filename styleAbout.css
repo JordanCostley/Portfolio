@@ -39,8 +39,9 @@
     display: table;
 }
 body {
-    background-color:blue;
+    background-color:white;
 }
+/*-----Landing Section-----*/
 #landing {
     background-color: #212121;
     height:100vh;
@@ -91,6 +92,7 @@ body {
     margin-left: 75%;
     margin-top: 8%;
 }
+/*-----Landing Footer-----*/
 .footerL {
     position: absolute;
     font-family: Montserrat-SemiBold, sans-serif;
@@ -99,6 +101,7 @@ body {
     text-align: center;
     color: white;
     bottom: 1em;
+    width: 400px;
     left: 40%;
     right: 40%;
 }
@@ -109,6 +112,7 @@ body {
 .footerL a:hover {
     color: #d6c197;
 }
+/*-----About Me-----*/
 #aboutMe {
     background-color: white;
     position: relative;
@@ -192,6 +196,7 @@ body {
 .whiteInfo h2 a:hover {
     color: #d6c197;
 }
+/*-----Footer-----*/
 #footer {
     position: relative;
     background-color: #212121;
