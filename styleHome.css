@@ -158,10 +158,16 @@ body {
 }
 .designC {
     display: inline-block;
+    width: 100%;
 }
 .Hollydale {
     padding: 10px;
     margin-left: 10%;
+}
+.multiD {
+    position: relative;
+    padding-left: 7%;
+    padding-right:1em;
 }
 /*-----Photography Section-----*/
 /*-----Footer-----*/
