@@ -28,14 +28,10 @@
     vertical-align: baseline;
     background: transparent;
 }
-.clearfix:after {
-    content:"";
-    clear: both;
-    display: table;
-}
 body {
     background-color:#212121;
 }
+
 /*-----Landing Section-----*/
 #landing {
     height:100vh;
@@ -126,7 +122,6 @@ body {
 #design {
     width: 100%;
 }
-/*-----Hollydale-----*/
 .designH {
     position: relative;
     width: 500px;
@@ -149,16 +144,11 @@ body {
     color: #212121;    
     text-align: center;
 }
-.yellowP {
-    color: #cc9423
-}
-.designC {
-    display: inline-block;
-    width: 100%;
-}
-.Hollydale {
-    padding: 10px;
-    margin-left: 10%;
+.designItemC {
+    position: relative;
+    
+    height: 620px;
+    padding: 20px;
 }
 .designC h3 {
     font-family: Montserrat-SemiBold, sans-serif;
@@ -170,26 +160,55 @@ body {
     font-family: Montserrat-Regular, sans-serif;
     font-size: 1em;
 }
+.yellowP {
+    color: #cc9423
+}
+/*-----Hollydale-----*/
+#hImage {
+    margin-left: 140px;
+    float: left;
+}
+.hText {
+    position: absolute;
+    bottom: 25px;
+    right: 200px;
+}
 .hP {
-    width: 1100px;
+    width: 415px;
     line-height: 1.5em;
 }
 /*-----Taco Grande-----*/
-.tImage {
-    margin-right: 10%;
-    padding: 10px;
+#tImage {
+    margin-right: 110px;
     float: right;
 }
+.tText {
+    position: absolute;
+    bottom: 150px;
+    left: 140px;
+}
 .tP {
-    width: 550px;
+    width: 480px;
     line-height: 1.5em;
     text-align: left;
     position: absolute;
 }
+/*-----Multi Design-----*/
 .multiD {
+    width: 100%;
+}
+.designT {
+    padding: 0;
+    margin:0;
+}
+.multiP {
+    width: 480px;
+}
+.designTShell {
+    width: 1641px;
     position: relative;
-    padding-left: 7%;
-    padding-right:1em;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*-----Photography Section-----*/
 #photography {
@@ -197,8 +216,7 @@ body {
     left:0;
     width:100%;
 }
-
-.photograpyH {
+.photographyH {
     position: relative;
     width: 500px;
     margin: auto;
@@ -220,13 +238,28 @@ body {
     color: white;    
     text-align: center;
 }
+.photographyT {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+
+}
+.photographyC{
+    width: 100%;
+}
+.photographyTShell {
+    width: 1566px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*-----Footer-----*/
 #footer {
     position: relative;
     background-color: white;
     height:50px;
     left:0;
-    width:100%;
+
 }
 .linksF {
     position: relative;

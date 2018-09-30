@@ -33,11 +33,6 @@
     vertical-align: baseline;
     background: transparent;
 }
-.clearfix:after {
-    content:"";
-    clear: both;
-    display: table;
-}
 body {
     background-color:white;
 }
