@@ -85,23 +85,21 @@ body {
 /*-----Footer Landing-----*/
 .footerLC {
     width: 100%;
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
 }
 .footerL {
-    position: absolute;
+    position: relative;
     font-family: Montserrat-SemiBold, sans-serif;
     font-size:1.1em;
     letter-spacing: .1em;
     text-align: center;
     color: white;
-    bottom: 1em;
     width: 500px;
-    left: 36%;
-    right: 40%;
-}
-.footerLC {
+    margin-top: 2.5em;
     margin-left: auto;
     margin-right: auto;
-    width:100%;
 }
 .footerL a {
     color: white;
@@ -115,7 +113,7 @@ body {
     background-color:white;
     height:2600px;
     left:0;
-    width:100%;
+    width:100vw;
 }
 /*-----Design Section-----*/
 #design {
@@ -281,52 +279,5 @@ body {
     top:.5em;
 }
 /*-----Sizing for Smaller Screens-----*/
-@media screen and (max-width: 1850px) {
-    #centerP  {
-        position: absolute;
-        margin-left: 30%;
-        margin-top: 10%;
-        width:475px;
-    }
- }
- @media screen and (max-width: 1800px) {
-    #centerP  {
-        position: absolute;
-        margin-left: 28%;
-        margin-top: 10%;
-        width:475px;
-    }
- }
- @media screen and (max-width: 1750px) {
-    #centerP  {
-        position: absolute;
-        margin-left: 24%;
-        margin-top: 10%;
-        width:475px;
-    }
- }
- @media screen and (max-width: 1650px) {
-    #centerP  {
-        position: absolute;
-        margin-left: 22%;
-        margin-top: 10%;
-        width:475px;
-    }
- }
- @media screen and (max-width: 1600px) {
-    #centerP  {
-        position: absolute;
-        margin-left: 18%;
-        margin-top: 10%;
-        width:475px;
-    }
- }
-@media screen and (max-width: 992px) {
-    body {
-      background-color: blue;
-    }
+@media screen and (max-width: 1024px) {
 }
-
-
-
-
