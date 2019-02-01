@@ -34,6 +34,7 @@ body {
 }
 .outserShell {
     width: 100%;
+    height: 100%;
 }
 /*-----Landing Section-----*/
 #landing {
@@ -58,7 +59,7 @@ body {
     letter-spacing: 1px;
 }
 #headerContent {
-    width: 70%;
+    width: 70vw;
     margin-left: auto;
     margin-right: auto;
     padding-top: 35px;
@@ -67,7 +68,7 @@ body {
     width: 100%;    
 }
 #headerImage img {
-    width: 55vw;
+    height: 55vh;
     position: relative;   
     display: block; 
     margin-left: auto;
@@ -157,7 +158,8 @@ body {
 }
 #contentLItems {
     width: 85%;
-    padding: 50px 30px 0px 90px;
+    padding: 50px 30px 10px 90px;
+    height: 100%;
     text-align: left;
     line-height: 1.75em;
     color: #212121;
@@ -172,6 +174,7 @@ body {
     font-size: 2.5em;
     line-height: 1.15em;
     color: #cc9423;
+    padding-top: 20px;
 }
 #contentLItems p {
     font-family: Montserrat-Light, sans-serif;
@@ -195,6 +198,7 @@ body {
     width: 50%;
     height: 100%;
     float: left;
+    padding-top: 20px;
 }
 #rImages {
     width: 12em;
@@ -243,6 +247,8 @@ body {
     height:55px;
     left:0;
     width:100%;
+    bottom: 0;
+    display: inline;
 }
 #fLogo {
     width: 40px;
