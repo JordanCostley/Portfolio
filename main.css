@@ -68,7 +68,7 @@ body {
     width: 100%;    
 }
 #headerImage img {
-    height: 55vh;
+    width: 55vw;
     position: relative;   
     display: block; 
     margin-left: auto;
@@ -244,11 +244,11 @@ body {
 #footer {
     position: relative;
     background-color: #212121;
-    height:55px;
+    height:50px;
     left:0;
     width:100%;
     bottom: 0;
-    display: inline;
+    display: inline-block;
 }
 #fLogo {
     width: 40px;
@@ -259,4 +259,5 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
