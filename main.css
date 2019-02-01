@@ -1,0 +1,257 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Montserrat-Regular;
+    font-weight: 100;
+    src: url('Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: Montserrat-ExtraBold;
+    font-weight: 100;
+    src: url('Montserrat-ExtraBold.ttf');
+}
+@font-face {
+    font-family: Montserrat-Light;
+    font-weight: 100;
+    src: url('Montserrat-Light.ttf');
+}
+@font-face {
+    font-family: Montserrat-SemiBold;
+    font-weight: 100;
+    src: url('Montserrat-SemiBold.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size:100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    background-color: #212121;
+    max-width: 100vw;
+}
+.outserShell {
+    width: 100%;
+}
+/*-----Landing Section-----*/
+#landing {
+    width: 100%;
+    height: 100vh;
+}
+#header {
+    width: 100%;
+    height: 10vh;
+}
+#header img {
+    height: 5vh;
+    padding: 30px;
+}
+#header h3 {
+    font-family: Montserrat-Regular,sans-serif;
+    color: white;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+#headerContent {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 35px;
+}
+#headerImage {
+    width: 100%;    
+}
+#headerImage img {
+    width: 55vw;
+    position: relative;   
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+#headerP {
+    position: absolute;
+    width: 28vw;
+    right: 390px;
+    top: 350px;
+    left: 50vw; 
+}
+#headerP h2 {
+    color: white;
+    font-family: Montserrat-ExtraBold, sans-serif;
+    font-size: 2.85vw;
+}
+#mailButton {
+    background-color: #cc9423;
+    width: 10em;
+    height: 2.25em;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+#mailButton p {
+    color: white;
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1vw;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.95em;
+}
+#mailButton a {
+    text-decoration: none;
+}
+#mailButton p:hover {
+    color: #53504b;
+}
+/*
+.yellowText {
+    color: #cc9423;
+}
+*/
+#contentShell {
+    width: 100%;
+}
+#downArrow {
+    width: 100%;
+    bottom: 1.5em;
+    position: absolute;
+}
+#downArrow a {
+    text-decoration: none;
+}
+#downArrow a h2:hover {
+    color: #cc9423
+}
+#downArrow h2 {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+}
+#arrowImage {
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+#arrowImage a img {
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*-----Lower Section Left-----*/
+#lowerSection {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+#contentLeft {
+    width: 50%;
+    background-color: white;
+    height: 100vh;
+    float: left;
+}
+#contentLItems {
+    width: 85%;
+    padding: 50px 30px 0px 90px;
+    text-align: left;
+    line-height: 1.75em;
+    color: #212121;
+}
+#contentLItems h1 {
+    font-family: Montserrat-SemiBold, sans-serif;
+    font-size: 1.95em;
+    line-height: 1.15em;
+}
+#aboutHead {
+    font-family: Montserrat-ExtraBold, sans-serif;
+    font-size: 2.5em;
+    line-height: 1.15em;
+    color: #cc9423;
+}
+#contentLItems p {
+    font-family: Montserrat-Light, sans-serif;
+    font-size: 1.15em;
+}
+#contentLItems h3 {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1.15em;
+}
+#contentLItems h2 a {
+    color: #cc9423;
+    font-family: Montserrat-MediumItalic, sans-serif;
+    text-decoration: none;
+}
+#contentLItems h2 a:hover {
+    color: #d6c197;
+}
+/*-----Lower Section Right-----*/
+#contentRight {
+    background-color: #212121;
+    width: 50%;
+    height: 100vh;
+    float: left;
+}
+#rImages {
+    width: 12em;
+    padding: 35px 30px 0px 90px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #cccccc;
+}
+#rImages img {
+    width: 11em;  
+    padding-top: 15px;  
+}
+#rImages h3 {
+    font-family: Montserrat-SemiBold, sans-serif;
+    font-size: 1.35em;
+    width: 20em;
+    text-align: center;
+    margin-left: -5em;
+    padding-top: 10px;
+}
+#rImages p {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1em;
+    width: 20em;
+    margin-left: 1em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#rImages a {
+    text-decoration: none;
+    color: #cc9423;
+    font-family: Montserrat-Light, sans-serif;
+}
+#rImages a span {
+    font-size: 1em;
+    width: 20em;
+    padding-left: 2.5em;
+}
+#rImages a:hover {
+    color: #d6c197;
+}
+/*-----Footer-----*/
+#footer {
+    position: relative;
+    background-color: #212121;
+    height:55px;
+    left:0;
+    width:100%;
+}
+#fLogo {
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#logoFImage {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
