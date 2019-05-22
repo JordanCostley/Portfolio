@@ -83,20 +83,24 @@
 
     function menuHoverOn() {
         var line2 = document.getElementById("line2");
+        var hamMenu = document.getElementById("hamMenu");
         //Turn on Hover Effect
         line2.style.transform = "translateX(-4px)"; 
         line2.style.width = "25px";    
+        hamMenu.style.transform = "scale(1.15,1.15)";
     }
 
     function menuHoverOff() {
         var line2 = document.getElementById("line2");
+        var hamMenu = document.getElementById("hamMenu");
         //Turn off Hover Effect
         if (line2.style.width === "16px") {
             null
         } 
         else {
             line2.style.transform = "translateX(4px)"; 
-            line2.style.width = "16px";     
+            line2.style.width = "16px"; 
+            hamMenu.style.transform = "scale(1,1)";    
         } 
     }
 
@@ -119,8 +123,21 @@
         menuClick.classList.toggle('toggle');        
         }
         
-    function logoHome() {
+    //Scroll to Work
+    var workButton = document.getElementById("myWorkScroll"); 
+    workButton.style.cursor = 'pointer';
+    workButton.onclick = goToWork;
 
+    function goToWork() {
+        $('html,body').animate({
+            scrollTop: $("main").offset().top},
+            'slow')
+    }
+    //Scroll Home
+    function logoHome() {
+        $('html,body').animate({
+            scrollTop: 0},
+            'slow')
     }
 /*Scroll to top when arrow up clicked BEGIN
 $(window).scroll(function() {
