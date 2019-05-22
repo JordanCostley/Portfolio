@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Jordan Costley | Designer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jordan Costley | Interaction Desginer</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/jqz4kcj.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -14,91 +19,126 @@
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body>
-    <div id="outerShell">
-        <div id="landing">
-            <div id="header">
-                <img src="images/Logo.svg" alt="logo"/>
-                <h3>Desinger & Photographer</h3>
-            </div>
-            <div class="contentShell">
-                <div id="headerContent">
-                    <div id="headerImage">
-                        <img src="images/me_Main.jpg" alt="Me in front of waterfall"/>
+<body id="body">
+    <header>
+        <div id="headerShell">
+            <div id="navShell">
+                <nav>
+                    <div class="invertMyColor" id="logoHolder">
+                    <svg id="jLogo" class="invertMyColor"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.94 41.27"><title>Home</title><g data-name="a3554e06-a8c7-41a3-9887-5d3844153994"><g data-name="e7a9de16-4472-4f7b-87ce-e3de7d101827"><path d="M6.19,39.81A15.35,15.35,0,0,1,0,35.43L3,32l4.23-5A12.87,12.87,0,0,0,10.35,30a5.82,5.82,0,0,0,3.16,1,4.05,4.05,0,0,0,3.2-1.25A5.33,5.33,0,0,0,17.81,26V11H8.29V0H30.94V25.13q0,8.1-4.15,12.14t-12.19,4A22.55,22.55,0,0,1,6.19,39.81Z"/></g></g></svg>
                     </div>
-                    <div id="headerP">
-                            <h2>Hello, my name is 
-                                    <span class="yellowText">Jordan Costley</span>. I am a 
-                                Designer,
-                                Photographer,
-                                & Creative.    
-                            </h2>
-                            <div id="mailButton">
-                            <a href="mailto:info@jordancostley.com"><p>Get in touch.</p></a>
-                            </div>
+                    <div id="hamMenu">
+                        <div id="line1" class="invertMyColor"></div>
+                        <div id="line2" class="invertMyColor"></div>
+                    <div id="line3" class="invertMyColor"></div>
+                    </div>
+                </nav>                
+            </div>
+                <div id="navMenu">
+                    <div id="menuItems">
+                        <ul class="menuList" id="menuListItems">
+                            <a href="#" id="strike1"><li>work</li></a>
+                            <a href="#" id="strike2"><li>about</li></a>
+                            <a href="#" id="strike3"><li>contact</li></a>
+                            <a href="#" id="strike4"><li>resume</li></a>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div id="downArrow">
-                    <a href="#lowerSection">
-                    <h2>Learn More</h2>
-                    </a>
-                <div id="arrowImage">
-                    <a href="#lowerSection">
-                        <img src="images/Down Arrow.svg" alt="down arrow"/>
-                    </a>
+            
+            <div id="headerContent">
+                <div id="introText">
+                    <h1><span id="yellowBar">| </span>Hello! I am Jordan Costley, a passionate & energetic Interaction Designer based in Atlanta, Georgia.</h1>
+                    <button id="sayHello" onclick="(helloCall)">say hello.</button>
                 </div>
+            </div>           
+            <div id="myWorkScrollShell">
+                <div id="myWorkScroll">
+                    <h6 id="myWorkText">my work</h6>
+                    <svg id="scrollArrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.2 28.29"><title>Arrow</title><polygon points="9.85 21.34 6.55 24.63 6.55 0 4.64 0 4.64 24.63 1.35 21.34 0 22.69 5.6 28.29 5.6 28.29 5.6 28.29 11.2 22.69 9.85 21.34"/></svg>
+                </div>
+            </div>            
+            <div id="socialLinks">
+                <a href="https://www.behance.net/Jordan_Costley" target="_blank"><i class="fab fa-behance"></i></a>
+                <a href="https://www.instagram.com/thejordanblake/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/jordan-costley-083177183" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
-        <div id="lowerSection">
-        <div class="contentShell">
-            <div id="contentLeft">
-                <div id="contentLItems">
-                                <h4 id="aboutHead">A little bit about me.</h1>
-                                <br>
-                                <h1>I am a designer and photographer based out of Atlanta, GA.</h1>
-                                <br>
-                                <p>A childhood filled with creativity and encouragement of exploration has led to my studying of design and passsion for creating beautiful, impactful designs. I am currently a student at Kennesaw State University.</p>
-                                <br>
-                                <br>
-                                <h1>Design</h1>
-                                <br>
-                                <p>I have had the opportunity to work on a wide variety of projects with a number of people ranging from branding projects to social media campaigns. My design scope encompasses both digital and print design. I have very proficient skills in regard to the Adobe Creative Cloud Suite having worked with Adobe products for roughly 8 years.</p>
-                                <br>
-                                <h3>A desire for beautiful, functional, and meaningful products my passion for design has evolved throughout the years. A product needs to act more than a mere decoration, it must function and function well.</h3>
-                                <br>
-                                <br>
-                                <h1>Photography</h1>
-                                <br>
-                                <p>Born out of a passion for capturing the beauty of the world around me, I have grown my skills to better capture a variety of subjects and scenes. I am continually expanding my subjects to have a more diverse skillset as to keep me fresh creatively speaking.</p>
-                                <br>
-                                <h2><a href="https://drive.google.com/open?id=18dgun4ig_ySJ6jaUVAYh4GMH7gpXBgUu" target="_blank">Download my Resume</a></h2>
-                                <br>
-                </div>
-            </div>
-            <div id="contentRight">
-                <div id="rImages">
-                    <img src="images/DesignIconG.svg" alt="Computer Icon"/>
-                    <h3>Proficient in both digital and print design via Adobe Creative Suite.</h3>
-                    <p>~8 years experience</p><a href="https://jordancostley.com/design" target="_blank"><span>Design Samples</span></a>
-                    <br>
-                    <img src="images/PhotographyIconG.svg" alt="Photography Icon"/>
-                    <h3>Strong photography skills, primarily nature based including portraits.</h3>
-                    <p>~5 years experience</p><a href="https://jordancostley.com/photography" target="_blank"><span>Photo Samples</span></a>
-                    <br>
-                    <img src="images/UXIconG.svg" alt="UX Icon"/>
-                    <h3>Moderate but evergrowing Ux design skills including InVision App, Adobe XD, & Axure. Also moderate HTML/CSS skills.</h3>
-                    <p>~1.5 years experience</p> <a href="https://github.com/JordanCostley?tab=repositories" target="_blank"><span>Code Samples</span></a>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    
-    <div id="footer"> 
-            <div id="fLogo">                            
-                <a href="https://jordancostley.info"><img src="images/Logo.svg" id="logoFImage" alt="my Logo"/></a>
-            </div>
-    </div>
+    </header>
+    <main>  
+    </main>
+    <footer>
+
+    </footer>
 </body>
+<script type="text/javascript">
+    var menuClick = document.getElementById("hamMenu");
+    menuClick.style.cursor = 'pointer';
+    menuClick.onclick = menuShow;
+    menuClick.onmouseenter = menuHoverOn;
+    menuClick.onmouseleave = menuHoverOff;
+
+    var logoHover = document.getElementById("jLogo");
+    logoHover.style.cursor = 'pointer';
+    logoHover.onclick = logoHome;
+
+    function menuHoverOn() {
+        var line2 = document.getElementById("line2");
+        //Turn on Hover Effect
+        line2.style.transform = "translateX(-4px)"; 
+        line2.style.width = "25px";    
+    }
+
+    function menuHoverOff() {
+        var line2 = document.getElementById("line2");
+        //Turn off Hover Effect
+        if (line2.style.width === "16px") {
+            null
+        } 
+        else {
+            line2.style.transform = "translateX(4px)"; 
+            line2.style.width = "16px";     
+        } 
+    }
+
+    function menuShow() {
+        var menuButton = document.getElementById("menuListItems");
+        var body = document.getElementById("body");
+        var socialLinks = document.getElementById("socialLinks");
+        //Move in Menu
+        if (menuButton.style.transform === "translateY(0%)") {
+            menuButton.style.transform = "translateY(-100%)";
+            body.style.overflowY = "auto";
+            socialLinks.style.visibility = "visible";
+        } 
+        else {
+                socialLinks.style.visibility = "hidden";
+                menuButton.style.transform = "translateY(0%)";
+                body.style.overflowY = "hidden";
+            }
+        //Burger animation
+        menuClick.classList.toggle('toggle');        
+        }
+        
+    function logoHome() {
+
+    }
+/*Scroll to top when arrow up clicked BEGIN
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+*/
+</script>
 </html>
