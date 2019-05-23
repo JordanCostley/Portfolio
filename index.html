@@ -135,9 +135,14 @@
     }
     //Scroll Home
     function logoHome() {
+        if (socialLinks.style.visibility === "hidden") {
+            window.location.href = "https://jordancostley.info";
+        }
+        else {
         $('html,body').animate({
             scrollTop: 0},
             'slow')
+        }
     }
 /*Scroll to top when arrow up clicked BEGIN
 $(window).scroll(function() {
