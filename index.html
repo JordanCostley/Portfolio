@@ -136,7 +136,10 @@
     //Scroll Home
     function logoHome() {
         if (socialLinks.style.visibility === "hidden") {
-            window.location.href = "https://jordancostley.info";
+            menuShow();
+            $('html,body').animate({
+            scrollTop: 0},
+            'slow')
         }
         else {
         $('html,body').animate({
@@ -144,6 +147,11 @@
             'slow')
         }
     }
+/* logo home link for other pages 
+function logoHome() {
+window.location.href = "https://jordancostley.info";
+}
+
 /*Scroll to top when arrow up clicked BEGIN
 $(window).scroll(function() {
     var height = $(window).scrollTop();
