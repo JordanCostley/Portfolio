@@ -71,19 +71,20 @@
     </footer>
 </body>
 <script type="text/javascript">
-    var menuClick = document.getElementById("hamMenu");
+    var menuClick = $("#hamMenu")[0];
     menuClick.style.cursor = 'pointer';
     menuClick.onclick = menuShow;
     menuClick.onmouseenter = menuHoverOn;
     menuClick.onmouseleave = menuHoverOff;
 
-    var logoHover = document.getElementById("jLogo");
+    var line2 =$("#line2")[0];
+    var hamMenu =$("#hamMenu")[0];
+
+    var logoHover = $("#jLogo")[0];
     logoHover.style.cursor = 'pointer';
     logoHover.onclick = logoHome;
 
-    function menuHoverOn() {
-        var line2 = document.getElementById("line2");
-        var hamMenu = document.getElementById("hamMenu");
+    function menuHoverOn() {        
         //Turn on Hover Effect
         line2.style.transform = "translateX(-4px)"; 
         line2.style.width = "25px";    
@@ -91,8 +92,6 @@
     }
 
     function menuHoverOff() {
-        var line2 = document.getElementById("line2");
-        var hamMenu = document.getElementById("hamMenu");
         //Turn off Hover Effect
         if (line2.style.width === "16px") {
             null
@@ -105,9 +104,9 @@
     }
 
     function menuShow() {
-        var menuButton = document.getElementById("menuListItems");
-        var body = document.getElementById("body");
-        var socialLinks = document.getElementById("socialLinks");
+        var menuButton = $("#menuListItems")[0];
+        var body = $("body")[0];
+        var socialLinks = $("#socialLinks")[0];
         //Move in Menu
         if (menuButton.style.transform === "translateY(0%)") {
             menuButton.style.transform = "translateY(-100%)";
@@ -115,16 +114,16 @@
             socialLinks.style.visibility = "visible";
         } 
         else {
-                socialLinks.style.visibility = "hidden";
-                menuButton.style.transform = "translateY(0%)";
-                body.style.overflowY = "hidden";
+            socialLinks.style.visibility = "hidden";
+            menuButton.style.transform = "translateY(0%)";
+            body.style.overflowY = "hidden";
             }
         //Burger animation
         menuClick.classList.toggle('toggle');        
         }
         
     //Scroll to Work
-    var workButton = document.getElementById("myWorkScroll"); 
+    var workButton = $("#myWorkScroll")[0]; 
     workButton.style.cursor = 'pointer';
     workButton.onclick = goToWork;
 
