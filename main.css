@@ -160,6 +160,10 @@ header {
     font-size: 35px;
     color: #CB9325;
 }
+.yellowText {
+    color: #CB9325;
+    font-weight: bold;
+}
 #sayHello {
     font-family: 'Montserrat', sans-serif;
     color: white;
