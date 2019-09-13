@@ -24,13 +24,13 @@
         <div id="headerShell">
             <div id="navShell">
                 <nav>
-                    <div class="invertMyColor" id="logoHolder">
-                    <svg id="jLogo" class="invertMyColor"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.94 41.27"><title>Home</title><g data-name="a3554e06-a8c7-41a3-9887-5d3844153994"><g data-name="e7a9de16-4472-4f7b-87ce-e3de7d101827"><path d="M6.19,39.81A15.35,15.35,0,0,1,0,35.43L3,32l4.23-5A12.87,12.87,0,0,0,10.35,30a5.82,5.82,0,0,0,3.16,1,4.05,4.05,0,0,0,3.2-1.25A5.33,5.33,0,0,0,17.81,26V11H8.29V0H30.94V25.13q0,8.1-4.15,12.14t-12.19,4A22.55,22.55,0,0,1,6.19,39.81Z"/></g></g></svg>
+                    <div id="logoHolder">
+                    <svg id="jLogo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.94 41.27"><title>Home</title><g data-name="a3554e06-a8c7-41a3-9887-5d3844153994"><g data-name="e7a9de16-4472-4f7b-87ce-e3de7d101827"><path d="M6.19,39.81A15.35,15.35,0,0,1,0,35.43L3,32l4.23-5A12.87,12.87,0,0,0,10.35,30a5.82,5.82,0,0,0,3.16,1,4.05,4.05,0,0,0,3.2-1.25A5.33,5.33,0,0,0,17.81,26V11H8.29V0H30.94V25.13q0,8.1-4.15,12.14t-12.19,4A22.55,22.55,0,0,1,6.19,39.81Z"/></g></g></svg>
                     </div>
                     <div id="hamMenu">
-                        <div id="line1" class="invertMyColor"></div>
-                        <div id="line2" class="invertMyColor"></div>
-                    <div id="line3" class="invertMyColor"></div>
+                        <div id="line1"></div>
+                        <div id="line2"></div>
+                    <div id="line3"></div>
                     </div>
                 </nav>                
             </div>
@@ -43,12 +43,10 @@
                             <a href="#" id="strike4"><li>resume</li></a>
                         </ul>
                     </div>
-                </div>
-            
+                </div>            
             <div id="headerContent">
                 <div id="introText">
-                    <h1><span id="yellowBar">| </span>Hello! I am an <span class="yellowText">Interaction Designer </span>focused on creating designs which solve problems in a creative and impactful manner. Based in Atlanta, Georgia.</h1>
-                    <button id="sayHello" onclick="(helloCall)">say hello.</button>
+                    <h1><span id="yellowBar">| </span>Hello! I am an <span class="yellowText">Interaction Designer </span>focused on creating designs that solve problems in a creative and impactful manner. Based in Atlanta, Georgia.</h1>
                 </div>
             </div>           
             <div id="myWorkScrollShell">
@@ -57,42 +55,66 @@
                     <svg id="scrollArrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.2 28.29"><title>Arrow</title><polygon points="9.85 21.34 6.55 24.63 6.55 0 4.64 0 4.64 24.63 1.35 21.34 0 22.69 5.6 28.29 5.6 28.29 5.6 28.29 11.2 22.69 9.85 21.34"/></svg>
                 </div>
             </div>            
-            <div id="socialLinks">
-                <a href="https://www.behance.net/Jordan_Costley" target="_blank"><i class="fab fa-behance"></i></a>
-                <a href="https://www.instagram.com/thejordanblake/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/jordan-costley-083177183" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            </div>
+            
         </div>
     </header>
-    <main>  
+    <main> 
+        <div id="work"> 
+            <div id="workShell">
+                <div class="workItemShell">
+                    <div class="workItem"></div>
+                    <h2 class="workTitle">WestJet Mobile Prototype</h2>
+                    <p class="workDesc">Mobile Redesign Concept and Prototype</p>                    
+                </div>
+                <div class="workItemShell">
+                    <div class="workItem"></div>
+                    <h2 class="workTitle">BMW iDrive 7.0</h2>
+                    <p class="workDesc">Usability Test</p>                    
+                </div>
+                <div class="workItemShell">
+                    <div class="workItem"></div>
+                    <h2 class="workTitle">Street Eats</h2>
+                    <p class="workDesc">Mobile App Concept and Prototype</p>                    
+                </div>
+                <div class="workItemShell">
+                    <div class="workItem"></div>
+                    <h2 class="workTitle">Hollydale Branding</h2>
+                    <p class="workDesc">Church Logo and Branding</p>                    
+                </div>
+            </div>
+        </work> 
     </main>
     <footer>
 
     </footer>
 </body>
 <script type="text/javascript">
+    // Menu Hover/Interaction
     var menuClick = $("#hamMenu")[0];
     menuClick.style.cursor = 'pointer';
     menuClick.onclick = menuShow;
     menuClick.onmouseenter = menuHoverOn;
     menuClick.onmouseleave = menuHoverOff;
-
     var line2 =$("#line2")[0];
     var hamMenu =$("#hamMenu")[0];
 
+    // Logo Hover/Interaction
     var logoHover = $("#jLogo")[0];
     logoHover.style.cursor = 'pointer';
     logoHover.onclick = logoHome;
 
+    var workItemHover = $(".workItem")[0];
+    workItemHover.style.cursor = 'pointer';
+
     function menuHoverOn() {        
-        //Turn on Hover Effect
+        //Turn on Hover Effect for Menu
         line2.style.transform = "translateX(-4px)"; 
         line2.style.width = "25px";    
         hamMenu.style.transform = "scale(1.15,1.15)";
     }
 
     function menuHoverOff() {
-        //Turn off Hover Effect
+        //Turn off Hover Effect for Menu
         if (line2.style.width === "16px") {
             null
         } 
@@ -106,15 +128,12 @@
     function menuShow() {
         var menuButton = $("#menuListItems")[0];
         var body = $("body")[0];
-        var socialLinks = $("#socialLinks")[0];
         //Move in Menu
         if (menuButton.style.transform === "translateY(0%)") {
             menuButton.style.transform = "translateY(-100%)";
             body.style.overflowY = "auto";
-            socialLinks.style.visibility = "visible";
         } 
         else {
-            socialLinks.style.visibility = "hidden";
             menuButton.style.transform = "translateY(0%)";
             body.style.overflowY = "hidden";
             }
@@ -132,9 +151,10 @@
             scrollTop: $("main").offset().top},
             'slow')
     }
-    //Scroll Home
+    //Logo Scroll Home
     function logoHome() {
-        if (socialLinks.style.visibility === "hidden") {
+        var menuButton = $("#menuListItems")[0];
+        if (menuButton.style.transform === "translateY(0%)") {
             menuShow();
             $('html,body').animate({
             scrollTop: 0},
