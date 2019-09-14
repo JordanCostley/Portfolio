@@ -311,6 +311,9 @@ footer {
 #headerContent {
     padding: 0;
 }
+#myWorkScrollShell {
+    padding: calc(60vh - 400px) 0 10px 0;
+}
 #workShell {
     width: 85%;
 }
