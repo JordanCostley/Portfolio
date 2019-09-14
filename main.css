@@ -222,7 +222,7 @@ main {
 }
 .workItem {
     border: solid .75px #cccccc38;
-    width: 90%;
+    width: 450px;
     height: 250px;
     border-radius: 5px;
     box-shadow: 0 3px 3px -2px rgba(0,0,0,.1), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.02);
@@ -282,6 +282,9 @@ footer {
     flex-direction: column;
 }
 #introText {
-    padding: 25vh 0 0 0;
+    padding: 20vh 0 0 0;
+}
+#headerContent {
+    padding: 0;
 }
 }
