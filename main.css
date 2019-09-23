@@ -140,6 +140,7 @@ header {
 }
 #headerShell {
     width: 100%;
+    height: auto;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
@@ -281,6 +282,84 @@ main {
 }
 footer {
     height: 150px;
+}
+/*------About Page------*/
+#bodyShell {
+    height: 100px;
+    background-color: white;
+}
+#aboutShell {
+    width: 100%;
+}
+#aboutContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 63%;
+    height: 70vh;
+    margin: 0 auto 0 auto;
+    padding: 75px 0 0 0;
+}
+#aboutPhotoShell {
+    flex-basis: 30%;
+    min-width: 400px;
+    height: 50vh;
+    min-height: 500px;
+    padding: 0 0 35px 0;
+}
+#aboutPhoto {  
+    width: 100%;
+    height: auto;  
+}
+#aboutText {
+    flex-basis: 30%;
+    min-width: 450px;
+    padding: 5px 0 100px 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+#aboutTitle {
+    font-weight: 700;
+    font-size: 23px;
+    text-align: left;
+    padding: 0 0 10px 0;
+}
+#aboutBodyText {
+    font-weight: 300;
+    color: #494949;
+    text-align: left;
+    font-size: 18px;
+    line-height: 29px;
+    padding: 0 0 40px 0;
+    text-align: left;
+}
+#aboutReach {
+    text-align: left;
+}
+#reachEmail, #reachEmail a {
+    padding: 10px 0 0 0;
+    text-align: left;
+    text-decoration: none;
+    color: #CB9325;
+}
+#reachEmail a:hover {
+    color: rgb(29, 74, 165);
+    transition: .2s;
+}
+#socialIcons {
+    text-align: left;
+    font-size: 22.5px;
+    padding: 25px 0 0 0;
+}
+#socialIcons a {
+    text-decoration: none;
+    color: black;
+    padding: 0 5px 0 0;
+}
+#socialIcons a:hover {
+    color: #CB9325;
+    transition: .02s;
 }
 /*------Mobile------*/
 @media screen and (max-width: 800px) {

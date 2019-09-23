@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jordan Costley | Interaction Desginer</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/jqz4kcj.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#cc9423">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body id="body">
+    <div id="bodyShell">
+        <div id="headerShell">
+            <div id="navShell">
+                <nav>
+                    <div id="logoHolder">
+                    <svg id="jLogo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.94 41.27"><title>Home</title><g data-name="a3554e06-a8c7-41a3-9887-5d3844153994"><g data-name="e7a9de16-4472-4f7b-87ce-e3de7d101827"><path d="M6.19,39.81A15.35,15.35,0,0,1,0,35.43L3,32l4.23-5A12.87,12.87,0,0,0,10.35,30a5.82,5.82,0,0,0,3.16,1,4.05,4.05,0,0,0,3.2-1.25A5.33,5.33,0,0,0,17.81,26V11H8.29V0H30.94V25.13q0,8.1-4.15,12.14t-12.19,4A22.55,22.55,0,0,1,6.19,39.81Z"/></g></g></svg>
+                    </div>
+                    <div id="hamMenu">
+                        <div id="line1"></div>
+                        <div id="line2"></div>
+                    <div id="line3"></div>
+                    </div>
+                </nav>                
+            </div>
+                <div id="navMenu">
+                    <div id="menuItems">
+                        <ul class="menuList" id="menuListItems">
+                            <a href="https://jordancostley.info/#work" id="strike1"><li>work</li></a>
+                            <a href="#" id="strike2"><li>about</li></a>
+                            <a href="#" id="strike3"><li>contact</li></a>
+                            <a href="#" id="strike4"><li>resume</li></a>
+                        </ul>
+                    </div>
+        </div>
+        </div>
+    </div>
+    <body>
+        <div id="aboutShell">
+            <div id="aboutContent">
+                <div id="aboutPhotoShell">
+                   <img src="images/aboutImage.jpg" alt="Photo of Jordan" id="aboutPhoto"/>
+                </div>
+                <div id="aboutText">
+                    <h3 id="aboutTitle">Hello there!</h3>
+                    <p id="aboutBodyText"> My name is Jordan and I am currently studying Interactive Design at Kennesaw State University. 
+                        
+                        
+                        
+                        I care deeply and believe strongly in the process of iterative design and
+                        believe it to be key in creating innovative, effective, and intuitive solutions
+                        to solve problems. I find exploration of thoughts and ideas on paper first
+                        as to explore my thoughts as I run through the possibilities of working on
+                        a project.</p>
+                        <h4 id="aboutReach">Feel free to reach out to me:</h4>
+                        <p id="reachEmail"><a href="mailto:info@jordancostley.com" target="_blank">info@jordancostley.com</a></p>
+                        <div id="socialIcons">
+                            <a href="https://www.linkedin.com/in/jordancostley" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/thejordanblake/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        // Menu Hover/Interaction
+        var menuClick = $("#hamMenu")[0];
+        menuClick.style.cursor = 'pointer';
+        menuClick.onclick = menuShow;
+        menuClick.onmouseenter = menuHoverOn;
+        menuClick.onmouseleave = menuHoverOff;
+        var line2 =$("#line2")[0];
+        var hamMenu =$("#hamMenu")[0];
+    
+        // Logo Hover/Interaction
+        var logoHover = $("#jLogo")[0];
+        logoHover.style.cursor = 'pointer';
+        logoHover.onclick = logoHome;
+    
+        var workItemHover = $(".workItem")[0];
+        workItemHover.style.cursor = 'pointer';
+    
+        function menuHoverOn() {        
+            //Turn on Hover Effect for Menu
+            line2.style.transform = "translateX(-4px)"; 
+            line2.style.width = "25px";    
+            hamMenu.style.transform = "scale(1.15,1.15)";
+        }
+    
+        function menuHoverOff() {
+            //Turn off Hover Effect for Menu
+            if (line2.style.width === "16px") {
+                null
+            } 
+            else {
+                line2.style.transform = "translateX(4px)"; 
+                line2.style.width = "16px"; 
+                hamMenu.style.transform = "scale(1,1)";    
+            } 
+        }
+    
+        function menuShow() {
+            var menuButton = $("#menuListItems")[0];
+            var body = $("body")[0];
+            //Move in Menu
+            if (menuButton.style.transform === "translateY(0%)") {
+                menuButton.style.transform = "translateY(-100%)";
+                body.style.overflowY = "auto";
+            } 
+            else {
+                menuButton.style.transform = "translateY(0%)";
+                body.style.overflowY = "hidden";
+                }
+            //Burger animation
+            menuClick.classList.toggle('toggle');        
+            }
+            
+        //Scroll to Work
+        var workButton = $("#myWorkScroll")[0]; 
+        workButton.style.cursor = 'pointer';
+        workButton.onclick = goToWork;
+    
+        function goToWork() {
+            $('html,body').animate({
+                scrollTop: $("main").offset().top},
+                'slow')
+        }
+    
+     //logo home link for other pages 
+    function logoHome() {
+    window.location.href = "https://jordancostley.info";
+    }
+    
+    // Scroll to top when arrow up clicked BEGIN
+    $(window).scroll(function() {
+        var height = $(window).scrollTop();
+        if (height > 100) {
+            $('#back2Top').fadeIn();
+        } else {
+            $('#back2Top').fadeOut();
+        }
+    });
+    $(document).ready(function() {
+        $("#back2Top").click(function(event) {
+            event.preventDefault();
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
+        });
+    
+    });
+
+    </script>
+</html>
