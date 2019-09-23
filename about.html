@@ -54,15 +54,9 @@
                 </div>
                 <div id="aboutText">
                     <h3 id="aboutTitle">Hello there!</h3>
-                    <p id="aboutBodyText"> My name is Jordan and I am currently studying Interactive Design at Kennesaw State University. 
-                        
-                        
-                        
-                        I care deeply and believe strongly in the process of iterative design and
-                        believe it to be key in creating innovative, effective, and intuitive solutions
-                        to solve problems. I find exploration of thoughts and ideas on paper first
-                        as to explore my thoughts as I run through the possibilities of working on
-                        a project.</p>
+                    <p id="aboutBodyText"> I am an undergraduate student at Kennesaw State University studying Interactive Design with a minor in Technical Communications. Ever since getting my hands on a computer I have fallen in love with learning new technologies and tools. Being in a world that is ever changing it is important to learn and adapt to a variety of situations. Having grown up in a world filled with electronics and technology I enjoy constantly learning new skills and knowledge. 
+                            <br><br>
+                            I am nearing the end of my college career having learned a variety of skills and knowledge with a foundation in human centered design. I have a strong technical background as well as an ever-growing knowledge of theories about design and humans. I am very passionate about beautiful design that offers an efficient and seamless experience. I believe strongly in communicating with those around me whether that be coworkers or strangers to get a better sense of how we interact with the world. </p>
                         <h4 id="aboutReach">Feel free to reach out to me:</h4>
                         <p id="reachEmail"><a href="mailto:info@jordancostley.com" target="_blank">info@jordancostley.com</a></p>
                         <div id="socialIcons">
@@ -87,9 +81,6 @@
         var logoHover = $("#jLogo")[0];
         logoHover.style.cursor = 'pointer';
         logoHover.onclick = logoHome;
-    
-        var workItemHover = $(".workItem")[0];
-        workItemHover.style.cursor = 'pointer';
     
         function menuHoverOn() {        
             //Turn on Hover Effect for Menu
@@ -125,17 +116,6 @@
             //Burger animation
             menuClick.classList.toggle('toggle');        
             }
-            
-        //Scroll to Work
-        var workButton = $("#myWorkScroll")[0]; 
-        workButton.style.cursor = 'pointer';
-        workButton.onclick = goToWork;
-    
-        function goToWork() {
-            $('html,body').animate({
-                scrollTop: $("main").offset().top},
-                'slow')
-        }
     
      //logo home link for other pages 
     function logoHome() {
@@ -146,13 +126,13 @@
     $(window).scroll(function() {
         var height = $(window).scrollTop();
         if (height > 100) {
-            $('#back2Top').fadeIn();
+            $('#backToTop').fadeIn();
         } else {
-            $('#back2Top').fadeOut();
+            $('#backToTop').fadeOut();
         }
     });
     $(document).ready(function() {
-        $("#back2Top").click(function(event) {
+        $("#backToTop").click(function(event) {
             event.preventDefault();
             $("html, body").animate({ scrollTop: 0 }, "slow");
             return false;
