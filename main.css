@@ -444,6 +444,15 @@ footer {
     font-size: 20px;
     text-align: left;
 }
+#developmentShell {
+    width: 63%;
+    margin: 50px auto 0 auto;
+}
+#development {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+}
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
 #aboutContent {
