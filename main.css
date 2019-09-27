@@ -687,6 +687,7 @@ footer {
 }
 .workItemShell {
     width: 90vw;
+    max-width: 400px;
 }
 #aboutContent {
     width: 100%;
