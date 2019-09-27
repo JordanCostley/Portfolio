@@ -13,6 +13,7 @@ body {
     width: 100%;
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
+    width: 100vw;
 }
 ::selection {
     background: rgb(29, 74, 165);
@@ -640,6 +641,7 @@ footer {
 }
 .goalSummary {
     width: 90%;
+    padding: 15px 20px;
 }
 #mastheadShellSE {
     background-image: url('');
