@@ -34,7 +34,7 @@ nav {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     padding: 50px 50px 0 50px;    
 }
@@ -431,17 +431,20 @@ footer {
 }
 .reportSummary {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     padding: 70px 0 100px 0;
-    width: 63%;
+    width: 60%;
     margin: 0 auto 0 auto;
+    justify-content: space-between;
 }
 .summaryP2 {
-    width: 50%;
+    width: 45%;
+    min-width: 300px;
 }
 .summaryP1 {
-    padding: 0 60px 0 0;
-    width: 50%;
+    width: 45%;
+    min-width: 300px;
 }
 .reportSummary h5 {
     font-family: 'Montserrat', sans-serif;
@@ -482,9 +485,82 @@ footer {
     height: auto;
     padding: 200px 0 0 0;
 }
-#foodTruckImage {
+.foodTruckImage {
     padding: 0 0 70px 0;
-    width: 800px;
+    width: 80%;
+    max-width: 800px;
+}
+#SECompetitorsImage {
+    width: 100%;
+}
+.personaShell {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.userImageLeft {
+    flex-basis: 500px;
+}
+.userImageRight {
+    flex-basis: 500px;
+    height: auto;
+}
+.userImageLeft img, .userImageRight img {
+    width: 500px;
+}
+.removePadding {
+    padding: 0 0 70px 0;
+}
+#addPadding {
+    padding: 40px 0 0 0;
+}
+#addPadding2 {
+    padding: 30px 0 0 0;
+}
+#centerText {
+    text-align: center;
+}
+.widthPadding {
+    width: 65%;
+    padding: 0 0 40px 0;
+}
+#SEPrototpyeImage {
+    width: 55%;
+}
+/*------Goals Final Section------*/
+.goalItemShell {
+    font-family: 'Montserrat', sans-serif;
+}
+.goalItemSubShell {
+    display: flex;
+    flex-direction: row;
+    width: 63%;
+    margin: 0 auto 0 auto;
+    padding: 40px 0 40px 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.goalImage img {
+    width: 250px;
+}
+.goalSummary {
+    padding: 15px 40px 15px 40px;
+    width: 50%;
+    align-self: center;
+    min-width: 300px;
+}
+.goalSummary h5 {
+    text-align: left;
+    font-weight: 600;
+    font-size: 25px;
+}
+.goalSummary p {
+    padding: 10px 0 0 0;
+    text-align: left;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
 }
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
@@ -493,6 +569,12 @@ footer {
 }
 .workItemShell {
     padding: 0 10px 10px 10px;
+}
+.reportSummary {
+    width: 70%;
+}
+#reportInfo {
+    width: 78%;
 }
 }
 /*------Small Width------*/
@@ -505,6 +587,45 @@ footer {
 }
 #workShell {
     width: 100%;
+}
+#reportInfo {
+    width: 90%;
+    flex-direction: row;
+    padding: 25px 0 0 0;
+}
+.userImageLeft {
+    flex-basis: 400px;
+}
+.userImageRight {
+    flex-basis: 400px;
+}
+.userImageLeft img, .userImageRight img {
+    width: 100%;
+}
+.reportSummary {
+    width: 90%;
+}
+.summaryP1, .summaryP2 {
+    width: 100%;
+}
+.goalItemSubShell {
+    width: 100%;
+}
+.goalSummary {
+    width: 100%;
+}
+#mastheadShellSE {
+    background-image: url('');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    background-color: #CB2E01;
+}
+#streetEatsLogo2 {
+    width: 300px;
+    height: auto;
+    padding: 130px 0 0 0;
 }
 }
 /*------Mobile------*/
