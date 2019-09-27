@@ -8,6 +8,7 @@
     transition:  .25s ease-in;
    -moz-transition:  .25s ease-in;
    -webkit-transition:  .25s ease-in;
+   overflow-x: hidden;
 }
 body {
     width: 100%;
@@ -423,8 +424,12 @@ footer {
     font-size: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 25px 0 0 0;
+}
+#reportInfo p {
+    padding: 0 5px 0 5px;
 }
 .boldText {
     font-weight: 600;
@@ -562,6 +567,12 @@ footer {
     font-size: 20px;
     line-height: 30px;
 }
+.h5Header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 40px 0 40px 0;
+}
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
 #aboutContent {
@@ -626,6 +637,9 @@ footer {
     width: 300px;
     height: auto;
     padding: 130px 0 0 0;
+}
+.summaryImage, #SEPrototpyeImage {
+    width: 90%;
 }
 }
 /*------Mobile------*/
