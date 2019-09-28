@@ -535,8 +535,9 @@ main {
 }
 .decorativeImageTall {
     padding: 0 0 70px 0;
-    height: 80%;
+    height: 700px;
     max-height: 800px;
+    max-width: 100vw;
 }
 #SECompetitorsImage {
     width: 100%;
