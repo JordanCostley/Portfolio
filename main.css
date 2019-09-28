@@ -547,6 +547,7 @@ footer {
     max-height: 800px;
     height: auto;
     width: auto;
+    max-width: 90vw;
 }
 /*------Goals Final Section------*/
 .goalItemShell {
