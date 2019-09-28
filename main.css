@@ -277,14 +277,17 @@ main {
     padding: 25px;
     fill: black;
 }
+#hollydaleLogo2 {
+    width: 40%;
+    height: auto;
+    padding: 25px;
+    fill: black;
+}
 #streetEatsLogo {
     width: auto;
     height: 55%;
     padding: 50px;
     fill: #D13C19;
-}
-footer {
-    height: 150px;
 }
 /*------About Page------*/
 #bodyShell {
@@ -386,6 +389,13 @@ footer {
     height: 650px;
     max-height: 60vh;
     background-color: #173861;
+    background-size: 60%;
+}
+#mastheadShellHD {
+    width: 100%;
+    height: 400px;
+    max-height: 60vh;
+    background-color: #212121;
     background-size: 60%;
 }
 #reportImageTitle {
@@ -499,6 +509,12 @@ footer {
     width: 420px;
     height: auto;
     padding: 200px 0 0 0;
+}
+#hollydaleLogoMasthead {
+    width: 250px;
+    height: auto;
+    padding: 50px 0 0 0;
+    fill: white;
 }
 .decorativeImage {
     padding: 0 0 70px 0;
@@ -632,6 +648,20 @@ footer {
 }
 .paddingBottom {
     padding: 50px 0 50px 0;
+}
+.photoGrid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto 0 auto;
+    justify-content: space-evenly;
+}
+.photoGrid img {
+    width: 350px;
+    padding: 15px;
+}
+.centerMe {
+    text-align: center;
 }
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
