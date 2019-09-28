@@ -298,6 +298,9 @@ main {
     width: auto;
     height: 100%;
 }
+#whiteBG {
+    background-color: white;
+}
 /*------About Page------*/
 #bodyShell {
     height: 100px;
