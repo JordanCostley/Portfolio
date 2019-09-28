@@ -623,20 +623,6 @@ main {
     font-size: 25px;
     padding: 40px 0 40px 0;
 }
-.iframeShell {
-    position: relative;
-    padding-top: 30px;
-    min-height: 980px;
-    overflow: hidden;
-}
-.resp-iframe {
-    width: 438px;
-    height: 980px;
-}
-#prototypeShell {
-    height: 100%;
-    min-height: 900px;
-}
 .prototypeLinkMobile {
     display: none;
 }
@@ -662,10 +648,10 @@ main {
     font-size: 25px; 
 }
 #prototypeShell {
-    min-height: 300px;
+    padding: 20px 0 50px 0;
 }
 .paddingBottom {
-    padding: 50px 0 50px 0;
+    padding: 10px 0 50px 0;
 }
 .photoGrid {
     display: flex;
