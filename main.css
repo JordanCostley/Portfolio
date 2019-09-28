@@ -289,6 +289,16 @@ main {
     padding: 50px;
     fill: #D13C19;
 }
+.coverImage {
+    width: auto;
+    height: 85%;
+    padding: 30px;
+}
+.coverImage2 {
+    width: auto;
+    height: 100%;
+    padding: 5px;
+}
 /*------About Page------*/
 #bodyShell {
     height: 100px;
