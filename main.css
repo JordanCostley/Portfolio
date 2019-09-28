@@ -4,10 +4,7 @@
     padding: 0;
     vertical-align: baseline;
     background: transparent;
-    text-align: center;
-    transition:  .25s ease-in;
-   -moz-transition:  .25s ease-in;
-   -webkit-transition:  .25s ease-in;
+    text-align: center;    
 }
 body {
     width: 100%;
@@ -381,6 +378,16 @@ footer {
     height: 650px;
     background-color: #CB2E01;
 }
+#mastheadShellWJ {
+    background-image: url('images/WestJet-Banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 650px;
+    max-height: 60vh;
+    background-color: #173861;
+    background-size: 60%;
+}
 #reportImageTitle {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -394,7 +401,7 @@ footer {
 }
 .contentShell {
     width: 100%;
-    background-color: #EAEAEA;
+    background-color: rgb(250, 250, 250);
 }
 #reportOverview {
     display: flex;
@@ -476,6 +483,9 @@ footer {
 .centerFlex {
     margin: 0 auto 0 auto;
 }
+.centerFlex p {
+    padding-bottom: 10px;
+}
 #developmentShell {
     width: 63%;
     margin: 50px auto 0 auto;
@@ -490,7 +500,7 @@ footer {
     height: auto;
     padding: 200px 0 0 0;
 }
-.foodTruckImage {
+.decorativeImage {
     padding: 0 0 70px 0;
     width: 80%;
     max-width: 800px;
@@ -532,6 +542,11 @@ footer {
 }
 #SEPrototpyeImage {
     width: 55%;
+}
+#westjetSketch {
+    max-height: 800px;
+    height: auto;
+    width: auto;
 }
 /*------Goals Final Section------*/
 .goalItemShell {
@@ -589,6 +604,33 @@ footer {
 }
 .prototypeLink {
     display: none;
+}
+.prototypeLink a, .prototypeLinkDesktop a {
+    text-decoration: none;
+    color: black;
+}
+.prototypeButton {
+    width: 200px;
+    height: auto;
+    border: solid 1.5px #161615;
+    margin: 0 auto 0 auto;
+    padding: 10px;
+}
+.prototypeButton:hover {
+    border: solid 1.5px #CB9325;
+    color: #CB9325;
+    transition: .25s ease-in-out;
+}
+.prototypeButton h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 25px; 
+}
+#prototypeShell {
+    min-height: 300px;
+}
+.paddingBottom {
+    padding: 50px 0 50px 0;
 }
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
@@ -659,6 +701,16 @@ footer {
 .summaryImage, #SEPrototpyeImage {
     width: 90%;
 }
+#mastheadShellWJ {
+    height: 450px;
+    background-size: 70%;
+}
+}
+@media screen and (max-width: 1000px) {
+#mastheadShellWJ {
+    height: 350px;
+    background-size: 80%;
+}
 }
 /*------Mobile------*/
 @media screen and (max-width: 800px) {
@@ -705,36 +757,19 @@ footer {
     flex-basis: 90%;
     padding: 10px 10px 100px 10px;
 }
+#mastheadShellWJ {
+    height: 300px;
+    background-size: 95%;
+}
 }
 @media screen and (max-width: 450px) {
 .iframeShell {
     display: none;
 }
+.prototypeLinkDesktop {
+    display: none;
+}
 .prototypeLink {
     display: contents;
-}
-.prototypeLink a {
-    text-decoration: none;
-    color: black;
-}
-.prototypeButton {
-    width: 200px;
-    height: auto;
-    border: solid 1.5px #161615;
-    margin: 0 auto 0 auto;
-    padding: 10px;
-}
-.prototypeButton:hover {
-    border: solid 1.5px #CB9325;
-    color: #CB9325;
-    transition: .25s ease-in;
-}
-.prototypeButton h5 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 25px; 
-}
-#prototypeShell {
-    min-height: 300px;
 }
 }
