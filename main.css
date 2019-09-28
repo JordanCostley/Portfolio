@@ -671,7 +671,7 @@ main {
 }
 .photoGrid img {
     width: 400px;
-    height: auto;
+    height: 400px;
     padding: 15px;
 }
 .centerMe {
@@ -808,7 +808,7 @@ main {
 }
 .photoGrid img {
     width: 300px;
-    height: auto;
+    height: 300px;
     padding: 15px;
 }
 }
