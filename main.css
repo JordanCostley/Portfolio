@@ -292,12 +292,11 @@ main {
 .coverImage {
     width: auto;
     height: 85%;
-    padding: 30px;
+    padding: 25px;
 }
 .coverImage2 {
     width: auto;
     height: 100%;
-    padding: 5px;
 }
 /*------About Page------*/
 #bodyShell {
