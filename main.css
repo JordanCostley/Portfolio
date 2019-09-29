@@ -829,4 +829,18 @@ nav {
     width: 90%;
     padding: 15px 10px;
 }
+#myWorkScrollShell {
+    padding: 50px 0 10px 0;
+}
+header {
+    height: 100%;
+}
+}
+@media screen and (max-width: 350px) {
+#myWorkScrollShell {
+    display: none;
+}
+header {
+    height: 70vh;
+}
 }
