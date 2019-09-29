@@ -471,6 +471,8 @@ main {
     width: 60%;
     margin: 0 auto 0 auto;
     justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto 0 auto;
 }
 .summaryP2 {
     width: 45%;
@@ -595,6 +597,7 @@ main {
     padding: 40px 0 40px 0;
     justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 1300px;
 }
 .goalImage img {
     width: 250px;
@@ -623,10 +626,13 @@ main {
     font-size: 25px;
     padding: 40px 0 40px 0;
 }
+.prototypeLinkDesktop2 {
+    padding: 30px 0 0 0;
+}
 .prototypeLinkMobile {
     display: none;
 }
-.prototypeLinkMobile a, .prototypeLinkDesktop a {
+.prototypeLinkMobile a, .prototypeLinkDesktop a, .prototypeLinkDesktop2 a {
     text-decoration: none;
     color: black;
 }
@@ -682,6 +688,8 @@ main {
 }
 #reportInfo {
     width: 78%;
+    max-width: 1300px;
+    margin: 0 auto 0 auto;
 }
 }
 /*------Small Width------*/
