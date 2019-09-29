@@ -50,10 +50,25 @@
             <div class="summmaryP1">
                 <h4>Whoops!</h4>
                 <h5>I can't seem to find the page you're looking for.</h5>
+                <p class="404Text">You can<span id="goBack"> go back</span> or return back to <a href="https://jordancostley.com/" alt="Link to go to homepage" id="goHome">the homepage.</a></p>
             </div>
-        </div>          
+        </div> 
+            <div class="reportSummary">
+                <div class="summaryP1">
+                    <p id="smallText">(Note to self: design more fun 404 page.)</p>
+                </div>
+            </div>         
     </body>
     <script type="text/javascript">
+        //Go back a page 
+        var goBackButton =$("#goBack")[0];
+        goBackButton.style.cursor = 'pointer';
+        goBackButton.onclick = goBack;
+
+        function goBack() {
+            window.history.back();
+        }
+
         // Menu Hover/Interaction
         var menuClick = $("#hamMenu")[0];
         menuClick.style.cursor = 'pointer';

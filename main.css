@@ -681,6 +681,18 @@ main {
 .centerMe {
     text-align: center;
 }
+#goBack, #goHome {
+    font-weight: 600;
+    transition: .25s ease-in;
+    text-decoration: none;
+}
+#goBack:hover, #goHome:hover {
+    color: #CB9325;
+    transition: .25s ease-in;
+}
+#smallText {
+    font-size: 15px;
+}
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
 #aboutContent {
