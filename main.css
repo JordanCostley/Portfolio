@@ -303,7 +303,8 @@ main {
 }
 /*------About Page------*/
 #bodyShell {
-    height: 100px;
+    height: auto;
+    min-height: 100px;
     background-color: white;
 }
 #aboutShell {
@@ -386,12 +387,9 @@ main {
     padding: 25px 0 0 0;
 }
 #mastheadShellSE {
-    background-image: url('images/Street-Eats_Banner.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 650px;
-    background-color: #CB2E01;
+    height: 100%;
+    margin-bottom: -5px;
 }
 #mastheadShellWJ {
     background-image: url('images/WestJet-Banner.jpg');
@@ -528,7 +526,15 @@ main {
 #streetEatsLogo2 {
     width: 420px;
     height: auto;
-    padding: 200px 0 0 0;
+    padding: 100px;
+}
+#streetEatsLogoShell {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/Street-Eats-Banner-2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 #hollydaleLogoMasthead {
     width: 250px;
@@ -748,18 +754,11 @@ main {
     width: 90%;
     padding: 15px 20px;
 }
-#mastheadShellSE {
-    background-image: url('');
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 400px;
-    background-color: #CB2E01;
-}
 #streetEatsLogo2 {
     width: 300px;
     height: auto;
-    padding: 130px 0 0 0;
+    padding: 75px;
+    max-height: 15vh;
 }
 .summaryImage, #SEPrototpyeImage {
     width: 90%;
@@ -852,6 +851,21 @@ nav {
 }
 header {
     height: 100%;
+}
+#streetEatsLogo2 {
+    width: 150px;
+    height: auto;
+    padding: 25px;
+    max-height: 15vh;
+}
+#reportShell {
+    padding-top: 0px;
+}
+#mastheadShellSE {
+    padding: 50px 0 0 0;
+}
+#bodyShell {
+    min-height: 50px;
 }
 }
 @media screen and (max-width: 350px) {
