@@ -497,6 +497,12 @@ main {
     padding: 10px 0 0 0; 
     line-height: 30px;
 }
+.reportSummary h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: left;
+}
 .imageCenterShell {
     padding: 0 0 100px 0;
 }
