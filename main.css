@@ -468,17 +468,27 @@ main {
     padding: 70px 0 100px 0;
     width: 60%;
     margin: 0 auto 0 auto;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-content: stretch;
     max-width: 1300px;
-    margin: 0 auto 0 auto;
 }
 .summaryP2 {
     width: 45%;
     min-width: 300px;
+    max-width: 60vw;
+    margin: 0 auto 0 auto;
+}
+.bulletList {
+    width: 45%;
+    min-width: 300px;
+    max-width: 60vw;
+    margin: 0 auto 0 auto;
 }
 .summaryP1 {
     width: 45%;
     min-width: 300px;
+    max-width: 60vw;
+    margin: 0 auto 0 auto;
 }
 .reportSummary h5 {
     font-family: 'Montserrat', sans-serif;
@@ -510,6 +520,7 @@ main {
 }
 .centerFlex {
     margin: 0 auto 0 auto;
+    max-width: 60vw;
 }
 .centerFlex p {
     padding-bottom: 10px;
@@ -619,6 +630,7 @@ main {
     width: 50%;
     align-self: center;
     min-width: 300px;
+    max-width: 60vw;
 }
 .goalSummary h5 {
     text-align: left;
@@ -699,6 +711,24 @@ main {
 #smallText {
     font-size: 15px;
 }
+.olItem {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+ol {
+    list-style: none;
+    counter-reset: item;
+  }
+  ol li {
+    counter-increment: item;
+    padding: 0 0 10px 0;
+  }
+  ol li::before {
+    content: counter(item) ". ";
+    font-weight: bold;
+  }
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
 #aboutContent {
@@ -767,11 +797,23 @@ main {
     height: 450px;
     background-size: 70%;
 }
+.reportSummary h5 {
+    padding: 20px 0 0 0;
+}
+.bulletList {
+    width: 45%;
+    min-width: 300px;
+    max-width: 60vw;
+    margin: 0 auto 0 auto;
+}
 }
 @media screen and (max-width: 1000px) {
 #mastheadShellWJ {
     height: 350px;
     background-size: 80%;
+}
+.summaryP1, .summaryP2, .centerFlex {
+    max-width: 90vw;
 }
 }
 /*------Mobile------*/
@@ -820,8 +862,8 @@ main {
     padding: 10px 10px 100px 10px;
 }
 #mastheadShellWJ {
-    height: 200px;
-    background-size: 110%;
+    height: 300px;
+    background-size: 70%;
 }
 .photoGrid img {
     width: 300px;
@@ -866,6 +908,12 @@ header {
 }
 #bodyShell {
     min-height: 50px;
+}
+}
+@media screen and (max-width: 550px) {
+#mastheadShellWJ {
+    height: 250px;
+    background-size: 70%;
 }
 }
 @media screen and (max-width: 350px) {
