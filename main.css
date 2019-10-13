@@ -729,6 +729,9 @@ ol {
     content: counter(item) ". ";
     font-weight: bold;
   }
+  .orderedList {
+      padding: 10px 0 0 0;
+  }
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
 #aboutContent {
@@ -923,4 +926,7 @@ header {
 header {
     height: 70vh;
 }
+}
+@media screen and (min-height: 2000px) {
+
 }
