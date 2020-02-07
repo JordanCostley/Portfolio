@@ -501,7 +501,7 @@ main {
     font-weight: 300;
     font-size: 20px;
     text-align: left;
-    max-width: 900px;
+    max-width: 58vw;
     padding: 10px 0 0 0; 
     line-height: 30px;
 }
@@ -517,10 +517,6 @@ main {
 .imageCenter {   
     width: 100%;
     height: auto; 
-}
-.centerFlex {
-    margin: 0 auto 0 auto;
-    max-width: 60vw;
 }
 .centerFlex p {
     padding-bottom: 10px;
