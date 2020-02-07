@@ -844,7 +844,7 @@ ol li::before {
     height: 350px;
     background-size: 80%;
 }
-.summaryP1, .summaryP2, .centerFlex {
+.summaryP1, .summaryP2, .centerFlex, .reportSummary p {
     max-width: 90vw;
 }
 }
