@@ -744,7 +744,7 @@ ol li::before {
 }
 .teamMemberShell {
     display: flex;
-    flex-direction: row;
+    
     align-items: space-between;
 }
 .teamPhoto {
