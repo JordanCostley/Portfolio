@@ -900,9 +900,7 @@ ol li::before {
     padding: 15px;
 }
 #navShell {
-    background-color: white;
     mix-blend-mode: normal;
-    filter: drop-shadow(1px 1px 3px rgba(71, 71, 71, 0.493));
 }
 #jLogo {
     fill: black;
@@ -943,6 +941,11 @@ header {
 #mastheadShellWJ {
     height: 250px;
     background-size: 70%;
+}
+#navShell {
+    background-color: white;
+    mix-blend-mode: normal;
+    filter: drop-shadow(1px 1px 3px rgba(71, 71, 71, 0.493));
 }
 }
 @media screen and (max-width: 350px) {
