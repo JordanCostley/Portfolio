@@ -787,6 +787,9 @@ ol li::before {
 #centerText {
     text-align: center;
 }
+.imageDouble {
+    max-width: 80vw;
+}
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
 #aboutContent {
