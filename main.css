@@ -879,7 +879,7 @@ ol li::before {
     background-size: 80%;
 }
 .summaryP1, .summaryP2, .centerFlex, .reportSummary p {
-    max-width: 90vw;
+    max-width: 100vw;
 }
 }
 /*------Mobile------*/
