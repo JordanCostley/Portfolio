@@ -928,7 +928,7 @@ ol li::before {
 }
 #mastheadShellWJ {
     height: 300px;
-    background-size: 70%;
+    background-size: 90%;
 }
 .photoGrid img {
     width: 300px;
@@ -976,7 +976,7 @@ header {
 @media screen and (max-width: 550px) {
 #mastheadShellWJ {
     height: 250px;
-    background-size: 70%;
+    background-size: 90%;
 }
 #navShell {
     background-color: white;
