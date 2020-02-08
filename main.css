@@ -767,6 +767,12 @@ ol li::before {
     height: auto;
     padding: 25px;
 }
+.teamPhotoSmall {
+    width: 300px;
+    max-width: 80vw;
+    height: auto;
+    padding: 25px;
+}
 .doubleImageFlex {
     display: flex;
     flex-wrap: wrap;
