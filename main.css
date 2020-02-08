@@ -672,6 +672,7 @@ main {
 }
 .prototypeLinkMobile {
     display: none;
+    margin: 0 auto 0 auto;
 }
 .prototypeLinkMobile a, .prototypeLinkDesktop a, .prototypeLinkDesktop2 a {
     text-decoration: none;
