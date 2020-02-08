@@ -774,7 +774,8 @@ ol li::before {
 .imageSmall {
     height: 350px;
     width: auto;
-    padding: 20px;
+    padding: 10px;
+    max-width: 80vw;
 }
 .caption {
     font-family: 'Montserrat', sans-serif;
@@ -786,9 +787,6 @@ ol li::before {
 }
 #centerText {
     text-align: center;
-}
-.imageDouble {
-    max-width: 80vw;
 }
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
