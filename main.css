@@ -26,7 +26,13 @@ body {
     position: fixed;
     mix-blend-mode: exclusion; 
     z-index: 1000;
+    transition: .5s ease;
 }
+@supports not (mix-blend-mode: exclusion) {
+#jLogo {
+    fill: black;
+}
+  }
 nav {
     display: flex;
     flex-wrap: nowrap;
@@ -34,7 +40,12 @@ nav {
     align-items: center;
     max-width: 1300px;
     margin: auto;
-    padding: 50px 50px 0 50px;    
+    padding: 40px 50px 40px 50px;   
+    transition: .5s ease; 
+}
+.navPadding {
+    padding: 15px 50px 15px 50px; 
+    transition: .5s ease;
 }
 #logoHolder {
     z-index: 9000;
@@ -47,6 +58,30 @@ nav {
 #jLogo:hover {    
     transform: scale(1.15,1.15);
 }
+.menuLinks {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.menuListDesk {
+    list-style: none;
+}
+.menuListDesk a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 15px;
+    transition: .5s ease;
+}
+.menuListDesk a:hover{
+    color: #1454d4;
+}
+.menuLI {
+    display: inline;
+}
 .menuList {
     position: fixed;
     height: 100vh;
@@ -56,7 +91,7 @@ nav {
     background-color: #161615;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     transform: translateY(-100%);
     transition: .5s ease;
 }
@@ -98,6 +133,7 @@ nav {
     height: auto;
     z-index: 9000;
     transition: .25s;
+    display: none;
 }
 #line1, #line3 {
     width: 25px;
@@ -801,6 +837,9 @@ ol li::before {
 #aboutContent {
     width: 80%;
 }
+#jLogo {
+    height: 30px;    
+}
 .workItemShell {
     padding: 0 10px 10px 10px;
 }
@@ -893,6 +932,9 @@ ol li::before {
 @media screen and (max-width: 800px) {
 .menuList {
     flex-direction: column;
+}
+#hamMenu {
+    display: inline;
 }
 #introText {
     padding: 20vh 0 0 0;
@@ -992,7 +1034,7 @@ header {
 #navShell {
     background-color: white;
     mix-blend-mode: normal;
-    filter: drop-shadow(1px 1px 3px rgba(71, 71, 71, 0.493));
+    filter: drop-shadow(.5px .5px 1px rgba(71, 71, 71, 0.493));
 }
 #SEPrototpyeImage {
     width: 90%;

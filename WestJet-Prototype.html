@@ -22,18 +22,25 @@
 <body id="body">
     <div id="bodyShell">
         <div id="headerShell">
-            <div id="navShell">
-                <nav>
-                    <div id="logoHolder"><a href="https://jordancostley.com" alt="link to homepage">
-                    <svg id="jLogo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.94 41.27"><title>Home</title><g data-name="a3554e06-a8c7-41a3-9887-5d3844153994"><g data-name="e7a9de16-4472-4f7b-87ce-e3de7d101827"><path d="M6.19,39.81A15.35,15.35,0,0,1,0,35.43L3,32l4.23-5A12.87,12.87,0,0,0,10.35,30a5.82,5.82,0,0,0,3.16,1,4.05,4.05,0,0,0,3.2-1.25A5.33,5.33,0,0,0,17.81,26V11H8.29V0H30.94V25.13q0,8.1-4.15,12.14t-12.19,4A22.55,22.55,0,0,1,6.19,39.81Z"/></g></g></svg></a>
-                    </div>
-                    <div id="hamMenu">
-                        <div id="line1"></div>
-                        <div id="line2"></div>
-                    <div id="line3"></div>
-                    </div>
-                </nav>                
-            </div>
+                <div id="navShell">
+                        <nav>
+                            <div id="logoHolder" alt="Home Button">
+                            <svg id="jLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186.68 186.62"><defs>></defs><title>JLogoNew</title><g id="J_Logo" data-name="J Logo"><g id="J"><path d="M287.5,166v-9.34a157.49,157.49,0,0,1-41.32,8.49v.16h0v-.16c-20.33,0-42,2-56.85,9.53a64.76,64.76,0,0,0-21.91,17.47l2.36,2.36,26.81,26.82a53.93,53.93,0,0,1,11.85-9c9.19-3.75,22.5-5.78,37.74-5.78v.69h0l0,66.7h0a28.36,28.36,0,0,1-28.32,28.05c-18.94,0-30.07-20.52-32-24.44l-29.2,29.2a69.58,69.58,0,0,0,130.79-33.09h0Z" transform="translate(-156.66 -156.69)"/></g><circle id="Period" cx="166.31" cy="162.07" r="20.37"/></g></svg>
+                            </div>
+                            <div class="menuLinks">
+                                <ul class="menuListDesk">
+                                    <a href="#" onclick="goToWork()"><li class="menuLI">work</li></a>
+                                    <a href="https://jordancostley.com/about"><li class="menuLI">about</li></a>
+                                    <a href="https://jordancostley.com/Costley-Resume_2020.pdf" target="_blank"><li class="menuLI">resume</li></a>
+                                </ul>
+                            </div>
+                            <div id="hamMenu">
+                                <div id="line1"></div>
+                                <div id="line2"></div>
+                            <div id="line3"></div> 
+                            </div>
+                        </nav>                
+                    </div>   
                 <div id="navMenu">
                     <div id="menuItems">
                         <ul class="menuList" id="menuListItems">
@@ -265,6 +272,19 @@
             //Burger animation
             menuClick.classList.toggle('toggle');        
             }
+
+            //nav scroll down change
+    $(document).ready(function() {
+        // Transition effect for navbar 
+        $(window).scroll(function() {
+          // checks if window is scrolled
+          if($(this).scrollTop() > 50) { 
+              $('nav').addClass('navPadding');
+          } else {
+              $('nav').removeClass('navPadding');
+          }
+        });
+});
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115173517-1"></script>
