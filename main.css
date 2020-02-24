@@ -941,8 +941,7 @@ ol li::before {
 #navShell {
     mix-blend-mode: exclusion; 
 }
-#jLogo {
-    height: 42px;    
+#jLogo {   
     fill: #fff;
     transition: .25s;
 }
