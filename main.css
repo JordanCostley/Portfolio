@@ -831,6 +831,107 @@ ol li::before {
 #centerText {
     text-align: center;
 }
+footer {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background-color: #161615;
+}
+.footerContent p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: #e0e0e0;
+    padding: 30px 0 20px 0;
+}
+.footerContent h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding: 20px 0 0 0;
+}
+.footerIcons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.footerIcons a {
+    color: white;
+    transition: .5s ease;
+    font-size: 21px;
+    text-decoration: none;
+    padding: 30px 20px 15px 20px;
+}
+.footerIcons a:hover {
+    color: #CB9325;
+    transition: .5s ease;
+}
+#reachEmailFooter, #reachEmailFooter a {
+    padding: 10px 0 20px 0;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    transition: .5s ease;
+}
+#reachEmailFooter a:hover {
+    color: #CB9325;
+    transition: .5s ease;
+} 
+.otherProjects {
+    width: 60%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.workLink {
+    text-decoration: none;
+    color: black;
+}
+.moreWork {
+    padding: 28px 0 20px 0;
+    align-self: center;
+}
+.moreWork h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: left;
+    color: black;   
+}
+.workButtonShell {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.workButton {
+    padding: 5px 10px 5px 10px;
+    margin: 20px;
+    border: 2px solid black;
+    align-self: center;
+}
+.workButton h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+    padding: 10px 0 0 0;
+}
+.workButton p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: left;
+    padding: 0 0 10px 0;
+}
+.workButton:hover {
+    color: #CB9325;
+    transition: .5s ease;
+    border: 2px solid #CB9325;
+}
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
 #aboutContent {
