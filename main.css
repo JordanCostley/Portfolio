@@ -931,7 +931,8 @@ footer {
     font-size: 15px;
     text-align: left;
     padding: 0 0 10px 0;
-    width: 300px;
+    width: 295px;
+    max-width: 98vw;
 }
 .workButton:hover {
     color: #CB9325;
