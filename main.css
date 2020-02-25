@@ -834,8 +834,9 @@ ol li::before {
 footer {
     width: 100%;
     height: auto;
-    padding: 50px;
     background-color: #161615;
+    display: flex;
+    justify-content: center;
 }
 .footerContent p {
     font-family: 'Montserrat', sans-serif;
@@ -844,6 +845,10 @@ footer {
     text-align: center;
     color: #e0e0e0;
     padding: 30px 0 20px 0;
+}
+.footerContent {
+    align-self: center;
+    padding: 25px;
 }
 .footerContent h5 {
     font-family: 'Montserrat', sans-serif;
