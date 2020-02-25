@@ -915,7 +915,7 @@ footer {
 .workButton {
     padding: 5px 10px 5px 10px;
     margin: 20px;
-    border: 2px solid black;
+    border: 1.5px solid #161615;
     align-self: center;
 }
 .workButton h6 {
@@ -937,7 +937,7 @@ footer {
 .workButton:hover {
     color: #CB9325;
     transition: .5s ease;
-    border: 2px solid #CB9325;
+    border: 1.5px solid #CB9325;
 }
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
