@@ -1060,6 +1060,9 @@ footer {
 * {
     font-size: 85%s;
 }
+#introText h1, #introText h2 {
+    font-size: 25px;
+}
 .menuList {
     flex-direction: column;
 }
@@ -1077,10 +1080,10 @@ footer {
     transition: .25s;
 }
 #introText {
-    padding: 20vh 0 0 0;
+    padding: 10vh 0 0 0;
+    width: 85vw;
 }
 #introText h1 {
-    font-size: 26px;
     padding: 17px 0 10px 0;
 }
 #yellowBar {
