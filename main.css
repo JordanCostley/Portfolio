@@ -201,6 +201,7 @@ header {
     font-weight: 500;
     font-size: 35px;
     padding: 10px 0 15px 0;
+    word-spacing: -1px;
 }
 #yellowBar {
     font-size: 40px;
@@ -961,6 +962,15 @@ footer {
 }
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
+header {
+    height: 100%;
+}
+#headerContent {
+    padding: 10vh 0 0 0;
+}
+#myWorkScrollShell {
+    padding: 100px 0 10px 0
+}
 #aboutContent {
     width: 80%;
 }
@@ -1057,9 +1067,6 @@ footer {
 }
 /*------Mobile------*/
 @media screen and (max-width: 800px) {
-* {
-    font-size: 85%s;
-}
 #introText h1, #introText h2 {
     font-size: 25px;
 }
@@ -1091,6 +1098,7 @@ footer {
 }
 #headerContent {
     padding: 0;
+    max-height: 85vh;
 }
 #myWorkScrollShell {
     padding: calc(60vh - 400px) 0 10px 0;
@@ -1102,8 +1110,8 @@ footer {
     height: 200px;
 }
 .workItemShell {
-    width: 90vw;
-    max-width: 400px;
+    max-width: 90vw;
+    width: 300px;
 }
 #aboutContent {
     width: 100%;
@@ -1191,12 +1199,14 @@ header {
     display: none;
 }
 header {
-    height: 70vh;
+    height: 100%;
 }
 #SEPrototpyeImage {
     width: 90%;
 }
 }
-@media screen and (min-height: 2000px) {
-
+@media screen and (max-height: 800px) {
+header {
+    height: 100%;
+}
 }
