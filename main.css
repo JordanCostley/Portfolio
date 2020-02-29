@@ -410,12 +410,14 @@ main {
 }
 #aboutReach {
     text-align: left;
+    font-size: 18px;
 }
 #reachEmail, #reachEmail a {
     padding: 10px 0 0 0;
     text-align: left;
     text-decoration: none;
     color: #CB9325;
+    font-size: 18px;
 }
 #reachEmail a:hover {
     color: rgb(29, 74, 165);
