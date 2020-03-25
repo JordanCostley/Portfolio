@@ -990,6 +990,9 @@ header {
     max-width: 1300px;
     margin: 0 auto 0 auto;
 }
+#planitLogoShell {
+    background-image: url('');
+}
 }
 /*------Small Width------*/
 @media screen and (max-width: 1350px) {
