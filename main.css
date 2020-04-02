@@ -524,11 +524,13 @@ main {
     width: calc(50% - 25px);
     min-width: 300px;
     max-width: 60vw;
+    margin: 0 auto 0 auto;
 }
 .summaryP2 {
     width: calc(50% - 25px);
     min-width: 300px;
     max-width: 60vw;
+    margin: 0 auto 0 auto;
 }
 .flexMe {
     display: flex;
@@ -1022,6 +1024,10 @@ header {
 }
 .summaryP1, .summaryP2 {
     width: 100%;
+    max-width: 90vw;
+}
+.flexMe {
+    justify-content: center;
 }
 .goalItemSubShell {
     width: 100%;
