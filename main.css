@@ -690,6 +690,13 @@ main {
     width: 100%;
     padding: 40px 0 0 0;
 }
+.decorativeImageDesktop {
+    width: 100%;
+    padding: 40px 0 0 0;
+}
+.decorativeImageMobile {
+    display: none;
+}
 .decorativeImageDouble {
     width: 80%;
 }
@@ -768,7 +775,7 @@ main {
     color: #CB9325;
     transition: .25s ease-in-out;
 }
-.prototypeButton h5, {
+.prototypeButton h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 20px; 
@@ -1385,6 +1392,14 @@ header {
 }
 .personaContent {
     padding: 0;
+}
+.decorativeImageDesktop {
+    display: none;
+}
+.decorativeImageMobile {
+    display: inherit;
+    width: 90vw;
+    padding: 40px 0 0 0;
 }
 }
 @media screen and (max-width: 550px) {
