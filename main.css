@@ -1077,8 +1077,8 @@ footer {
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin: -10px 0 0 0;
-    justify-content: center;
+    margin: -10px 0 0 45px;
+    justify-content: left;
     padding: 0 0 20px 0;
 }
 .personaContentTitle h3 {
@@ -1247,6 +1247,10 @@ header {
     height: 180px;
     padding: 10px 0px 20px 20px;
 }
+.personaContentTitle {
+    margin: -10px 0 0 0;
+    justify-content: center;
+}
 .personaSBText {
     display: flex;
     flex-direction: row;
@@ -1387,6 +1391,8 @@ header {
 }
 .personaContentTitle {
     padding: 0;
+    margin: -10px 0 0 0;
+    justify-content: center;
 }
 .personaContentTitle h3 {
     font-size: 18px;
