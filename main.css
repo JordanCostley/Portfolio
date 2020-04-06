@@ -1235,7 +1235,7 @@ header {
 .personaSideBar {
     height: 100%;
     width: 90vw;
-    margin: 40px;
+    margin: 20px;
     padding: 20px 0 0 0;
     align-items: center;
     justify-content: space-around;
@@ -1385,12 +1385,27 @@ header {
 #planitLogoShell {
     background-image: url('');
 }
+.personaContentTitle {
+    padding: 0;
+}
 .personaContentTitle h3 {
-    font-size: 20px;
+    font-size: 18px;
 }
 .personaContentTitle h6 {
-    font-size: 20px;
+    font-size: 16px;
     padding: 40px 15px 0 0;
+}
+.personaImg {
+    padding: 10px 0 0 0;
+}
+.personaQuote {
+    margin: 30px 0 0 0;
+}
+.personaDetail {
+    margin:20px 0 0 0;
+}
+.personaGoals {
+    padding: 20px 0 0 0;
 }
 .personaContent {
     padding: 0;
