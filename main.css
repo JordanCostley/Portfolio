@@ -340,6 +340,11 @@ main {
     width: auto;
     height: 100%;
 }
+.coverImage3 {
+    width: auto;
+    height: 45%;
+    margin: 15% auto 0 auto;
+}
 #whiteBG {
     background-color: white;
 }
@@ -1186,10 +1191,10 @@ header {
 }
 .goalItemSubShell {
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
 }
 .goalSummary {
-    width: 90%;
+    width: 85%;
     padding: 15px 20px;
 }
 #streetEatsLogo2 {
@@ -1213,6 +1218,9 @@ header {
 }
 .reportSummary h5 {
     padding: 20px 0 0 0;
+}
+.reportButton h5 {
+    padding: 0;
 }
 .bulletList {
     width: 45%;
