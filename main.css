@@ -320,7 +320,7 @@ main {
     text-align: left;
     letter-spacing: 1px;
     padding: 5px 0 25px 0;
-    color: #707070; 
+    color: black; 
     transition:  .25s ease-in;
    -moz-transition:  .25s ease-in;
    -webkit-transition:  .25s ease-in;
