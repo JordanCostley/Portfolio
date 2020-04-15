@@ -1324,6 +1324,9 @@ header {
     max-width: 60vw;
     margin: 0 auto 0 auto;
 }
+.centerFlex2 {
+    width: 100vw;
+}
 }
 @media screen and (max-width: 1000px) {
 #mastheadShellWJ {
