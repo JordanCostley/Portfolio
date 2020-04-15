@@ -631,7 +631,7 @@ main {
     width: 100%;
     height: auto; 
 }
-.centerFlex p {
+.centerFlex p, .centerFlex2 {
     padding: 10px 0 10px 0;
 }
 #developmentShell {
@@ -685,6 +685,7 @@ main {
     width: 200px;
     height: auto;
     padding: 50px;
+    fill: black;
 }
 .planit3D {
     height: 550px;
@@ -764,11 +765,18 @@ main {
     width: 100%;
     padding: 40px 0 0 0;
 }
+.decorativeImageDesktop2 {
+    width: 100%;
+    padding: 40px 0 0 0;
+}
 .decorativeImageMobile {
     display: none;
 }
 .decorativeImageDouble {
     width: 80%;
+}
+.centerFlex2 {
+    width: 70vw;
 }
 /*------Goals Final Section------*/
 .goalItemShell {
@@ -1314,7 +1322,7 @@ header {
     height: 350px;
     background-size: 80%;
 }
-.summaryP1, .summaryP2, .centerFlex, .reportSummary p, .goalSummary p, .goalSummary {
+.summaryP1, .summaryP2, .centerFlex, .reportSummary p, .goalSummary p, .goalSummary, .centerFlex2 {
     max-width: 100vw;
 }
 .summaryP1v2, .summaryP2v2 {
@@ -1513,12 +1521,12 @@ header {
 .personaContent {
     padding: 0;
 }
-.decorativeImageDesktop {
+.decorativeImageDesktop, .decorativeImageDesktop2 {
     display: none;
 }
 .decorativeImageMobile {
     display: inherit;
-    width: 90vw;
+    width: 100%;
     padding: 40px 0 0 0;
 }
 #reportInfo {
