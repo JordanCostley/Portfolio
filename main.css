@@ -439,7 +439,7 @@ main {
     text-decoration: none;
     color: black;
     padding: 0 5px 0 0;
-}
+} 
 #socialIcons a:hover {
     color: #CB9325;
     transition: .02s;
@@ -509,21 +509,63 @@ main {
     padding: 10px 0 0 0;
     line-height: 30px;
 }
+.contentShell2 {
+    width: 100%;
+    background-color: white;
+}
 #reportInfo {
     margin: 0 auto 0 auto;
-    width: 70%;
+    width: 67%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-content: center;
+    align-items: space-between;
     flex-wrap: wrap;
-    padding: 25px 0 0 0;
     text-align: left;
+    color: black;
+    background-color: white;
+    padding: 25px 0 25px 0;
 }
 #reportInfo p {
-    padding: 0 5px 0 5px;
+    padding: 12px 5px 0 5px;
+}
+.prototypeLinkDesktop3 {
+    margin: -25px 0 0 0;
+    padding: 25px 5px 0 5px;
+}
+.prototypeLinkDesktop3 a {
+    text-decoration: none;
+    color: #4848d3;
+}
+.prototypeButton3,  .prototypeButton4 {
+    width: 200px;
+    height: auto;
+    border: solid 1.5px #4848d3;
+    border-radius: 100px;
+    background-color: white;
+    margin: 0 auto 0 auto;
+    padding: 10px;
+}
+.prototypeButton3:hover, .prototypeButton4:hover {
+    border: solid 1.5px #4848d3;
+    background-color: #4848d3;
+    color: white;
+    transition: .25s ease-in-out;
+}
+.prototypeButton3 h5, .prototypeButton4 h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px; 
+}
+.reportButton h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px; 
+    text-align: center;
 }
 .boldText {
     font-weight: 600;
@@ -532,7 +574,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 70px 0 50px 0;
+    padding: 60px 0 50px 0;
     width: 60%;
     margin: 0 auto 0 auto;
     justify-content: space-around;
@@ -817,6 +859,7 @@ main {
 #prototypeShell {
     padding: 20px 0 50px 0;
 }
+
 .paddingBottom {
     padding: 10px 0 50px 0;
 }
@@ -1002,6 +1045,7 @@ footer {
     margin: 20px;
     border: 1.5px solid #161615;
     align-self: center;
+    border-radius: 5px;
 }
 .workButton h6 {
     font-family: 'Montserrat', sans-serif;
@@ -1185,6 +1229,7 @@ header {
     width: 78%;
     max-width: 1300px;
     margin: 0 auto 0 auto;
+    padding: 25px 0 25px 0;
 }
 
 }
@@ -1202,7 +1247,7 @@ header {
 #reportInfo {
     width: 90%;
     flex-direction: row;
-    padding: 25px 0 0 0;
+    padding: 25px 0 25px 0;
 }
 .userImageLeft {
     flex-basis: 400px;
@@ -1325,6 +1370,15 @@ header {
 .mainMockup {
     margin: 20px auto 0 auto;
 }
+#reportInfo {
+    justify-content: center;
+}
+#reportInfo p   {
+    padding: 0 30px 0 0;
+}
+#prototypeShell2 {
+    padding: 15px 0 0 0;
+}
 }
 /*------Mobile------*/
 @media screen and (max-width: 800px) {
@@ -1413,13 +1467,12 @@ header {
     max-height: 15vh;
 }
 #planitLogo2 {
-    width: 150px;
+    width: 40vw;
     height: auto;
-    padding: 25px;
-    max-height: 15vh;
+    padding: 10px 0 40px 0;
 }
 #reportShell {
-    padding-top: 0px;
+    padding-top: 10px;
 }
 #mastheadShellSE, #mastheadShellPlanit, #mastheadShellSpotter {
     padding: 50px 0 0 0;
@@ -1467,6 +1520,23 @@ header {
     display: inherit;
     width: 90vw;
     padding: 40px 0 0 0;
+}
+#reportInfo {
+    flex-direction: column;
+    justify-content: left;
+    align-content: flex-start;
+}
+#reportInfo p {
+    text-align: left;
+}
+.prototypeButton3 {
+    margin: 0;
+}
+.prototypeButton4 {
+    margin: 0 auto 0;
+}
+.reportSummary {
+    padding: 30px 0 50px 0;
 }
 }
 @media screen and (max-width: 550px) {
