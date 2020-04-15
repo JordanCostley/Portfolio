@@ -693,7 +693,6 @@ main {
     width: 200px;
     height: auto;
     padding: 50px;
-    fill: black;
 }
 .planit3D {
     height: 550px;
@@ -1486,7 +1485,7 @@ header {
     max-height: 15vh;
 }
 #planitLogo2 {
-    width: 40vw;
+    width: 70vw;
     height: auto;
     padding: 10px 0 40px 0;
 }
@@ -1494,7 +1493,7 @@ header {
     padding-top: 10px;
 }
 #mastheadShellSE, #mastheadShellPlanit, #mastheadShellSpotter {
-    padding: 50px 0 0 0;
+    padding: 40px 0 0 0;
 }
 #bodyShell {
     min-height: 50px;
@@ -1556,6 +1555,11 @@ header {
 }
 .reportSummary {
     padding: 30px 0 50px 0;
+}
+#spotterLogo2 {
+    width: 150px;
+    height: auto;
+    padding: 15px;
 }
 }
 @media screen and (max-width: 550px) {
