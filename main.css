@@ -1500,4 +1500,7 @@ header {
 #headerContent {
     padding: 10vh 0 0 0;
 }
+#introText {
+    padding: 60px 0 0 0;
+}
 }
