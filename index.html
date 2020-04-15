@@ -94,6 +94,8 @@
 
     // Menu Hover/Interaction
     var menuClick = $("#hamMenu")[0];
+    var logoChange = $("#logoHolder")[0];
+    var navChange = $('#headerShell')[0];
     menuClick.style.cursor = 'pointer';
     menuClick.onclick = menuShow;
     menuClick.onmouseenter = menuHoverOn;
@@ -140,8 +142,10 @@
             menuButton.style.transform = "translateY(0%)";
             body.style.overflowY = "hidden";
             }
-        //Burger animation
-        menuClick.classList.toggle('toggle');        
+        //Burger animation and color change
+        menuClick.classList.toggle('toggle'); 
+        logoChange.classList.toggle('toggle'); 
+        navChange.classList.toggle('toggle');      
         }
         
     //Scroll to Work

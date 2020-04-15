@@ -155,18 +155,28 @@ nav {
 .toggle #line1 {
     transform: rotate(-45deg) translate(-6px,6px);
     transition: .5s ease;
+    background-color: white;
 }
 .toggle #line2 {
     opacity: 0;
     transition: .25s ease;
+    background-color: white;
 }
 .toggle #line3 {
     transform: rotate(45deg) translate(-6px,-6.5px);
     transition: .5s ease;
+    background-color: white;
 }
 .toggleHover #line2 {
     transform: scaleX(6px);
     transition: .25s ease;
+}
+.toggle #jLogo {
+    fill: white;
+}
+.toggle #navShell {
+    background-color: rgba(255, 255, 255, 0); 
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.75);
 }
 /*------Header Content------*/
 header {
@@ -1329,10 +1339,6 @@ header {
 .menuLinks {
     display: none;
 }
-#jLogo {   
-    fill: black;
-    transition: .25s;
-}
 #introText {
     padding: 10vh 0 0 0;
     width: 85vw;
@@ -1467,19 +1473,8 @@ header {
     height: 250px;
     background-size: 90%;
 }
-#navShell {
-    background-color: white;
-    mix-blend-mode: normal;
-    filter: drop-shadow(.5px .5px 1px rgba(71, 71, 71, 0.493));
-}
-#jLogo {
-    fill: black;
-}
 #line1, #line2, #line3 {
     background-color: black;
-}
-#navShell {
-    mix-blend-mode: normal; 
 }
 #SEPrototpyeImage {
     width: 90%;
@@ -1503,6 +1498,6 @@ header {
 }
 @media screen and (max-height: 700px) {
 #headerContent {
-    padding: 125px 0 0 0;
+    padding: 10vh 0 0 0;
 }
 }
