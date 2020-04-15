@@ -141,14 +141,14 @@ nav {
 #line1, #line3 {
     width: 25px;
     height: 3px;
-    background-color: rgb(255, 255, 255);
+    background-color: black;
     margin: 6px;
     transition: .5s ease;
 }
 #line2 {
     width: 19px;
     height: 3px;
-    background-color: rgb(255, 255, 255);
+    background-color: black;
     margin: 6px 0 6px 10px;
     transition: .5s ease;
 }
@@ -1330,7 +1330,7 @@ header {
     display: none;
 }
 #jLogo {   
-    fill: #fff;
+    fill: black;
     transition: .25s;
 }
 #introText {
