@@ -539,7 +539,7 @@ main {
 #reportInfo p {
     padding: 12px 5px 0 5px;
 }
-.prototypeLinkDesktop3 {
+.prototypeLinkDesktop3, .prototypeLinkSpotter {
     margin: -25px 0 0 0;
     padding: 25px 5px 0 5px;
 }
@@ -547,10 +547,22 @@ main {
     text-decoration: none;
     color: #4848d3;
 }
+.prototypeLinkSpotter a {
+    text-decoration: none;
+    color: black;
+}
 .prototypeButton3,  .prototypeButton4 {
     width: 200px;
     height: auto;
     border: solid 1.5px #4848d3;
+    border-radius: 100px;
+    margin: 0 auto 0 auto;
+    padding: 10px;
+}
+.prototypeButtonSpotter {
+    width: 200px;
+    height: auto;
+    border: solid 1.5px #fdcc1d;
     border-radius: 100px;
     margin: 0 auto 0 auto;
     padding: 10px;
@@ -561,7 +573,13 @@ main {
     color: white;
     transition: .25s ease-in-out;
 }
-.prototypeButton3 h5, .prototypeButton4 h5 {
+.prototypeButtonSpotter:hover {
+    border: solid 1.5px #fdcc1d;
+    background-color: #fdcc1d;
+    color: black;
+    transition: .25s ease-in-out;
+}
+.prototypeButton3 h5, .prototypeButton4 h5, .prototypeButtonSpotter h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 20px; 
@@ -662,7 +680,7 @@ main {
     background-size: 100%;
 }
 #mastheadShellPlanit {
-    background-image: url('images/planitMasthead3.jpg');
+    background-image: url('images/planitMasthead.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -672,16 +690,18 @@ main {
     width: 100%;
     height: 100%;
 }
-#spotterLogoShell {
-    width: 100%;
-    height: 100%;
-    background-image: url('');
+#mastheadShellSpotter {
+    background-image: url('images/spotterMasthead.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: white;
 }
-#planitLogo2 {
+#spotterLogoShell {
+    width: 100%;
+    height: 100%;
+}
+#planitLogo2{
     width: 420px;
     height: auto;
     padding: 150px;
@@ -689,7 +709,7 @@ main {
 #spotterLogo2 {
     width: 200px;
     height: auto;
-    padding: 50px;
+    padding: 125px;
 }
 .planit3D {
     height: 550px;
@@ -1029,7 +1049,7 @@ footer {
     width: 60%;
     margin: 0 auto 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .workLink {
@@ -1214,6 +1234,11 @@ footer {
     font-size: 15px;
     padding: 0 0 0 15px;
 }
+#blankPadding {
+    width: 100%;
+    background-color: white;
+    height: 25vh;
+}
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
 header {
@@ -1300,6 +1325,11 @@ header {
     height: auto;
     padding: 75px;
     max-height: 15vh;
+}
+#spotterLogo2 {
+    width: 150px;
+    height: auto;
+    padding: 60px;
 }
 .summaryImage, #SEPrototpyeImage {
     width: 90%;
@@ -1389,7 +1419,7 @@ header {
     justify-content: center;
 }
 #reportInfo p   {
-    padding: 0 30px 0 0;
+    padding: 0 20px 0 0;
 }
 #prototypeShell2 {
     padding: 15px 0 0 0;
@@ -1486,6 +1516,11 @@ header {
     height: auto;
     padding: 10px 0 40px 0;
 }
+#spotterLogo2 {
+    width: 20vw;
+    height: auto;
+    padding: 5px 0 20px 0;
+}
 #reportShell {
     padding-top: 10px;
 }
@@ -1544,7 +1579,7 @@ header {
 #reportInfo p {
     text-align: left;
 }
-.prototypeButton3 {
+.prototypeButton3, .prototypeButtonSpotter {
     margin: 0;
 }
 .prototypeButton4 {
@@ -1552,11 +1587,6 @@ header {
 }
 .reportSummary {
     padding: 30px 0 50px 0;
-}
-#spotterLogo2 {
-    width: 150px;
-    height: auto;
-    padding: 15px;
 }
 }
 @media screen and (max-width: 550px) {
@@ -1595,3 +1625,8 @@ header {
     padding: 60px 0 0 0;
 }
 }
+@media screen and (max-height: 900px) {
+#blankPadding {
+    height: 1vh;
+}
+} 
