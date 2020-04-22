@@ -579,7 +579,7 @@ main {
     color: black;
     transition: .25s ease-in-out;
 }
-.prototypeButton3 h5, .prototypeButton4 h5, .prototypeButtonSpotter h5 {
+.prototypeButton3 h5, .prototypeButton4 h5, .prototypeButtonSpotter h5, .prototypeButtonSpotter h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 20px; 
@@ -718,7 +718,7 @@ main {
     width: 350px;
     max-width: 90vw;
     height: auto;
-    margin: -30px auto 0 auto;
+    margin: 0 auto 0 auto;
 }
 .decorativeImage {
     padding: 0 0 70px 0;
@@ -944,6 +944,7 @@ ol li::before {
 .orderedList {
     padding: 15px 0 0 0;
     margin: 0 auto 0 auto;
+    list-style-position: outside;
 }
 .teamMemberShell {
     display: flex;
@@ -1161,15 +1162,15 @@ footer {
     text-align: center;
 }
 .personaSBText ul {
-    padding: 0 0 10px 0;
+    padding: 0 0 10px 10px;
 }
 .unorderedList, .unorderedList li {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 18px;
     line-height: 25px;
-    list-style-position: inside;
     text-align: left;
+    list-style-position: outside;
 }
 .personaRight {
     text-align: left;
@@ -1268,7 +1269,6 @@ header {
     margin: 0 auto 0 auto;
     padding: 25px 0 25px 0;
 }
-
 }
 /*------Small Width------*/
 @media screen and (max-width: 1350px) {
