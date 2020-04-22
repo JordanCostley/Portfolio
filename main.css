@@ -604,6 +604,17 @@ main {
     align-content: stretch;
     max-width: 1300px;
 }
+.reportSummary2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0 0 50px 0;
+    width: 60%;
+    margin: 0 auto 0 auto;
+    justify-content: space-around;
+    align-content: stretch;
+    max-width: 1300px;
+}
 .bulletList {
     width: 45%;
     min-width: 300px;
@@ -627,13 +638,13 @@ main {
     justify-content: space-between;
     flex-direction: row;
 }
-.reportSummary h5 {
+.reportSummary h5, .reportSummary2 h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 20px;
     text-align: left;
 }
-.reportSummary p {
+.reportSummary p, .reportSummary2 p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 17px;
@@ -641,7 +652,7 @@ main {
     padding: 10px 0 0 0; 
     line-height: 30px;
 }
-.reportSummary h4 {
+.reportSummary h4, .reportSummary2 h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 50px;
@@ -1260,7 +1271,7 @@ header {
 .workItemShell {
     padding: 0 10px 10px 10px;
 }
-.reportSummary {
+.reportSummary, .reportSummary2 {
     width: 70%;
 }
 #reportInfo {
@@ -1295,7 +1306,7 @@ header {
 .userImageLeft img, .userImageRight img {
     width: 100%;
 }
-.reportSummary {
+.reportSummary, .reportSummary2 {
     width: 90%;
 }
 .summaryP1, .summaryP2 {
@@ -1338,7 +1349,7 @@ header {
     height: 450px;
     background-size: 70%;
 }
-.reportSummary h5 {
+.reportSummary h5, .reportSummary2 h5 {
     padding: 20px 0 0 0;
 }
 .reportButton h5 {
@@ -1359,7 +1370,7 @@ header {
     height: 350px;
     background-size: 80%;
 }
-.summaryP1, .summaryP2, .centerFlex, .reportSummary p, .goalSummary p, .goalSummary, .centerFlex2 {
+.summaryP1, .summaryP2, .centerFlex, .reportSummary p, .reportSummary2 p, .goalSummary p, .goalSummary, .centerFlex2 {
     max-width: 100vw;
 }
 .summaryP1v2, .summaryP2v2 {
@@ -1587,6 +1598,9 @@ header {
 }
 .reportSummary {
     padding: 30px 0 50px 0;
+}
+.reportSummary2 {
+    padding: 0 0 50px 0;
 }
 }
 @media screen and (max-width: 550px) {
