@@ -622,7 +622,6 @@ main {
     width: calc(50% - 25px);
     min-width: 300px;
     max-width: 60vw;
-    margin: 0 auto 0 auto;
 }
 .summaryP2, .summaryP2v2 {
     width: calc(50% - 25px);
@@ -1247,6 +1246,9 @@ footer {
     width: 100%;
     background-color: white;
     height: 25vh;
+}
+.bgColor {
+    background-color: blue;
 }
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
