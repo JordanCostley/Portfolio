@@ -460,16 +460,6 @@ main {
     height: 100%;
     margin-bottom: -5px;
 }
-#mastheadShellWJ {
-    background-image: url('images/WestJet-Banner.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 650px;
-    max-height: 60vh;
-    background-color: #173861;
-    background-size: 60%;
-}
 #mastheadShellHD {
     width: 100%;
     height: 400px;
@@ -500,7 +490,7 @@ main {
 #reportTitle h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 25px;
     text-align: left;
 }
 #reportTitle p {
@@ -576,7 +566,7 @@ main {
     color: black;
     transition: .25s ease-in-out;
 }
-.prototypeButton3 h5, .prototypeButton4 h5, .prototypeButtonSpotter h5, .prototypeButtonSpotter h6 {
+.prototypeButton3 h5, .prototypeButton4 h5, .prototypeButtonSpotter h5, .prototypeButtonSpotter h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 20px; 
@@ -608,7 +598,7 @@ main {
     padding: 0 0 50px 0;
     width: 60%;
     margin: 0 auto 0 auto;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: stretch;
     max-width: 1300px;
 }
@@ -619,15 +609,20 @@ main {
     margin: 0 auto 0 auto;
 }
 .summaryP1, .summaryP1v2 {
-    width: calc(50% - 25px);
+    width: calc(50% - 20px);
     min-width: 300px;
     max-width: 60vw;
+
+}
+.summaryP1a, .summaryP2a {
+    width: calc(50% - 25px);
+    min-width: 300px;
+    max-width: 60vw; 
 }
 .summaryP2, .summaryP2v2 {
-    width: calc(50% - 25px);
+    width: calc(50% - 20px);
     min-width: 300px;
     max-width: 60vw;
-    margin: 0 auto 0 auto;
 }
 .flexMe {
     display: flex;
@@ -635,6 +630,12 @@ main {
     flex-direction: row;
 }
 .reportSummary h5, .reportSummary2 h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    text-align: left;
+}
+.reportSummary h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 20px;
@@ -664,6 +665,10 @@ main {
 .centerFlex p, .centerFlex2 {
     padding: 10px 0 10px 0;
 }
+.leftFlex {
+    display: flex;
+    justify-content: space-between;
+}
 #developmentShell {
     width: 63%;
     margin: 50px auto 0 auto;
@@ -672,19 +677,6 @@ main {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 70px;
-}
-#streetEatsLogo2 {
-    width: 420px;
-    height: auto;
-    padding: 100px;
-}
-#streetEatsLogoShell {
-    width: 100%;
-    height: 100%;
-    background-image: url('images/Street-Eats-Banner-2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 #mastheadShellPlanit {
     background-image: url('images/planitMasthead.jpg');
@@ -698,7 +690,7 @@ main {
     height: 100%;
 }
 #mastheadShellSpotter {
-    background-image: url('images/spotterMasthead.jpg');
+    background-image: url('images/spotterMasthead2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -763,13 +755,16 @@ main {
     padding: 0 0 0 0;
 }
 #addPadding {
-    padding: 33px 0 0 0;
+    padding: 45px 0 0 0;
 }
 #addPadding2 {
     padding: 30px 0 0 0;
 }
 #addPadding3 {
     padding: 0 0 40px 0;
+}
+#addPadding4 {
+    padding: 50px 0 0 0;
 }
 #centerText {
     text-align: center;
@@ -823,6 +818,9 @@ main {
     flex-wrap: wrap;
     max-width: 1300px;
 }
+.goalImage {
+    z-index: 1;
+}
 .goalImage img {
     width: 250px;
 }
@@ -832,6 +830,20 @@ main {
     align-self: center;
     min-width: 300px;
     max-width: 60vw;
+}
+.goalChallengeGold {
+    text-align: left;
+    font-weight: 400;
+    font-size: 18px;
+    color: #CB9325;
+    padding: 0 0 5px 0;
+}
+.goalChallengePurp {
+    text-align: left;
+    font-weight: 400;
+    font-size: 18px;
+    color: #4848d3;
+    padding: 0 0 5px 0;
 }
 .goalSummary h5 {
     text-align: left;
@@ -980,6 +992,10 @@ ol li::before {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.imageBox {
+    width: 48%;
+    height: auto;
 }
 .imageSmall {
     height: 350px;
@@ -1250,6 +1266,9 @@ footer {
 .bgColor {
     background-color: blue;
 }
+#negativeMargin {
+    margin: 0 0 0 -10px;
+}
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
 header {
@@ -1312,7 +1331,9 @@ header {
     width: 100%;
     max-width: 90vw;
 }
-
+.summaryP2a {
+    width: calc(50%-25px);
+}
 .flexMe {
     justify-content: center;
 }
@@ -1583,8 +1604,8 @@ header {
 }
 #reportInfo {
     flex-direction: column;
-    justify-content: left;
-    align-content: flex-start;
+    justify-content: center;
+    align-content: center;
 }
 #reportInfo p {
     text-align: left;
@@ -1600,6 +1621,10 @@ header {
 }
 .reportSummary2 {
     padding: 0 0 50px 0;
+}
+.summaryP1a, .summaryP2a {
+    width: 100%;
+    max-width: 90vw;
 }
 }
 @media screen and (max-width: 550px) {
