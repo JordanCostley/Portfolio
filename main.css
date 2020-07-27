@@ -15,6 +15,7 @@ body {
 }
 ::selection {
     background: rgb(29, 74, 165);
+    color: white;
 }
 ::-moz-selection {
     background: rgb(29, 74, 165);
@@ -534,6 +535,14 @@ main {
     text-decoration: none;
     color: #4848d3;
 }
+.resumeLink {
+    margin: -25px 0 0 0;
+    padding: 50px 5px 50px 5px;
+}
+.resumeLink a {
+    text-decoration: none;
+    color: black;
+}
 .prototypeLinkSpotter a {
     text-decoration: none;
     color: black;
@@ -542,6 +551,14 @@ main {
     width: 200px;
     height: auto;
     border: solid 1.5px #4848d3;
+    border-radius: 100px;
+    margin: 0 auto 0 auto;
+    padding: 10px;
+}
+.prototypeButtonResume {
+    width: 200px;
+    height: auto;
+    border: solid 1.5px #CB9325;
     border-radius: 100px;
     margin: 0 auto 0 auto;
     padding: 10px;
@@ -560,13 +577,19 @@ main {
     color: white;
     transition: .25s ease-in-out;
 }
+.prototypeButtonResume:hover {
+    border: solid 1.5px #CB9325;
+    background-color: #CB9325;
+    color: white;
+    transition: .25s ease-in-out;
+}
 .prototypeButtonSpotter:hover {
     border: solid 1.5px #fdcc1d;
     background-color: #fdcc1d;
     color: black;
     transition: .25s ease-in-out;
 }
-.prototypeButton3 h5, .prototypeButton4 h5, .prototypeButtonSpotter h5, .prototypeButtonSpotter h1 {
+.prototypeButton3 h5, .prototypeButton4 h5, .prototypeButtonSpotter h5, .prototypeButtonSpotter h1, .prototypeButtonResume h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 20px; 
@@ -1269,6 +1292,107 @@ footer {
 #negativeMargin {
     margin: 0 0 0 -10px;
 }
+.resumeShell {
+    width: 100%;
+    margin: auto;
+    padding: 50px 0 0 0;
+}
+.resumeSummary {
+    margin: 0 auto 0;
+    width: 50rem;
+    max-width: 85vw;
+    padding: 25px 50px;
+}
+.resumeSummary h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: left;
+    color: black;
+    padding: 0 0 20px;
+}
+.resumeSummary h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: left;
+    color: #CB9325;
+    padding: 5px 0;
+}
+.resumeSummary p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: left;
+    color: black;
+    padding: 5px 0;
+}
+.resumeBody {
+    margin: 0 auto 0;
+    width: 50rem;
+    max-width: 85vw;
+    padding: 0 50px 0 50px;
+}
+.resumeBody h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    text-align: left;
+    color: black;
+}
+.resumeItem {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.resumeItem h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: left;
+    color: black; 
+    padding: 15px 0;
+}
+.boldMe {
+    font-weight: bold;
+}
+.italicizeMe {
+    font-style: italic;
+}
+.resumeBody h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
+    color: black; 
+}
+.resumeBody p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: left;
+    padding: 5px 0;
+    line-height: 23px;
+}
+.resumeBody h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+    color: black; 
+    padding: 10px 0 0;
+}
+.resumeBody ul {
+    margin-left: 20px;
+}
+.resumeBody li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: left;
+    padding: 5px 0;
+    line-height: 23px;
+}
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
 header {
@@ -1610,7 +1734,7 @@ header {
 #reportInfo p {
     text-align: left;
 }
-.prototypeButton3, .prototypeButtonSpotter {
+.prototypeButton3, .prototypeButtonSpotter, .prototypeButtonResume {
     margin: 0 auto 0;
 }
 .prototypeButton4 {
