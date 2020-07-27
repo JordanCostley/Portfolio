@@ -1301,7 +1301,7 @@ footer {
     margin: 0 auto 0;
     width: 50rem;
     max-width: 85vw;
-    padding: 25px 50px;
+    padding: 25px 0;
 }
 .resumeSummary h1 {
     font-family: 'Montserrat', sans-serif;
@@ -1331,7 +1331,6 @@ footer {
     margin: 0 auto 0;
     width: 50rem;
     max-width: 85vw;
-    padding: 0 50px 0 50px;
 }
 .resumeBody h3 {
     font-family: 'Montserrat', sans-serif;
