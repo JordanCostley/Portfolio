@@ -661,7 +661,7 @@ main {
 .reportSummary h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 23px;
     text-align: left;
 }
 .reportSummary p, .reportSummary2 p {
@@ -1394,6 +1394,9 @@ footer {
     text-align: left;
     padding: 5px 0;
     line-height: 23px;
+}
+.highlight {
+    background-color: #c8c8ff; 
 }
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
