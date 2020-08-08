@@ -82,7 +82,7 @@ nav {
     transition: .5s ease;
 }
 .menuListDesk a:hover{
-    color: #CB9325;
+    color: #e85a3e;
 }
 .menuLI {
     display: inline;
@@ -114,7 +114,7 @@ nav {
     transition: .5s ease;
 }
 .menuList a:hover {
-    color: #CB9325;
+    color: #e85a3e;
 }
 #strike1, #strike2, #strike3, #strike4 {
     position: relative;
@@ -136,7 +136,7 @@ nav {
     width: 0%;
     left: 15px;
     height: 6px;
-    background: #CB9325;
+    background: #e85a3e;
     transition:width 0.25s ease;
 }
 #hamMenu {
@@ -214,7 +214,7 @@ header {
     font-weight: 900;
     font-size: 45px;
     padding: 20px 0 0 0;
-    color: #CB9325;
+    color: #e85a3e;
 }
 #introText h2 {
     font-family: futura-pt,sans-serif;
@@ -226,7 +226,7 @@ header {
 }
 #yellowBar {
     font-size: 40px;
-    color: #CB9325;
+    color: #e85a3e;
 }
 .yellowText a {
     color: rgb(17, 17, 16);
@@ -234,7 +234,7 @@ header {
     text-decoration-color: #d0d3d4;
 }
 .yellowText a:hover {
-    color: #CB9325;
+    color: #e85a3e;
    /*-- -webkit-text-stroke: 1.5px black;--*/
     transition: .25s ease;
 }
@@ -427,7 +427,7 @@ main {
     padding: 10px 0 0 0;
     text-align: left;
     text-decoration: none;
-    color: #CB9325;
+    color: #e85a3e;
     font-size: 18px;
 }
 #reachEmail a:hover {
@@ -445,7 +445,7 @@ main {
     padding: 0 5px 0 0;
 } 
 #socialIcons a:hover {
-    color: #CB9325;
+    color: #e85a3e;
     transition: .02s;
 }
 /*------Report Pages------*/
@@ -558,7 +558,7 @@ main {
 .prototypeButtonResume {
     width: 200px;
     height: auto;
-    border: solid 1.5px #CB9325;
+    border: solid 1.5px #e85a3e;
     border-radius: 100px;
     margin: 0 auto 0 auto;
     padding: 10px;
@@ -578,8 +578,8 @@ main {
     transition: .25s ease-in-out;
 }
 .prototypeButtonResume:hover {
-    border: solid 1.5px #CB9325;
-    background-color: #CB9325;
+    border: solid 1.5px #e85a3e;
+    background-color: #e85a3e;
     color: white;
     transition: .25s ease-in-out;
 }
@@ -864,7 +864,7 @@ main {
     text-align: left;
     font-weight: 400;
     font-size: 18px;
-    color: #CB9325;
+    color: #e85a3e;
     padding: 0 0 5px 0;
 }
 .goalChallengePurp {
@@ -921,8 +921,8 @@ main {
     padding: 10px; 
 }
 .prototypeButton:hover, .reportButton:hover {
-    border: solid 1.5px #CB9325;
-    color: #CB9325;
+    border: solid 1.5px #e85a3e;
+    color: #e85a3e;
     transition: .25s ease-in-out;
 }
 .prototypeButton h5 {
@@ -965,7 +965,7 @@ main {
     text-decoration: none;
 }
 #goBack:hover, #goHome:hover {
-    color: #CB9325;
+    color: #e85a3e;
     transition: .25s ease-in;
 }
 #smallText {
@@ -1084,7 +1084,7 @@ footer {
     padding: 30px 20px 15px 20px;
 }
 .footerIcons a:hover {
-    color: #CB9325;
+    color: #e85a3e;
     transition: .5s ease;
 }
 #reachEmailFooter, #reachEmailFooter a {
@@ -1095,7 +1095,7 @@ footer {
     transition: .5s ease;
 }
 #reachEmailFooter a:hover {
-    color: #CB9325;
+    color: #e85a3e;
     transition: .5s ease;
 } 
 .otherProjects {
@@ -1149,9 +1149,9 @@ footer {
     max-width: 95vw;
 }
 .workButton:hover {
-    color: #CB9325;
+    color: #e85a3e;
     transition: .5s ease;
-    border: 1.5px solid #CB9325;
+    border: 1.5px solid #e85a3e;
 }
 .personaShell {
     background-color: white;
@@ -1322,7 +1322,7 @@ footer {
     font-weight: 500;
     font-size: 25px;
     text-align: left;
-    color: #CB9325;
+    color: #e85a3e;
     padding: 5px 0;
 }
 .resumeSummary p {
