@@ -1593,9 +1593,6 @@ header {
 #negativeMargin {
     margin: 0 0 0 0;
 }
-.sideBarShell {
-    display: none;
-}
 }
 @media screen and (max-width: 1200px) {
 .decorativeImageDesktop3 {
@@ -1683,6 +1680,9 @@ header {
 }
 .goalSummary {
     width: 80%;
+}
+.sideBarShell {
+    display: none;
 }
 }
 /*------Mobile------*/

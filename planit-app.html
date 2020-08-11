@@ -455,10 +455,13 @@ $(function() {
         // Transition effect for navbar 
         $(window).scroll(function() {
           // checks if window is scrolled
+          var windowSize = $(window).width();
+          if (windowSize >= 1000) {
           if($(this).scrollTop() > 500) { 
               $('.sideBarShell').fadeIn();
           } else {
               $('.sideBarShell').fadeOut();
+          }
           }
         });
 });
