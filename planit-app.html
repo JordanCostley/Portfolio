@@ -51,6 +51,25 @@
                     </div>
         </div>
         </div>
+        <div class="sideBarShell">
+                <div class="sideMenu">
+                    <div class="sideMenuSubShell">
+                        <h3>PlanIt</h3>
+                        <p>A planner targeted at students who don't use planners..</p>
+                        <div class="sideMenuLine"></div>
+                        <ul class="sideMenuList">
+                            <li><span class="overview sideButton" dest="#overview">Overview</span></li>
+                            <li><span class="research sideButton" dest="#research">Research</span></li>
+                            <li><span class="modeling sideButton" dest="#modeling">Modeling</span></li>
+                            <li><span class="requirements sideButton" dest="#requirements">Requirements</span></li>
+                            <li><span class="framework sideButton" dest="#framework">Framework</span></li>
+                            <li><span class="refinement sideButton" dest="#refinement">Refinement</span></li>
+                            <li><span class="results sideButton" dest="#results">Results</span></li>
+                            <li><span class="takeaways sideButton" dest="#takeaways">Takeaways</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
     </div>
     <body> 
             <div id="reportShell">
@@ -72,7 +91,7 @@
                                     </div>
                                 </div>
                         </div></div>
-                    <div class="contentShell">
+                    <div class="contentShell s1" id="overview">
                     <div class="reportSummary">                        
                         <div class="summaryP1a">
                             <h5>A planner targeted at students who don't use planners.</h5>
@@ -103,7 +122,7 @@
                             <p id="caption2">The Goal-Directed Design Process steps</p>
                         </div>
                     </div>
-                    <div class="contentShell">
+                    <div class="contentShell s2" id="research">
                             <div class="reportSummary">
                             <div class="centerFlex">
                                     <h5>Understanding the problem and user with research.</h5>
@@ -160,7 +179,7 @@
                             </div>
                         </div>
                         </div>
-                            <div class="reportSummary">
+                            <div class="reportSummary s3" id="modeling">
                                 <div class="centerFlex">
                                     <h5>Modeling the interview data into personas.</h5>
                                     <p>As a means of easily digesting and discussing the information, personas are created to take the major components of the various participants and map the similarities to find patterns among the users and represent them as a grouped model. This model is displayed as a persona to help the designers, stakeholders, and others involved in the project understand the users while keeping a focus on their goals.</p>
@@ -210,7 +229,7 @@
                                     </div>
                                 </div>
                             </div>
-                        <div class="contentShell">
+                        <div class="contentShell s4" id="requirements">
                         <div class="reportSummary flexMe">
                             <div class="summaryP1">
                                 <h5>Defining the app's requirements.</h5>
@@ -228,7 +247,7 @@
                             </div>
                         </div>
                         </div>
-                            <div class="reportSummary">
+                            <div class="reportSummary s5" id="framework">
                                 <div class="centerFlex">
                                     <h5>Designing the framework and flow of the screens.</h5>
                                     <p>Once we established the research and determined the requirements, we were able to begin discussing the layout design of the app. I took the lead drawing wireframe designs on the whiteboard as we discussed the layout. <span class="boldMe">We wanted to quickly explore as many options as possible before committing to one layout.</span></p>
@@ -245,7 +264,7 @@
                                     <p id="caption2">Detailed wireframe sketches</p>
                                 </div>
                             </div>
-                        <div class="contentShell">
+                        <div class="contentShell s6" id="refinement">
                         <div class="reportSummary">
                             <div class="centerFlex">
                                 <h5>Refining and turning the design into a prototype.</h5>
@@ -294,7 +313,7 @@
                             </div>
                             
                         </div>
-                        <div class="contentShell">
+                        <div class="contentShell s7" id="results">
                                 <div class="reportSummary">
                                     <div class="centerFlex">
                                         <h5>Addressing challenges and  the final design.</h5>
@@ -314,7 +333,9 @@
             <div class="goalItemShell">
                 <div class="goalItemSubShell">
                 <div class="goalImage">
-                    <img src="images/planit_organizedvid.gif" alt="Video of app homepage"/>
+                        <video width="300" height="574" controls>
+                            <source src="videos/planit_vid1.mp4">
+                        </video>
                 </div>
                 <div class="goalSummary">
                     <h4 class="goalChallengePurp">Challenge 1:</h4>
@@ -331,14 +352,18 @@
                     <p>We wanted to ensure that our app focused on helping students get through college. We sought to implement gamification in the form of a tracker under the profile page, however further gamification features would need to be implemented to fully assist and encourage the users. We added secondary features that allow users to both study flashcards according to their classes and the ability to set a timer utilizing the Pomodoro Technique to better make use of their time. We wanted this study time to be flexible and fit around the users' busy lives while also breaking up the time to reduce stress and increase impact. Ultimately, we want our users to be prepared for their classes and pass their exams, assignments, and quizzes and implemented features targeted at all categories.</p>
                 </div> 
                 <div class="goalImage">
-                        <img src="images/planit_goalsvid.gif" alt="Video of app profile page"/>
+                        <video width="300" height="574" controls>
+                            <source src="videos/planit_vid2.mp4">
+                        </video>
                 </div>
                 </div>                       
             </div>
             <div class="goalItemShell">
                 <div class="goalItemSubShell">
                 <div class="goalImage">
-                    <img src="images/planit_stressvid.gif" alt="Video of app study timer"/>
+                        <video width="300" height="574" controls>
+                            <source src="videos/planit_vid3.mp4">
+                        </video>
                 </div>
                 <div class="goalSummary">
                     <h4 class="goalChallengePurp">Challenge 3:</h4>
@@ -347,7 +372,7 @@
                 </div>
                 </div>                        
             </div>
-            <div class="contentShell">
+            <div class="contentShell s8" id="takeaways">
             <div class="reportSummary flexMe">
                 <div class="summaryP1">
                     <h5>My takeaways from this project.</h5>
@@ -453,7 +478,128 @@
           }
         });
 });
+//side menu scroll 
+$(function() {
+    $('.sideButton').on('click', function(sideButtonScroll) {
+    sideButtonScroll.preventDefault();
+    $('html, body').animate({
+      scrollTop: $($(sideButtonScroll.target).attr("dest")).offset().top - 60
+    }, 'slow');
+  });
+});
 
+    //side menu show/hide
+    $(document).ready(function() {
+        // Transition effect for navbar 
+        $(window).scroll(function() {
+          // checks if window is scrolled
+          if($(this).scrollTop() > 600) { 
+              $('.sideBarShell').fadeIn();
+          } else {
+              $('.sideBarShell').fadeOut();
+          }
+        });
+});
+    //side menu section toggle
+    $(window).scroll(function(e) {
+    var s1 = $('.s1'),
+        s2 = $('.s2'),
+        s3 = $('.s3'),
+        s4 = $('.s4'),
+        s5 = $('.s5'),
+        s6 = $('.s6'),
+        s7 = $('.s7'),
+        s8 = $('.s8'),
+        diff = s1[0].offsetTop - window.pageYOffset - 75;
+        diff2 = s2[0].offsetTop - window.pageYOffset - 75; 
+        diff3 = s3[0].offsetTop - window.pageYOffset - 75;
+        diff4 = s4[0].offsetTop - window.pageYOffset - 75;
+        diff5 = s5[0].offsetTop - window.pageYOffset - 75;
+        diff6 = s6[0].offsetTop - window.pageYOffset - 75;
+        diff7 = s7[0].offsetTop - window.pageYOffset - 75;
+        diff8 = s8[0].offsetTop - window.pageYOffset - 200;
+    
+		if(diff < 0) {
+			$(".overview").addClass("sideToggle");
+			$(".research").removeClass("sideToggle");
+            $(".modeling").removeClass("sideToggle");
+            $(".requirements").removeClass("sideToggle");
+            $(".framework").removeClass("sideToggle");
+            $(".refinement").removeClass("sideToggle");
+            $(".results").removeClass("sideToggle");
+            $(".takeaways").removeClass("sideToggle");
+		}
+		if(diff2 < 0) {
+			$(".research").addClass("sideToggle");
+			$(".overview").removeClass("sideToggle");
+            $(".modeling").removeClass("sideToggle");
+            $(".requirements").removeClass("sideToggle");
+            $(".framework").removeClass("sideToggle");
+            $(".refinement").removeClass("sideToggle");
+            $(".results").removeClass("sideToggle");
+            $(".takeaways").removeClass("sideToggle");
+		}
+        if(diff3 < 0) {
+			$(".modeling").addClass("sideToggle");
+            $(".overview").removeClass("sideToggle");
+			$(".research").removeClass("sideToggle");
+            $(".requirements").removeClass("sideToggle");
+            $(".framework").removeClass("sideToggle");
+            $(".refinement").removeClass("sideToggle");
+            $(".results").removeClass("sideToggle");
+            $(".takeaways").removeClass("sideToggle");
+		}
+        if(diff4 < 0) {
+			$(".requirements").addClass("sideToggle");
+            $(".overview").removeClass("sideToggle");
+			$(".research").removeClass("sideToggle");
+            $(".modeling").removeClass("sideToggle");
+            $(".framework").removeClass("sideToggle");
+            $(".refinement").removeClass("sideToggle");
+            $(".results").removeClass("sideToggle");
+            $(".takeaways").removeClass("sideToggle");
+		}
+        if(diff5 < 0) {
+			$(".framework").addClass("sideToggle");
+            $(".overview").removeClass("sideToggle");
+			$(".research").removeClass("sideToggle");
+            $(".modeling").removeClass("sideToggle");
+            $(".requirements").removeClass("sideToggle");
+            $(".refinement").removeClass("sideToggle");
+            $(".results").removeClass("sideToggle");
+            $(".takeaways").removeClass("sideToggle");
+		}
+        if(diff6 < 0) {
+			$(".refinement").addClass("sideToggle");
+            $(".overview").removeClass("sideToggle");
+			$(".research").removeClass("sideToggle");
+            $(".modeling").removeClass("sideToggle");
+            $(".requirements").removeClass("sideToggle");
+            $(".framework").removeClass("sideToggle");
+            $(".results").removeClass("sideToggle");
+            $(".takeaways").removeClass("sideToggle");
+		}
+        if(diff7 < 0) {
+			$(".results").addClass("sideToggle");
+            $(".overview").removeClass("sideToggle");
+			$(".research").removeClass("sideToggle");
+            $(".modeling").removeClass("sideToggle");
+            $(".requirements").removeClass("sideToggle");
+            $(".framework").removeClass("sideToggle");
+            $(".refinement").removeClass("sideToggle");
+            $(".takeaways").removeClass("sideToggle");
+		}
+        if(diff8 < 0) {
+			$(".takeaways").addClass("sideToggle");
+			$(".overview").removeClass("sideToggle");
+			$(".research").removeClass("sideToggle");
+            $(".modeling").removeClass("sideToggle");
+            $(".requirements").removeClass("sideToggle");
+            $(".framework").removeClass("sideToggle");
+            $(".refinement").removeClass("sideToggle");
+            $(".results").removeClass("sideToggle");
+		}
+});
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115173517-1"></script>

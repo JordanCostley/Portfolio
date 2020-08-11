@@ -19,8 +19,8 @@
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body id="body">
-    <div id="bodyShell">
+    <body id="body">
+        <div id="bodyShell">
         <div id="headerShell">
                 <div id="navShell">
                         <nav>
@@ -51,7 +51,26 @@
                     </div>
         </div>
         </div>
-    </div>
+        <div class="sideBarShell">
+                <div class="sideMenu">
+                    <div class="sideMenuSubShell">
+                        <h3>Spotter</h3>
+                        <p>A streaming assistant to help search and discover content across platforms.</p>
+                        <div class="sideMenuLine"></div>
+                        <ul class="sideMenuList">
+                            <li><span class="overview sideButton" dest="#overview">Overview</span></li>
+                            <li><span class="research sideButton" dest="#research">Research</span></li>
+                            <li><span class="modeling sideButton" dest="#modeling">Modeling</span></li>
+                            <li><span class="requirements sideButton" dest="#requirements">Requirements</span></li>
+                            <li><span class="framework sideButton" dest="#framework">Framework</span></li>
+                            <li><span class="refinement sideButton" dest="#refinement">Refinement</span></li>
+                            <li><span class="results sideButton" dest="#results">Results</span></li>
+                            <li><span class="takeaways sideButton" dest="#takeaways">Takeaways</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     <body> 
             <div id="reportShell">
                     <div id="mastheadShellSpotter">
@@ -72,7 +91,7 @@
                                         </div>
                                     </div>
                             </div></div>
-                    <div class="contentShell">
+                    <div class="contentShell s1" id="overview">
                     <div class="reportSummary">                        
                         <div class="summaryP1a">
                             <h5>A streaming assistant to help search and discover content across platforms.</h5>
@@ -100,7 +119,7 @@
                             <p id="caption2">The Goal-Directed Design Process Steps</p>
                         </div>
                     </div>
-                    <div class="contentShell">
+                    <div class="contentShell s2" id="research">
                         <div class="reportSummary">
                             <div class="centerFlex">
                                 <h5>Understanding the problem and user with research.</h5>
@@ -161,7 +180,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="reportSummary flexMe">
+                    <div class="reportSummary flexMe s3" id="modeling">
                         <div class="centerFlex"><h5>Modeling the interview data into personas.</h5></div>
                         <div class="summaryP1">
                             <p>As a means of easily digesting and discussing the information, personas are created to take the major components of the various participants and map the similarities to find patterns among the users and represent them as a grouped model. This model is displayed as a persona to help the designers, stakeholders, and others involved in the project understand the users while keeping a focus on their goals.</p>
@@ -217,7 +236,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="contentShell">
+                    <div class="contentShell s4" id="requirements">
                     <div class="reportSummary">
                         <div class="centerFlex">
                             <h5>Defining the app's requirements.</h5>
@@ -232,7 +251,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="reportSummary">
+                    <div class="reportSummary s5" id="framework">
                         <div class="centerFlex">
                             <h5>Designing the framework and flow of the screens.</h5>
                             <p>Once we established the research on the domain and technologies we were able to begin discussing the wireframe and design. This is a stage that benefits from meeting in person and creating designs quickly with many revisions. Unfortunately, due to the events of COVID-19, we had to reconsider how we would continue the project. I landed on InVision Freehand as it offers real-time collaboration and would allow us to quickly sketch wireframe designs.</p>
@@ -248,7 +267,7 @@
                             <img src="images/spotter_wireframe-mobile.png" class="decorativeImageMobile" alt="Image of wireframe drawings"/>
                         </div>
                     </div>
-                    <div class="contentShell">
+                    <div class="contentShell s6" id="refinement">
                         <div class="reportSummary">
                             <div class="summaryP1">
                                 <h5>Refining and turning the design into a prototype.</h5>
@@ -290,7 +309,7 @@
                                 </div>
                         </div>
                         <div id="addPadding3"></div>
-                    <div class="contentShell">
+                    <div class="contentShell s7" id="results">
                         <div class="reportSummary">
                             <div class="centerFlex">
                                 <h5>Addressing challenges and the final design.</h5>
@@ -340,7 +359,7 @@
                         </div>
                         </div>                        
                     </div>
-                    <div class="contentShell">
+                    <div class="contentShell s8" id="takeaways">
                         <div class="reportSummary flexMe">
                             <div class="summaryP1">
                                 <h5>My takeaways from this project.</h5>
@@ -350,13 +369,13 @@
                                 <p id="addPadding">Although I am satisfied with our results, some areas could be more polished and explored. Not having access to ideal testing procedures certainly affected the results. There are areas of interaction that I would have liked to explore more thoroughly, but I am confident that the overall flow and interaction in the final product is accurate to user goals and expectations. We did address the concept of clarity of content, but I would like to explore this concept further to offer a more complete solution for the users. I believe this area to be of fairly high importance based on our interviews and think a more prominent feature would benefit the product. I look forward to taking the skills learned from this process and further developing them in the future.</p>
                             </div>
                         </div>
-                        <div id="prototypeShell2 contentShell">
-                                <div class="prototypeLinkSpotter" id="addPadding3">
+                      <!--   <div id="prototypeShell2 contentShell">
+                                <div class="prototypeLinkSpotter" id="addPadding7">
                                 <a href="https://www.figma.com/proto/2Ha0qsF4VSjjm5LMe3qL5m/Streaming-Assistant-App-Design?node-id=228%3A788&scaling=min-zoom" target="_blank"><div class="prototypeButtonSpotter">
                                         <h5>View Prototype</h5>
                                     </div></a>
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
             </div>
             </div>
@@ -441,14 +460,135 @@
         // Transition effect for navbar 
         $(window).scroll(function() {
           // checks if window is scrolled
-          if($(this).scrollTop() > 50) { 
+          if($(this).scrollTop() > 100) { 
               $('nav').addClass('navPadding');
           } else {
               $('nav').removeClass('navPadding');
           }
         });
 });
+    //side menu scroll 
+    $(function() {
+    $('.sideButton').on('click', function(sideButtonScroll) {
+    sideButtonScroll.preventDefault();
+    $('html, body').animate({
+      scrollTop: $($(sideButtonScroll.target).attr("dest")).offset().top - 60
+    }, 'slow');
+  });
+});
 
+    //side menu show/hide
+    $(document).ready(function() {
+        // Transition effect for navbar 
+        $(window).scroll(function() {
+          // checks if window is scrolled
+          if($(this).scrollTop() > 600) { 
+              $('.sideBarShell').fadeIn();
+          } else {
+              $('.sideBarShell').fadeOut();
+          }
+        });
+});
+    //side menu section toggle
+    $(window).scroll(function(e) {
+    var s1 = $('.s1'),
+        s2 = $('.s2'),
+        s3 = $('.s3'),
+        s4 = $('.s4'),
+        s5 = $('.s5'),
+        s6 = $('.s6'),
+        s7 = $('.s7'),
+        s8 = $('.s8'),
+        diff = s1[0].offsetTop - window.pageYOffset - 75;
+        diff2 = s2[0].offsetTop - window.pageYOffset - 75; 
+        diff3 = s3[0].offsetTop - window.pageYOffset - 75;
+        diff4 = s4[0].offsetTop - window.pageYOffset - 75;
+        diff5 = s5[0].offsetTop - window.pageYOffset - 75;
+        diff6 = s6[0].offsetTop - window.pageYOffset - 75;
+        diff7 = s7[0].offsetTop - window.pageYOffset - 75;
+        diff8 = s8[0].offsetTop - window.pageYOffset - 200;
+    
+		if(diff < 0) {
+			$(".overview").addClass("sideToggle");
+			$(".research").removeClass("sideToggle");
+            $(".modeling").removeClass("sideToggle");
+            $(".requirements").removeClass("sideToggle");
+            $(".framework").removeClass("sideToggle");
+            $(".refinement").removeClass("sideToggle");
+            $(".results").removeClass("sideToggle");
+            $(".takeaways").removeClass("sideToggle");
+		}
+		if(diff2 < 0) {
+			$(".research").addClass("sideToggle");
+			$(".overview").removeClass("sideToggle");
+            $(".modeling").removeClass("sideToggle");
+            $(".requirements").removeClass("sideToggle");
+            $(".framework").removeClass("sideToggle");
+            $(".refinement").removeClass("sideToggle");
+            $(".results").removeClass("sideToggle");
+            $(".takeaways").removeClass("sideToggle");
+		}
+        if(diff3 < 0) {
+			$(".modeling").addClass("sideToggle");
+            $(".overview").removeClass("sideToggle");
+			$(".research").removeClass("sideToggle");
+            $(".requirements").removeClass("sideToggle");
+            $(".framework").removeClass("sideToggle");
+            $(".refinement").removeClass("sideToggle");
+            $(".results").removeClass("sideToggle");
+            $(".takeaways").removeClass("sideToggle");
+		}
+        if(diff4 < 0) {
+			$(".requirements").addClass("sideToggle");
+            $(".overview").removeClass("sideToggle");
+			$(".research").removeClass("sideToggle");
+            $(".modeling").removeClass("sideToggle");
+            $(".framework").removeClass("sideToggle");
+            $(".refinement").removeClass("sideToggle");
+            $(".results").removeClass("sideToggle");
+            $(".takeaways").removeClass("sideToggle");
+		}
+        if(diff5 < 0) {
+			$(".framework").addClass("sideToggle");
+            $(".overview").removeClass("sideToggle");
+			$(".research").removeClass("sideToggle");
+            $(".modeling").removeClass("sideToggle");
+            $(".requirements").removeClass("sideToggle");
+            $(".refinement").removeClass("sideToggle");
+            $(".results").removeClass("sideToggle");
+            $(".takeaways").removeClass("sideToggle");
+		}
+        if(diff6 < 0) {
+			$(".refinement").addClass("sideToggle");
+            $(".overview").removeClass("sideToggle");
+			$(".research").removeClass("sideToggle");
+            $(".modeling").removeClass("sideToggle");
+            $(".requirements").removeClass("sideToggle");
+            $(".framework").removeClass("sideToggle");
+            $(".results").removeClass("sideToggle");
+            $(".takeaways").removeClass("sideToggle");
+		}
+        if(diff7 < 0) {
+			$(".results").addClass("sideToggle");
+            $(".overview").removeClass("sideToggle");
+			$(".research").removeClass("sideToggle");
+            $(".modeling").removeClass("sideToggle");
+            $(".requirements").removeClass("sideToggle");
+            $(".framework").removeClass("sideToggle");
+            $(".refinement").removeClass("sideToggle");
+            $(".takeaways").removeClass("sideToggle");
+		}
+        if(diff8 < 0) {
+			$(".takeaways").addClass("sideToggle");
+			$(".overview").removeClass("sideToggle");
+			$(".research").removeClass("sideToggle");
+            $(".modeling").removeClass("sideToggle");
+            $(".requirements").removeClass("sideToggle");
+            $(".framework").removeClass("sideToggle");
+            $(".refinement").removeClass("sideToggle");
+            $(".results").removeClass("sideToggle");
+		}
+});
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115173517-1"></script>
