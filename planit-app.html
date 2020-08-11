@@ -494,9 +494,11 @@ $(function() {
         $(window).scroll(function() {
           // checks if window is scrolled
           if($(this).scrollTop() > 600) { 
+              $('.sideBarShell').style.display === "flex"
               $('.sideBarShell').fadeIn();
           } else {
               $('.sideBarShell').fadeOut();
+              $('.sideBarShell').style.display === "nonce"
           }
         });
 });
