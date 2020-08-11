@@ -822,7 +822,7 @@ main {
     width: 100%;
     padding: 40px 0 0 0;
 }
-.decorativeImageDesktop {
+.decorativeImageDesktop, .decorativeImageDesktop3 {
     width: 100%;
     padding: 40px 0 0 0;
 }
@@ -830,7 +830,7 @@ main {
     width: 100%;
     padding: 40px 0 0 0;
 }
-.decorativeImageMobile {
+.decorativeImageMobile, .decorativeImageMedium {
     display: none;
 }
 .decorativeImageDouble {
@@ -1530,7 +1530,7 @@ header {
     width: 100%;
 }
 .reportSummary, .reportSummary2 {
-    width: 90%;
+    width: 75%;
 }
 .summaryP1, .summaryP2 {
     width: 100%;
@@ -1543,11 +1543,12 @@ header {
     justify-content: center;
 }
 .goalItemSubShell {
-    width: 100%;
+    width: 75%;
     flex-direction: row;
 }
 .goalSummary {
-    width: 85%;
+    width: 60%;
+    max-width: 40vw;
     padding: 15px 20px;
 }
 #streetEatsLogo2 {
@@ -1594,6 +1595,16 @@ header {
 }
 .sideBarShell {
     display: none;
+}
+}
+@media screen and (max-width: 1200px) {
+.decorativeImageDesktop3 {
+    display: none;
+}
+.decorativeImageMedium {
+    display: inherit;
+    width: 100%;
+    padding: 40px 0 0 0;
 }
 }
 @media screen and (max-width: 1000px) {
@@ -1665,6 +1676,13 @@ header {
 }
 #prototypeShell2 {
     padding: 15px 0 0 0;
+}
+.goalItemSubShell {
+    width: 90%;
+    flex-direction: row;
+}
+.goalSummary {
+    width: 80%;
 }
 }
 /*------Mobile------*/
@@ -1806,6 +1824,9 @@ header {
     padding: 0;
 }
 .decorativeImageDesktop, .decorativeImageDesktop2 {
+    display: none;
+}
+.decorativeImageMedium {
     display: none;
 }
 .decorativeImageMobile {
