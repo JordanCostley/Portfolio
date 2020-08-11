@@ -1440,7 +1440,6 @@ header {
 @media screen and (min-width: 1350px) {
     .sideBarShell {
         display: none;
-        display: flex;
         flex-wrap: nowrap;
         align-content: flex-start;
         justify-content: space-between;
