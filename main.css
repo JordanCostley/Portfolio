@@ -510,6 +510,7 @@ main {
 #reportInfo {
     margin: 0 auto 0 auto;
     width: 67%;
+    max-width: 1500px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -1901,3 +1902,17 @@ header {
     height: 1vh;
 }
 } 
+@media screen and (min-height: 1250px) {
+header {
+    height: 50vh;
+}
+#headerContent {
+    padding: 20rem 0 0 0;
+}
+#myWorkScrollShell {
+    padding: 20rem 0 10px 0
+}
+#workShell {
+    max-width: 1200px;
+}
+}
