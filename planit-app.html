@@ -114,7 +114,13 @@
                             <h5>Designed by students for students.</h5>
                             <p>For my senior project class I worked alongside 3 other team members, Derek Duty, Ralston Fitler, and Iegor Gutyria on the PlanIt student planner and assistant app. As students ourselves nearing the end of our college careers, we have an understanding of the importance of keeping on top of your class work. We understand the difficulties and attitudes often associated with attending college, especially those starting their college career. We wanted to target the app at benefiting and assisting others in a position that we were once in.</p>
                             <h6 id="addPadding2">We utilized Goal-Directed Design method to focus on user goals.</h6>
-                            <p>Goal-Directed Design is a multi-stage user-centered methodology created by Alan Cooper. This multi-stage process allows for a solid foundation in research to get a better understanding of users before developing a solution to design and test.</p>
+                            <p>Goal-Directed Design is a multi-stage user-centered methodology created by Alan Cooper. This multi-stage process allows for a solid foundation in research to get a better understanding of user goals and expectations before developing a solution to design and test.</p>
+                            <p>The bulk of the process focuses on research to discover information about the user including their goals and behaviors. There are three types of goals:</p>
+                            <ol class="orderedList">
+                                <li class="olItem">Life Goals: Who the user wants to be</li>
+                                <li class="olItem">End Goals: What the user wants to do</li>
+                                <li class="olItem">Experience Goals: How the user wants to feel</li>
+                            </ol>
                         </div>
                         <div class="centerFlex2">
                                 <img class="decorativeImageDesktop2" src="images/GDD_Steps-Purp.svg" alt="Infograph of design process steps steps"/>
@@ -163,8 +169,9 @@
                                     <ol class="orderedList">
                                         <li class="olItem">The students who do not use a planner tend to procrastinate.</li>
                                         <li class="olItem">Most of the students have commitments outside of class and must balance their time.</li>
-                                        <li class="olItem">The students who use planners are typically more focused on school and their future career.</li>
+                                        <li class="olItem">The students who do not use planners are typically more focused on simply getting through school.</li>
                                         <li class="olItem">Most students rely on the various syllabuses to keep up with classwork.</li>
+                                        <li class="olItem">Those who do not use planners rely on their memory to ensure they complete their work.</li>
                                     </ol>                                    
                                 </div>
                             <div class="leftFlex">
@@ -211,11 +218,12 @@
                                     <p>Once we established the research and determined the requirements, we were able to begin discussing the layout design of the app. I took the lead drawing wireframe designs on the whiteboard as we discussed the layout. <span class="boldMe">We wanted to quickly explore as many options as possible before committing to one layout.</span></p>
                                     <p>We first drew out the main interaction before designing the supplemental features. This allowed us to establish the beginning framework and flow that covered many details that would extend into secondary interactions. This included all the information the user would be looking for, primary and secondary navigation, what interactions would occur, any secondary menus, and selection boxes based on inputs.</p>
                                     <p>I then took these whiteboard sketches and further developed them on my iPad. Although we covered most everything in the initial brainstorming session, some minor details needed further thought. <span class="boldMe">I wanted to create design solutions that included bite-sized content, automated processes, and an overall focus on helping the user balance their limited time.</span></p>
-                                    <h6 id="addPadding2">We focused on three main concepts:</h6>
+                                    <h6 id="addPadding2">We focused on four main concepts:</h6>
                                     <ol class="orderedList">
                                         <li class="olItem">Home screen: we focused on bite-sized content that prominently displays today's events and tasks.</li>
-                                        <li class="olItem">Daily tasks: we wanted a simple way of marking tasks complete, initially this was a swipe gesture.</li>
-                                        <li class="olItem">Study tools: a study session section was coined to automate and simplify the process of studying for classes.</li>
+                                        <li class="olItem">Daily tasks: we wanted a simple way of marking tasks complete to encourage interaction, initially this was a swipe gesture.</li>
+                                        <li class="olItem">Study tools: study sessions were created to automate and simplify the process of studying for classes using the Pomodoro Technique.</li>
+                                        <li class="olItem">Importing classes: we wanted to simplify the process of inputing tasks and events by importing data from the class syllabus.</li> 
                                      </ol>   
                                     <img src="images/planit_wireframes.png" class="decorativeImageDesktop" alt="decorative image of wireframe sketches"/>
                                     <img src="images/planit_wireframes-Mobile.png" class="decorativeImageMobile" alt="decorative image of wireframe sketches"/>                               
@@ -259,10 +267,10 @@
                                     <p>We addressed these concerns by changing verbiage and simplifying the concept of study sessions to a simple Pomodoro timer. We also refined other interactions and functionality throughout the app to make the process simpler overall.</p>
                                     <h6 id="addPadding2">Main areas of concern:</h6>
                                     <ol class="orderedList">
-                                            <li class="olItem">Entire flow of study session was confusing to users</li>
-                                            <li class="olItem">Process of connecting account to school not clear</li>
-                                            <li class="olItem">Secondary button function on navigation bar not always clear</li>
-                                            <li class="olItem">Technical issues with prototype</li>
+                                            <li class="olItem">The entire flow of the study session was confusing to users and needed to be simplified into a more basic timer.</li>
+                                            <li class="olItem">The process of importing a syllabus was not clear and there was no easy way to connect the account to the school's portal past the onboarding.</li>
+                                            <li class="olItem">The secondary button function on the navigation bar was not always clear in terms of the icon and intended action.</li>
+                                            <li class="olItem">Technical issues with the prototype that needed to be refined for seamless interaction.</li>
                                      </ol>
                                 </div>
                                 <div class="summaryP2">
@@ -298,7 +306,8 @@
                 <div class="goalSummary">
                     <h4 class="goalChallengePurp">Challenge 1:</h4>
                     <h5>Stay Organized</h5>
-                    <p>Our primary focus was on allowing students to stay organized and on top of their tasks. We wanted to make the experience and interaction with tracking tasks as simple and streamlined as possible. There are inherent barriers to using physical planners that we sought to overcome. We wanted to create a flexible experience to automatically display information that students already have access to on their syllabuses by automatically importing this data. We also wanted to allow users to easily track what they have going on for the day and mark tasks completed to ensure they are on top of their work. We focused on a daily overview to more easily allow the users to digest the information.</p>
+                    <p>Our primary focus was on allowing students to stay organized and on top of their tasks. We wanted to make the experience and interaction with tracking tasks as simple and streamlined as possible.</p>
+                    <p>There are inherent barriers to using physical planners that we sought to overcome. We wanted to create a flexible and quick experience by importing data from their syllabuses to fill their planner. Additionally, we focused on a daily overview to more easily allow the users to digest the information on their home screen. We also wanted to encourage users to mark their daily tasks as complete.</p>
                 </div>
             </div>                        
             </div>
@@ -307,7 +316,8 @@
                 <div class="goalSummary">
                     <h4 class="goalChallengePurp">Challenge 2:</h4>
                     <h5>Achieve Goals</h5>
-                    <p>We wanted to ensure that our app focused on helping students get through college. We sought to implement gamification in the form of a tracker under the profile page, however further gamification features would need to be implemented to fully assist and encourage the users. We added secondary features that allow users to both study flashcards according to their classes and the ability to set a timer utilizing the Pomodoro Technique to better make use of their time. We wanted this study time to be flexible and fit around the users' busy lives while also breaking up the time to reduce stress and increase impact. Ultimately, we want our users to be prepared for their classes and pass their exams, assignments, and quizzes and implemented features targeted at all categories.</p>
+                    <p>We wanted to ensure that our app focused on helping students get through college. We implemented gamification in the form of a tracker under the profile page, however further gamification features would need to be implemented to fully assist and encourage the users.</p>
+                    <p>We added secondary features that allow users to study flashcards based on their classes and set a timer utilizing the Pomodoro Technique. We wanted this study time to be flexible and fit around the users' busy lives while also breaking up the time to reduce stress and increase impact. Ultimately, we want our users to be prepared for their classes and pass their exams, assignments, and quizzes so we implemented features targeted at all categories.</p>
                 </div> 
                 <div class="goalImage">
                         <video width="300" height="574" controls autoplay muted loop>
@@ -326,7 +336,8 @@
                 <div class="goalSummary">
                     <h4 class="goalChallengePurp">Challenge 3:</h4>
                     <h5>Reduce Stress</h5>
-                    <p>We explored the concept of reducing stress for our users as initial interviews discovered that our participants had to balance their college, work, and personal lives and often had little time between. A focus on simplicity and ease of use was kept in mind as to not add any cognitive load or stress to the users. By implementing automation and bite-size overviews, we wanted to create a product that does not add any more time constraints to the lives of our users. We also made decisions to make the colors a friendly color while still being customizable if the user chose to change them.</p>
+                    <p>We explored the concept of reducing stress for our users as initial interviews discovered that our participants had to balance their college, work, and personal lives and often had little time between.</p>
+                    <p>We kept a focus on simplicity and ease of use to not add any cognitive load or stress to the users. By implementing automation and bite-size overviews, we wanted to create a product that does not add any more time constraints to the lives of our users. We also wanted to add features that would add value to the user by giving easy access to study tools such as a study timer and flashcards based on their classes.</p>
                 </div>
                 </div>                        
             </div>
