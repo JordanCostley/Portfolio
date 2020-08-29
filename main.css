@@ -529,8 +529,9 @@ main {
     padding: 12px 5px 0 5px;
 }
 .prototypeLinkDesktop3, .prototypeLinkSpotter {
-    margin: -25px 0 0 0;
+    margin: -25px auto 0 auto;
     padding: 25px 5px 0 5px;
+    width: 250px;
 }
 .prototypeLinkDesktop3 a {
     text-decoration: none;
@@ -565,7 +566,7 @@ main {
     padding: 10px;
 }
 .prototypeButtonSpotter {
-    width: 200px;
+    width: 250px;
     height: auto;
     border: solid 1.5px #fdcc1d;
     border-radius: 100px;
