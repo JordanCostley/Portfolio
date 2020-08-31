@@ -1374,6 +1374,12 @@ footer {
 .boldMe {
     font-weight: bold;
 }
+.highlighMe {
+    background-color: rgba(250, 225, 84, 0.322);
+}
+.highlighMe2 {
+    background-color: rgba(109, 84, 250, 0.219);
+}
 .italicizeMe {
     font-style: italic;
 }
@@ -1413,6 +1419,26 @@ footer {
 }
 .highlight {
     background-color: #c8c8ff; 
+}
+.rolesBreakdown {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 1em;
+}
+.roleBox {
+    width: 350px;
+    height: auto;
+    max-width: 90vw;
+    border: black 1.5px solid;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin: 20px 0 0 0;
+    padding: 0 10px;
+}
+#roleTitle {
+    font-weight: bold;
+    padding: 10px 0 0 0;
 }
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
@@ -1600,6 +1626,9 @@ header {
 #negativeMargin {
     margin: 0 0 0 0;
 }
+.sideBarShell {
+    opacity: 0;
+}
 }
 @media screen and (max-width: 1200px) {
 .decorativeImageDesktop3 {
@@ -1687,9 +1716,6 @@ header {
 }
 .goalSummary {
     width: 80%;
-}
-.sideBarShell {
-    display: none;
 }
 }
 /*------Mobile------*/
