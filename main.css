@@ -340,7 +340,7 @@ main {
     font-size: 18px;
     text-align: left;
     letter-spacing: 1px;
-    padding: 5px 0 25px 0;
+    padding: 5px 0 5px 0;
     color: black; 
     transition:  .25s ease-in;
    -moz-transition:  .25s ease-in;
@@ -1439,6 +1439,14 @@ footer {
 #roleTitle {
     font-weight: bold;
     padding: 10px 0 0 0;
+}
+#roles {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+    color: rgb(107, 107, 107);
+    padding: 0 0 25px;
 }
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
