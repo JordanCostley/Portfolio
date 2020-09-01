@@ -695,6 +695,7 @@ main {
 }
 .leftFlex {
     display: flex;
+    flex-flow: wrap row;
     justify-content: space-between;
 }
 #developmentShell {
@@ -989,23 +990,17 @@ main {
     font-weight: 300;
     font-size: 17px;
     line-height: 30px;
-}
-ol {
-    list-style: none;
-    counter-reset: item;
-}
-ol li {
-    counter-increment: item;
-    padding: 0 0 10px 0;
-}
-ol li::before {
-    content: counter(item) ". ";
+    list-style-position: outside;
     font-weight: bold;
 }
-.orderedList {
+.orderedList, .orderedList li {
     padding: 15px 0 0 0;
-    margin: 0 auto 0 auto;
+    margin: 0 0 0 10px;
     list-style-position: outside;
+    text-align: left;
+}
+.normal {
+    font-weight: 300;
 }
 .teamMemberShell {
     display: flex;
@@ -1037,6 +1032,8 @@ ol li::before {
 }
 .imageBox {
     width: 48%;
+    min-width: 550px;
+    max-width: 90vw;
     height: auto;
 }
 .imageSmall {
@@ -1233,9 +1230,11 @@ footer {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 35px;
     text-align: left;
     list-style-position: outside;
+    padding: 10px 0 0 0;
+    margin: 0 0 0 10px;
 }
 .personaRight {
     text-align: left;
@@ -1374,10 +1373,10 @@ footer {
 .boldMe {
     font-weight: bold;
 }
-.highlighMe {
+.highlightMe {
     background-color: rgba(250, 225, 84, 0.322);
 }
-.highlighMe2 {
+.highlightMe2 {
     background-color: rgba(109, 84, 250, 0.219);
 }
 .italicizeMe {
