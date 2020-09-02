@@ -188,7 +188,7 @@ nav {
 /*------Header Content------*/
 header {
     width: 100%;
-    height: 90vh;
+    height: auto;
     background-color: white;
     color: rgb(17, 17, 16);
 }
@@ -201,7 +201,7 @@ header {
 }
 #headerContent {
     width: 100%;
-    padding: calc(45vh - 200px) 0 0 0;
+    padding: 200px 0 0 0;
 }
 #introText {
     width: 900px;
@@ -247,7 +247,7 @@ header {
     margin: auto;
     display: flex;
     justify-content: center;
-    padding: calc(60vh - 450px) 0 10px 0;
+    padding: 90px 0 10px 0;
 }
 #myWorkScroll {    
     transition: .5s ease-in-out;
@@ -291,7 +291,9 @@ main {
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 70%;
+    max-width: 1300px;
     margin: 0 auto 0 auto;
+    padding: 90px 0 0;
 }
 #workShell a {
     text-decoration: none;
@@ -518,7 +520,6 @@ main {
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
-    align-items: space-between;
     flex-wrap: wrap;
     text-align: left;
     color: black;
@@ -614,7 +615,7 @@ main {
     margin: 0 auto 0 auto;
     justify-content: space-around;
     align-content: stretch;
-    max-width: 1300px;
+    max-width: 1100px;
 }
 .reportSummary2 {
     display: flex;
@@ -625,7 +626,7 @@ main {
     margin: 0 auto 0 auto;
     justify-content: space-between;
     align-content: stretch;
-    max-width: 1300px;
+    max-width: 1100px;
 }
 .bulletList {
     width: 45%;
@@ -634,7 +635,7 @@ main {
     margin: 0 auto 0 auto;
 }
 .summaryP1, .summaryP1v2 {
-    width: calc(50% - 20px);
+    width: calc(50% - 10px);
     min-width: 300px;
     max-width: 60vw;
 
@@ -858,7 +859,7 @@ main {
     padding: 40px 0 40px 0;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 1300px;
+    max-width: 1100px;
 }
 .goalImage {
     z-index: 1;
@@ -1422,11 +1423,11 @@ footer {
 .rolesBreakdown {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
     gap: 1em;
 }
 .roleBox {
-    width: 350px;
+    width: 335px;
     height: auto;
     max-width: 90vw;
     border: black 1.5px solid;
@@ -1472,77 +1473,77 @@ header {
 }
 #reportInfo {
     width: 78%;
-    max-width: 1300px;
+    max-width: 1500px;
     margin: 0 auto 0 auto;
     padding: 25px 0 25px 0;
 }
 }
 @media screen and (min-width: 1350px) {
-    .sideBarShell {
-        display: none;
-        flex-wrap: nowrap;
-        align-content: flex-start;
-        justify-content: space-between;
-        width: 100vw;
-        margin: 200px 0 0 0;
-        position: fixed;
-        transition: .5s ease;
-        pointer-events: none;
-    }
-    .sideMenu {
-        margin: 0 auto;
-        max-width: 1650px;
-        width: calc(100% - 120px);
-    }
-    .sideMenuSubShell {
-        width: 175px;
-        left: 0;
-        pointer-events: all;
-    }
-    .sideMenu h3 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        color: rgb(43, 43, 43);
-        font-size: 18px;  
-        text-align: left;
-        padding: 0 0 10px 0;
-    }
-    .sideMenuLine {
-        background-color: rgb(43, 43, 43);
-        width: 100px;
-        height: 2px;
-        margin: 10px 0;
-    }
-    .sideMenu p {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 300;
-        color: rgb(43, 43, 43);
-        font-size: 16px;  
-        text-align: left;
-        line-height: 22px;
-    }
-    .sideMenuList li {
-        list-style-type: none;
-        text-align: left;
-    }
-    .sideMenuList li {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        color: black;
-        font-size: 15px; 
-        transition: .25s ease;
-        line-height: 26px;
-    }
-    .sideMenuList li:hover {
-        color: #e85a3e;
-        transition: .25s ease;
-        cursor: pointer;
-    }
-    .sideToggle {
-        color: #e85a3e;
-        font-weight: bold;
-        transition: .25s ease;
-    }
+.sideBarShell {
+    display: none;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    width: 100vw;
+    margin: 200px 0 0 0;
+    position: fixed;
+    transition: .5s ease;
+    pointer-events: none;
+}
+.sideMenu {
+    margin: 0 auto;
+    max-width: 1650px;
+    width: calc(100% - 120px);
+}
+.sideMenuSubShell {
+    width: 175px;
+    left: 0;
+    pointer-events: all;
+}
+.sideMenu h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: rgb(43, 43, 43);
+    font-size: 18px;  
+    text-align: left;
+    padding: 0 0 10px 0;
+}
+.sideMenuLine {
+    background-color: rgb(43, 43, 43);
+    width: 100px;
+    height: 2px;
+    margin: 10px 0;
+}
+.sideMenu p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: rgb(43, 43, 43);
+    font-size: 16px;  
+    text-align: left;
+    line-height: 22px;
+}
+.sideMenuList li {
+    list-style-type: none;
+    text-align: left;
+}
+.sideMenuList li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: black;
+    font-size: 15px; 
+    transition: .25s ease;
+    line-height: 26px;
+}
+.sideMenuList li:hover {
+    color: #e85a3e;
+    transition: .25s ease;
+    cursor: pointer;
+}
+.sideToggle {
+    color: #e85a3e;
+    font-weight: bold;
+    transition: .25s ease;
+}
 }
 /*------Small Width------*/
 @media screen and (max-width: 1350px) {
@@ -1559,6 +1560,9 @@ header {
     width: 90%;
     flex-direction: row;
     padding: 25px 0 25px 0;
+}
+#reportInfo p {
+    margin: 0 0 15px;
 }
 .userImageLeft {
     flex-basis: 400px;
@@ -1726,6 +1730,24 @@ header {
 }
 }
 /*------Mobile------*/
+@media screen and (max-width: 970px) {
+.roleBox {
+    width: 100%;
+    height: auto;
+    max-width: 90vw;
+}
+@media screen and (max-width: 900px) {
+#reportInfo {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#reportInfo p {
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+}   
+}
 @media screen and (max-width: 800px) {
 #introText h1, #introText h2 {
     font-size: 25px;
@@ -1878,9 +1900,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-}
-#reportInfo p {
-    text-align: left;
 }
 .prototypeButton3, .prototypeButtonSpotter, .prototypeButtonResume {
     margin: 0 auto 0;
