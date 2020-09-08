@@ -496,15 +496,6 @@ main {
     font-size: 25px;
     text-align: left;
 }
-#reportTitle p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 17px;  
-    text-align: left;
-    max-width: 900px;
-    padding: 10px 0 0 0;
-    line-height: 30px;
-}
 .contentShell2 {
     width: 100%;
     background-color: white;
@@ -617,6 +608,17 @@ main {
     align-content: stretch;
     max-width: 1100px;
 }
+.reportSummaryBig {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 60px 0 50px 0;
+    width: 60%;
+    margin: 0 auto 0 auto;
+    justify-content: space-around;
+    align-content: stretch;
+    max-width: 1100px;
+}
 .reportSummary2 {
     display: flex;
     flex-wrap: wrap;
@@ -655,19 +657,19 @@ main {
     justify-content: space-between;
     flex-direction: row;
 }
-.reportSummary h5, .reportSummary2 h5 {
+.reportSummary h5, .reportSummary2 h5, .reportSummaryBig h5  {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 30px;
     text-align: left;
 }
-.reportSummary h6 {
+.reportSummary h6, .reportSummaryBig h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 23px;
+    font-size: 21px;
     text-align: left;
 }
-.reportSummary p, .reportSummary2 p {
+.reportSummary p, .reportSummary2 p, .reportSummaryBig p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 17px;
@@ -675,7 +677,7 @@ main {
     padding: 10px 0 0 0; 
     line-height: 30px;
 }
-.reportSummary h4, .reportSummary2 h4 {
+.reportSummary h4, .reportSummary2 h4, .reportSummaryBig h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 50px;
@@ -754,6 +756,21 @@ main {
     width: 80%;
     max-width: 800px;
 }
+.decorativeImage5 {
+    padding: 10px 0 10px 0;
+    width: 80%;
+    max-width: 500px;
+}
+.decorativeImage6 {
+    padding: 10px 0 10px 0;
+    width: 80%;
+    max-width: 300px;
+}
+.decorativeImage7 {
+    padding: 0 0 70px 0;
+    width: 100%;
+    max-width: 800px;
+}
 .decorativeImagePadding {
     padding: 0 0 40px 0;
     width: 80%;
@@ -805,6 +822,9 @@ main {
 #addPadding7 {
     padding: 40px 0 40px 0;
 }
+#addPadding8 {
+    padding: 120px 0 0 0;
+}
 #centerText {
     text-align: center;
 }
@@ -830,7 +850,7 @@ main {
     width: 100%;
     padding: 40px 0 0 0;
 }
-.decorativeImageDesktop, .decorativeImageDesktop3 {
+.decorativeImageDesktop, .decorativeImageDesktop3, .decorativeImageDesktop4 {
     width: 100%;
     padding: 40px 0 0 0;
 }
@@ -838,7 +858,7 @@ main {
     width: 100%;
     padding: 40px 0 0 0;
 }
-.decorativeImageMobile, .decorativeImageMedium {
+.decorativeImageMobile, .decorativeImageMedium, .decorativeImageMedium2 {
     display: none;
 }
 .decorativeImageDouble {
@@ -861,11 +881,21 @@ main {
     flex-wrap: wrap;
     max-width: 1100px;
 }
+.goalItemSubShell2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 40px 0 40px 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1100px;
+}
 .goalImage {
     z-index: 1;
 }
 .goalImage img {
-    width: 250px;
+    width: 400px;
 }
 .goalSummary {
     padding: 15px 40px 15px 40px;
@@ -1300,6 +1330,12 @@ footer {
     font-size: 15px;
     padding: 0 0 0 15px;
 }
+#caption4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+}
 #blankPadding {
     width: 100%;
     background-color: white;
@@ -1447,6 +1483,22 @@ footer {
     color: rgb(107, 107, 107);
     padding: 0 0 25px;
 }
+#textWidthSmall {
+    max-width: 800px;
+    margin: 0 auto;
+}
+#centerMe {
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+.fixText {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+.fixItem {
+    padding: 20px 0 30px 0;
+}
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
 header {
@@ -1467,7 +1519,7 @@ header {
 .workItemShell {
     padding: 0 10px 10px 10px;
 }
-.reportSummary, .reportSummary2 {
+.reportSummary, .reportSummary2, .reportSummaryBig {
     width: 60%;
 }
 #reportInfo {
@@ -1572,7 +1624,7 @@ header {
 .userImageLeft img, .userImageRight img {
     width: 100%;
 }
-.reportSummary, .reportSummary2 {
+.reportSummary, .reportSummary2, .reportSummaryBig {
     width: 75%;
 }
 .summaryP1, .summaryP2 {
@@ -1611,14 +1663,14 @@ header {
     height: auto;
     padding: 60px;
 }
-.summaryImage, #SEPrototpyeImage {
+.summaryImage {
     width: 90%;
 }
 #mastheadShellWJ {
     height: 450px;
     background-size: 70%;
 }
-.reportSummary h5, .reportSummary2 h5 {
+.reportSummary h5, .reportSummary2 h5, .reportSummaryBig h5 {
     padding: 20px 0 0 0;
 }
 .reportButton h5 {
@@ -1639,6 +1691,28 @@ header {
 .sideBarShell {
     opacity: 0;
 }
+.decorativeImageMedium2 {
+    display: inherit;
+    width: 100%;
+    padding: 40px 0 0 0;
+}
+.decorativeImageDesktop4 {
+    display: none;
+}
+.summaryP1, .summaryP2 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.decorativeImage7 {
+    padding: 0 0 70px 0;
+    width: 80%;
+    max-width: 800px;
+}
+.decorativeImage3 {
+    padding: 40px 0 70px 0;
+    width: 80%;
+    max-width: 800px;
+}
 }
 @media screen and (max-width: 1200px) {
 .decorativeImageDesktop3 {
@@ -1655,7 +1729,7 @@ header {
     height: 350px;
     background-size: 80%;
 }
-.summaryP1, .summaryP2, .centerFlex, .reportSummary p, .reportSummary2 p, .goalSummary p, .goalSummary, .centerFlex2 {
+.summaryP1, .summaryP2, .centerFlex, .reportSummary p, .reportSummary2 p, .goalSummary p, .goalSummary, .centerFlex2, .reportSummaryBig p {
     max-width: 100vw;
 }
 .summaryP1v2, .summaryP2v2 {
@@ -1851,9 +1925,6 @@ header {
 #bodyShell {
     min-height: 50px;
 }
-#SEPrototpyeImage {
-    width: 90%;
-}
 #planitLogoShell {
     background-image: url('');
 }
@@ -1906,7 +1977,7 @@ header {
 .prototypeButton4 {
     margin: 0 auto 0;
 }
-.reportSummary {
+.reportSummary, .reportSummaryBig {
     padding: 30px 0 50px 0;
     width: 90%;
 }
@@ -1926,9 +1997,6 @@ header {
 #line1, #line2, #line3 {
     background-color: black;
 }
-#SEPrototpyeImage {
-    width: 90%;
-}
 }
 @media screen and (max-width: 350px) {
 #myWorkScrollShell {
@@ -1936,9 +2004,6 @@ header {
 }
 header {
     height: 100%;
-}
-#SEPrototpyeImage {
-    width: 90%;
 }
 }
 @media screen and (max-height: 800px) {
@@ -1972,4 +2037,4 @@ header {
 #workShell {
     max-width: 1200px;
 }
-}
+}}
