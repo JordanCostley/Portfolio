@@ -825,6 +825,9 @@ main {
 #addPadding8 {
     padding: 120px 0 0 0;
 }
+#addPadding9 {
+    padding: 0 0 10px 0;
+}
 #centerText {
     text-align: center;
 }
