@@ -1928,6 +1928,16 @@ header {
 .goalSummary {
     width: 80%;
 }
+.workItemSecondary {
+    width: 350px;
+    height: 475px;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+}
+.coverImageSecondary {
+    max-height: 475px;
+}
 }
 /*------Mobile------*/
 @media screen and (max-width: 970px) {
