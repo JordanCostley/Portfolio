@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,500,600,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/jqz4kcj.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -53,35 +56,50 @@
                 </div>            
             <div id="headerContent">
                 <div id="introText">
-                    <h1>Hello!</h1>
-                    <h2>I am Jordan Costley, a <span class="yellowText">Product Designer based out of Atlanta, GA. Currently designing at CINC.</h2>
+                    <h1>Jordan Costley<span id="redAccent">.</span></h1>
+                    <h2>Currently designing the web CRM at CINC. Based in Atlanta, GA. Connoisseur of french fries. </h2>
+                    <h2></h2>
+                    <h2></h2>
                 </div>
             </div>           
-            <div id="myWorkScrollShell">
-                <div id="myWorkScroll">
-                    <h6 id="myWorkText">my work</h6>
-                    <svg id="scrollArrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.84 25.42"><title>Arrow_Down</title><path d="M150.54,207.55a2,2,0,0,1-1.45-.62l-20.42-21.42a2,2,0,0,1,2.9-2.76l19,19.9,19-19.9a2,2,0,1,1,2.9,2.76L152,206.93A2,2,0,0,1,150.54,207.55Z" transform="translate(-128.12 -182.13)"/></svg>
-                </div>
-            </div>            
-            
         </div>
     </header>
     <main> 
-        <div id="work"> 
-            <div id="workShell">
-                    <a href="https://jordancostley.com/planit-app"><div class="workItemShell">
-                            <div class="workItem" id="planit"><img class="coverImage3" src="images/planit_Logo.svg" alt="Planit app Logo image"/></div>
-                            <h2 class="workTitle">Planit Mobile App Prototype</h2>
-                            <p class="workDesc">School Planner & Automation App</p>  
-                            <p id="roles">Research, Interaction, UI</p>                 
-                        </div></a>
-                <a href="https://jordancostley.com/spotter"><div class="workItemShell">
-                    <div class="workItem" id="Spotter"><img class="coverImage" src="images/SpotterLogo.svg" alt="Spotter app Logo"/></div>
-                        <h2 class="workTitle">Spotter Mobile App Prototype</h2>
-                        <p class="workDesc">Streaming Service Assistant App</p> 
-                        <p id="roles">Team Lead, Research, Interaction, UI</p>                   
-                </div></a>
-            </div>
+        <div id="work">
+            <div id="myWork">
+                    <div id="workShell">
+                        <div class="workSectionSecondary"><h3 id="workSectionTitle">Projects</h3>
+                        <div class="secondaryWorkShell">
+                        <a href="https://jordancostley.com/planit-app">
+                            <div class="workItemShellSecondary">
+                                <div class="workItemSecondary" id="planitCover"><img class="coverImageSecondary" src="images/PlanitCover.png" alt="Screenshot of PlanIt app home screen for tracking school assignments and tasks"/></div>
+                                <div class="workItemDetails">
+                                        <h2 class="workTitleMain">PlanIt Prototype</h2>
+                                        <p class="workDesc">School planner & automation app.</p>
+                                        <div class="workItemTags">
+                                            <span id="itemTag">iOS</span>
+                                            <span id="itemTag">2020</span>
+                                        </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://jordancostley.com/spotter">
+                                <div class="workItemShellSecondary">
+                                    <div class="workItemSecondary" id="spotterCover"><img class="coverImageSecondaryAlt" src="images/spottercover.png" alt="Screenshot of Spotter app home screen. An app for browsing streaming content."/></div>
+                                    <div class="workItemDetails">
+                                            <h2 class="workTitleMain">Spotter Prototype</h2>
+                                            <p class="workDesc">Streaming service assistant app.</p>
+                                            <div class="workItemTags">
+                                                <span id="itemTag">iOS</span>
+                                                <span id="itemTag">2020</span>
+                                            </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div> 
         </div> 
     </main>
     <div id="blankPadding"></div>
@@ -145,16 +163,17 @@
         navChange.classList.toggle('toggle');      
         }
         
-    //Scroll to Work
-    var workButton = $("#myWorkScroll")[0]; 
+     //Scroll to Work
+     var workButton = $("#myWorkScroll")[0]; 
     workButton.style.cursor = 'pointer';
     workButton.onclick = goToWork;
 
     function goToWork() {
         $('html,body').animate({
-            scrollTop: $("main").offset().top - 100},
+            scrollTop: $("#myWork").offset().top - 100},
             'slow')
     }
+
     //Logo Scroll Home
     function logoHome() {
         var menuButton = $("#menuListItems")[0];

@@ -30,9 +30,10 @@ body {
 }
 /*------Header Nav------*/
 #navShell {
-    width: 100vw;
+    width: 100%;
     left: 0;
-    margin: 0 0 20px 0;
+    margin: auto;
+    padding: 0 0 20px 0;
     position: fixed;
     z-index: 1000;
     transition: .5s ease;
@@ -48,9 +49,9 @@ nav {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 1650px;
+    max-width: 1600px;
     margin: auto;
-    padding: 40px 50px 40px 50px;   
+    padding: 40px 50px;   
     transition: .5s ease; 
 }
 .navPadding {
@@ -73,8 +74,8 @@ nav {
 }
 .menuListDesk a {
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
     color: rgb(0, 0, 0);
     font-size: 15px;
     text-transform: uppercase;
@@ -105,7 +106,7 @@ nav {
 }
 .menuList a {
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-weight: 700;
     color: rgb(255, 255, 255);
     font-size: 30px;
@@ -209,19 +210,23 @@ header {
     margin: auto;
 }
 #introText h1 {
-    font-family: futura-pt,sans-serif;
+    font-family: Syne,sans-serif;
     text-align: left;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 45px;
     padding: 20px 0 0 0;
-    color: #e85a3e;
+    color: black;
+}
+#redAccent {
+    color: #F55A47;
+    font-family: Montserrat, sans-serif;
+    font-size: 60px;
 }
 #introText h2 {
-    font-family: futura-pt,sans-serif;
+    font-family: Montserrat,sans-serif;
     text-align: left;
-    font-weight: 700;
-    font-size: 35px;
-    padding: 10px 0 15px 0;
+    font-weight: 500;
+    font-size: 30px;
     word-spacing: -1px;
 }
 #yellowBar {
@@ -258,7 +263,7 @@ header {
     cursor: pointer;
 }
 #myWorkText{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-weight: 600;
     font-size: 20px;
 }
@@ -283,17 +288,18 @@ main {
 #work {
     height: 100%;
     width: 100%;
+    max-width: 1100px;
     margin: auto;
+    padding: 25vh 0 0 0;
 }
 #workShell {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 70%;
+    width: 100%;
     max-width: 1300px;
-    margin: 0 auto 0 auto;
-    padding: 90px 0 0;
+    margin: 50px auto 0 auto;
 }
 #workShell a {
     text-decoration: none;
@@ -302,6 +308,17 @@ main {
     height: 100%;
     width: 450px;
     padding: 0 20px 10px 20px;
+}
+.workItemShellMain {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.workItemShellSecondary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
 }
 .workItem {
     border: solid .75px #cccccc38;
@@ -314,7 +331,75 @@ main {
    -moz-transition: box-shadow .25s ease-in;
    -webkit-transition: box-shadow .25s ease-in;
 }
-.workItemShell:hover {
+.workItemMain {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 12px;
+}
+.workItemSecondary {
+    width: 375px;
+    height: 500px;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+}
+.workItemDetails {
+    max-width: 350px;
+    padding: 10px;
+}
+.workItemTags {
+    display: flex;
+    align-items: flex-start;
+}
+#itemTag {
+    padding: 4px 8px;
+    border-radius: 6px; 
+    background-color: #252525;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 5px 10px 0 0;
+}
+#myWork {
+    padding: 50px 0;
+    max-width: 1600px;
+    margin: auto;
+}
+.secondaryWorkShell {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 950px;
+    justify-content: space-between;
+}
+#workSectionTitle {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: left;
+    padding: 0 0 30px 0;
+}
+.workSectionMain {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.workSectionSecondary {
+    width: 100%;
+}
+#CINCDeals {
+    background-color: #0097B6;
+}
+#planitCover {
+    background-color: #4848D3;
+}
+#spotterCover {
+    background-color: #FECF01;
+}
+.workItemShell:hover, .workItemShellMain:hover, .workItemShellSecondary:hover {
     cursor: pointer;
     transform: scale(1.015,1.015);
     transition:  .25s ease-in;
@@ -326,11 +411,22 @@ main {
 }
 .workTitle {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 23px;
     text-align: left;
     letter-spacing: 1px;
     padding: 15px 0 0 0; 
+    transition:  .25s ease-in;
+   -moz-transition:  .25s ease-in;
+   -webkit-transition:  .25s ease-in;
+   color: black;
+}
+.workTitleMain {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: left;
+    letter-spacing: 1px;
     transition:  .25s ease-in;
    -moz-transition:  .25s ease-in;
    -webkit-transition:  .25s ease-in;
@@ -367,6 +463,19 @@ main {
     width: auto;
     height: 45%;
     margin: 15% auto 0 auto;
+}
+.coverImageMain {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+.coverImageSecondary {
+    max-width: 100%;
+    max-height: 500px;
+}
+.coverImageSecondaryAlt {
+    max-width: 100%;
+    max-height: 100%;
 }
 #whiteBG {
     background-color: white;
@@ -411,6 +520,7 @@ main {
     font-size: 23px;
     text-align: left;
     padding: 0 0 10px 0;
+    font-family: Syne, sans-serif;
 }
 #aboutBodyText {
     font-weight: 300;
@@ -424,6 +534,7 @@ main {
 #aboutReach {
     text-align: left;
     font-size: 18px;
+    font-family: 'Syne', sans-serif;
 }
 #reachEmail, #reachEmail a {
     padding: 10px 0 0 0;
@@ -504,7 +615,7 @@ main {
     margin: 0 auto 0 auto;
     width: 67%;
     max-width: 1500px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-weight: 300;
     font-size: 20px;
     display: flex;
@@ -515,10 +626,11 @@ main {
     text-align: left;
     color: black;
     background-color: white;
-    padding: 25px 0 25px 0;
+    padding: 15px 0 15px 0;
 }
 #reportInfo p {
     padding: 12px 5px 0 5px;
+    font-weight: 300;
 }
 .prototypeLinkDesktop3, .prototypeLinkSpotter {
     margin: -25px auto 0 auto;
@@ -530,8 +642,9 @@ main {
     color: #4848d3;
 }
 .resumeLink {
-    margin: -25px 0 0 0;
+    margin: -25px auto 0 auto;
     padding: 50px 5px 50px 5px;
+    max-width: 250px;
 }
 .resumeLink a {
     text-decoration: none;
@@ -550,12 +663,13 @@ main {
     padding: 10px;
 }
 .prototypeButtonResume {
-    width: 200px;
+    width: 250px;
     height: auto;
     border: solid 1.5px #e85a3e;
     border-radius: 100px;
     margin: 0 auto 0 auto;
     padding: 10px;
+    font-family: 'Syne', sans-serif;
 }
 .prototypeButtonSpotter {
     width: 250px;
@@ -584,12 +698,12 @@ main {
     transition: .25s ease-in-out;
 }
 .prototypeButton3 h5, .prototypeButton4 h5, .prototypeButtonSpotter h5, .prototypeButtonSpotter h1, .prototypeButtonResume h5 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-weight: 500;
     font-size: 20px; 
 }
 .reportButton h5 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-weight: 500;
     font-size: 20px; 
     text-align: center;
@@ -659,7 +773,7 @@ main {
 }
 .reportSummary h5, .reportSummary2 h5, .reportSummaryBig h5  {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 30px;
     text-align: left;
 }
@@ -1028,7 +1142,7 @@ main {
     font-weight: bold;
 }
 .orderedList, .orderedList li {
-    padding: 15px 0 0 0;
+    padding: 5px 0 0 0;
     margin: 0 0 0 10px;
     list-style-position: outside;
     text-align: left;
@@ -1108,7 +1222,7 @@ footer {
     padding: 25px;
 }
 .footerContent h5 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-weight: 600;
     font-size: 20px;
     text-align: center;
@@ -1362,7 +1476,7 @@ footer {
     padding: 25px 0;
 }
 .resumeSummary h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-weight: 600;
     font-size: 50px;
     text-align: left;
@@ -1370,7 +1484,7 @@ footer {
     padding: 0 0 20px;
 }
 .resumeSummary h5 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-weight: 500;
     font-size: 25px;
     text-align: left;
@@ -1391,7 +1505,7 @@ footer {
     max-width: 85vw;
 }
 .resumeBody h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-weight: 600;
     font-size: 28px;
     text-align: left;
@@ -1601,6 +1715,12 @@ header {
 }
 /*------Small Width------*/
 @media screen and (max-width: 1350px) {
+#work {
+    padding: 10vh 0 0 0;
+}
+.workItemMain {
+    max-width: 850px;
+}
 #aboutContent {
     width: 90%;
 }
@@ -1608,7 +1728,8 @@ header {
     padding: 0 5px 10px 5px;
 }
 #workShell {
-    width: 100%;
+    max-width: 85%;
+    margin: auto;
 }
 #reportInfo {
     width: 90%;
