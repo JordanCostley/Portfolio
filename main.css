@@ -1718,6 +1718,9 @@ header {
 #work {
     padding: 10vh 0 0 0;
 }
+#myWork {
+    max-width: 100%;
+}
 .workItemMain {
     max-width: 850px;
 }
