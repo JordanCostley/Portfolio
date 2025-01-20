@@ -403,7 +403,7 @@
                                 <a href="https://www.linkedin.com/in/jordancostley" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="https://www.instagram.com/thejordancostley/" target="_blank"><i class="fab fa-instagram"></i></a>
                             </div>   
-                                <p>I am always looking for an excuse to talk about design or photography.</p>
+                                <p>I am always looking for an excuse to talk about design or movies.</p>
                                 <p id="reachEmailFooter"><a href="mailto:&#104;&#101;&#108;&#108;&#111;&#64;&#106;&#111;&#114;&#100;&#97;&#110;&#99;&#111;&#115;&#116;&#108;&#101;&#121;&#46;&#99;&#111;&#109;" target="_blank">hello@jordancostley.com</a></p>
                             </div>
                     </footer>       
@@ -497,6 +497,57 @@
           }
         });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Create modal container and append to body
+    const modal = document.createElement("div");
+    modal.className = "image-modal";
+    modal.innerHTML = `
+        <div class="image-modal-content">
+            <img src="" alt="Modal Image" />
+        </div>
+    `;
+    document.body.appendChild(modal);
+
+    const modalImage = modal.querySelector("img");
+
+    // Open modal when an image is clicked
+    const images = document.querySelectorAll("img");
+    images.forEach((img) => {
+        img.style.cursor = "pointer"; // Indicate that images are clickable
+        img.addEventListener("click", () => {
+            modalImage.src = img.src; // Set modal image to clicked image's src
+            modal.style.display = "flex"; // Show the modal
+            requestAnimationFrame(() => {
+                modal.classList.add("animate-open"); // Add animation class for opening
+            });
+            document.body.style.overflow = "hidden"; // Disable page scrolling
+        });
+    });
+
+    // Close modal when clicking outside the image
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            modal.classList.remove("animate-open"); // Remove animation class
+            setTimeout(() => {
+                modal.style.display = "none"; // Hide the modal after animation
+                document.body.style.overflow = ""; // Re-enable page scrolling
+            }, 300); // Match the transition duration
+        }
+    });
+
+    // Close modal when Escape key is pressed
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modal.style.display === "flex") {
+            modal.classList.remove("animate-open"); // Remove animation class
+            setTimeout(() => {
+                modal.style.display = "none"; // Hide the modal after animation
+                document.body.style.overflow = ""; // Re-enable page scrolling
+            }, 300); // Match the transition duration
+        }
+    });
+});
+
     //side menu section toggle
     $(window).scroll(function(e) {
     var s1 = $('.s1'),

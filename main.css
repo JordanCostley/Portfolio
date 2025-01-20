@@ -55,8 +55,11 @@ nav {
     transition: .5s ease; 
 }
 .navPadding {
-    padding: 15px 50px 15px 50px; 
+    padding: 15px 50px 15px 50px;
     transition: .5s ease;
+}
+.nav-shrink {
+    padding: 15px 50px !important;
 }
 #logoHolder {
     z-index: 9000;
@@ -107,7 +110,7 @@ nav {
 .menuList a {
     text-decoration: none;
     font-family: 'Syne', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     color: rgb(255, 255, 255);
     font-size: 30px;
     text-transform: uppercase;
@@ -205,29 +208,32 @@ header {
     padding: 200px 0 0 0;
 }
 #introText {
-    width: 900px;
-    max-width: 90vw;
+    max-width: 1100px;
     margin: auto;
+    padding: 0 24px;
 }
 #introText h1 {
     font-family: Syne,sans-serif;
     text-align: left;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 45px;
     padding: 20px 0 0 0;
     color: black;
 }
 #redAccent {
     color: #F55A47;
-    font-family: Montserrat, sans-serif;
+    font-family: Syne, sans-serif;
     font-size: 60px;
+    font-weight: 700;
 }
 #introText h2 {
-    font-family: Montserrat,sans-serif;
+    font-family: DM sans,sans-serif;
     text-align: left;
     font-weight: 500;
     font-size: 30px;
     word-spacing: -1px;
+    letter-spacing: -.5px;
+    line-height: 120%;
 }
 #yellowBar {
     font-size: 40px;
@@ -272,13 +278,6 @@ header {
     padding: 10px 0 0 0;
     fill: rgb(17, 17, 16);
 }
-/*-- #scrollArrow {
-    height: 70px;
-    padding: 100px 0 0 0;
-    margin: 0 -27px;
-    float: right;
-    fill: rgb(17, 17, 16);
-} --*/
 /*------Main Content------*/
 main {
     height: auto;
@@ -290,19 +289,19 @@ main {
     width: 100%;
     max-width: 1100px;
     margin: auto;
-    padding: 25vh 0 0 0;
+    padding: 150px 0 0 0;
 }
 #workShell {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
     max-width: 1300px;
-    margin: 50px auto 0 auto;
+    margin: 0 auto 0 auto;
 }
 #workShell a {
     text-decoration: none;
+    max-width: 100%;
 }
 .workItemShell {
     height: 100%;
@@ -320,6 +319,20 @@ main {
     gap: 20px;
     flex-direction: column;
 }
+
+.workItemShell, .workItemShellMain, .workItemShellSecondary {
+    transform: scale(1); /* Ensure the default state is set */
+    transition: transform 0.25s ease, box-shadow 0.25s ease; /* Include transition for both properties */
+    -moz-transition: transform 0.25s ease, box-shadow 0.25s ease;
+    -webkit-transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.workItem {
+    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.1),
+                0 3px 4px 0 rgba(0, 0, 0, 0.14),
+                0 1px 8px 0 rgba(0, 0, 0, 0.02);
+    transition: box-shadow 0.25s ease; /* Smooth transition for box-shadow */
+}
+
 .workItem {
     border: solid .75px #cccccc38;
     width: auto;
@@ -333,20 +346,19 @@ main {
 }
 .workItemMain {
     width: 100%;
-    max-width: 650px;
     height: auto;
     border-radius: 12px;
 }
 .workItemSecondary {
-    width: 375px;
-    height: 500px;
+    width: 500px;
+    height: 666px;
     max-width: 90%;
     max-height: 90%;
     border-radius: 12px;
 }
 .workItemDetails {
     max-width: 350px;
-    padding: 10px;
+    padding: 10px 0;
 }
 .workItemTags {
     display: flex;
@@ -357,22 +369,21 @@ main {
     border-radius: 6px; 
     background-color: #252525;
     color: white;
-    font-family: Montserrat, sans-serif;
+    font-family: 'DM sans', sans-serif;
     font-size: 16px;
     font-weight: 300;
+    letter-spacing: -.25px;
     margin: 5px 10px 0 0;
 }
 #myWork {
-    padding: 50px 0;
+    padding: 50px 0 200px 0;
     max-width: 1600px;
-    margin: auto;
 }
 .secondaryWorkShell {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 950px;
     justify-content: space-between;
 }
 #workSectionTitle {
@@ -390,7 +401,7 @@ main {
 .workSectionSecondary {
     width: 100%;
 }
-#CINCDeals {
+#CINClayout2 {
     background-color: #0097B6;
 }
 #planitCover {
@@ -400,17 +411,15 @@ main {
     background-color: #FECF01;
 }
 .workItemShell:hover, .workItemShellMain:hover, .workItemShellSecondary:hover {
-    cursor: pointer;
-    transform: scale(1.015,1.015);
-    transition:  .25s ease-in;
-   -moz-transition:  .25s ease-in;
-   -webkit-transition:  .25s ease-in;
+    transform: scale(1.015, 1.015);
 }
 .workItemShell:hover .workItem {
-    box-shadow: 0 6px 6px -2px rgba(0,0,0,.3), 0 6px 8px 0 rgba(0,0,0,.14), 0 2px 16px 0 rgba(0,0,0,.22);
+    box-shadow: 0 6px 6px -2px rgba(0, 0, 0, 0.3),
+                0 6px 8px 0 rgba(0, 0, 0, 0.14),
+                0 2px 16px 0 rgba(0, 0, 0, 0.22);
 }
 .workTitle {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 23px;
     text-align: left;
@@ -423,7 +432,7 @@ main {
 }
 .workTitleMain {
     font-family: 'Syne', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 30px;
     text-align: left;
     letter-spacing: 1px;
@@ -433,11 +442,11 @@ main {
    color: black;
 }
 .workDesc {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 18px;
+    font-family: 'DM sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
     text-align: left;
-    letter-spacing: 1px;
+    letter-spacing: -.25px;
     padding: 5px 0 5px 0;
     color: black; 
     transition:  .25s ease-in;
@@ -470,10 +479,6 @@ main {
     margin: auto;
 }
 .coverImageSecondary {
-    max-width: 100%;
-    max-height: 500px;
-}
-.coverImageSecondaryAlt {
     max-width: 100%;
     max-height: 100%;
 }
@@ -513,7 +518,7 @@ main {
 #aboutText {
     flex-basis: 41%;
     padding: 0 0 100px 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 #aboutTitle {
     font-weight: 700;
@@ -582,7 +587,7 @@ main {
     background-size: 60%;
 }
 #reportImageTitle {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 70px;
     color: white;
@@ -602,7 +607,7 @@ main {
     padding: 60px 0 60px 0;
 }
 #reportTitle h5 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 25px;
     text-align: left;
@@ -711,6 +716,85 @@ main {
 .boldText {
     font-weight: 600;
 }
+.heroContainer {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 40px; /* Space between columns */
+    align-items: flex-start;
+    padding: 150px 20px 50px 20px; /* Adjusts padding for spacing */
+    max-width: 1500px; /* Restricts content width */
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+#layout2HeroImage {
+    flex: 1 1 50%; /* Ensures the image takes 50% of the container width */
+    max-width: 75%;
+    text-align: center;
+}
+
+.heroImage {
+    width: 100%; /* Scales image to fit container */
+    height: auto;
+    border-radius: 8px; /* Adds rounded corners */
+}
+#layout2HeroText h1 {
+    font-family: 'Inter', sans-serif; /* Ensures the Inter font is used */
+    font-size: 24px; /* Sets the size for "CINC: Deals" */
+    font-weight: 700; /* Bold */
+    margin: 0 0 10px; /* Adds spacing below */
+    text-align: left;
+}
+
+#layout2HeroText .bodytext {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px; /* Regular text below the main heading */
+    font-weight: 400; /* Regular weight */
+    margin: 0 0 20px; /* Adds spacing below */
+    line-height: 1.5; /* Improves readability */
+    text-align: left;
+}
+
+#layout2HeroText h6 {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px; /* Subheadings (Company, Team) */
+    font-weight: 700; /* Bold */
+    margin: 20px 0 5px; /* Adds spacing above and below */
+    text-align: left;
+}
+
+.supportText {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px; /* Regular text below subheadings */
+    font-weight: 400; /* Regular weight */
+    margin: 0 0 10px; /* Adds spacing below */
+    line-height: 1.4; /* Improves readability */
+    text-align: left;
+}
+.supportTextList {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px; /* Regular text below subheadings */
+    font-weight: 400; /* Regular weight */
+    margin: 0 0 5px; /* Adds spacing below */
+    line-height: 1.4; /* Improves readability */
+    text-align: left;
+}
+.workItemTags {
+    display: flex;
+    gap: 10px; /* Space between tags */
+    margin-top: 10px; /* Space above tags */
+}
+
+.itemTag {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px; /* Font size for tags */
+    font-weight: 500; /* Medium weight */
+    color: #fff; /* White text */
+    background-color: #252525; /* Black background */
+    padding: 4px 8px; /* Padding inside each tag */
+    border-radius: 4px; /* Rounded corners */
+}
+
+
 .reportSummary {
     display: flex;
     flex-wrap: wrap;
@@ -772,27 +856,27 @@ main {
     flex-direction: row;
 }
 .reportSummary h5, .reportSummary2 h5, .reportSummaryBig h5  {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 30px;
     text-align: left;
 }
 .reportSummary h6, .reportSummaryBig h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 21px;
     text-align: left;
 }
 .reportSummary p, .reportSummary2 p, .reportSummaryBig p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 16px;
     text-align: left;
     padding: 10px 0 0 0; 
     line-height: 30px;
 }
 .reportSummary h4, .reportSummary2 h4, .reportSummaryBig h4 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 50px;
     text-align: left;
@@ -810,6 +894,39 @@ main {
 .centerFlex {
     width: 100%;
 }
+.centerFlexCard {
+    background: rgba(255, 255, 255, 0.94902);
+    border: 1px solid rgba(246, 246, 246, 0.94902);
+    box-shadow: 0px 12px 12px -6px rgba(0, 0, 0, 0.06), 0px 3px 3px -1.5px rgba(0, 0, 0, 0.06), 0px 1px 1px -0.5px rgba(0, 0, 0, 0.06), 0px 0px 0px 2px rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 8px;
+    justify-content: center;
+    margin: 20px 0;
+    max-width: 750px;
+}
+.centerFlexCard h5 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    }
+.centerFlexCard ul {
+    margin: 0;
+    padding-left: 20px; 
+}
+.centerFlexCard li {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: left;
+}
 .leftFlex {
     display: flex;
     flex-flow: wrap row;
@@ -820,7 +937,7 @@ main {
     margin: 50px auto 0 auto;
 }
 #development {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 70px;
 }
@@ -960,8 +1077,41 @@ main {
     max-width: 90vw;
 }
 .decorativeImage2 {
-    width: 100%;
-    padding: 40px 0 0 0;
+    max-width: 100%;
+}
+.decorativeImage2upFlex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto; 
+}
+.decorativeImage2upContainer {
+    margin: 20px 0px;
+    padding: 10px;
+    background: #F2F5F7;
+    border: 1px solid #EDF5FB;
+    box-shadow: 0px 0px 0px 6px #FBFEFF, 0px 0px 0px 7px rgba(186, 208, 228, 0.5);
+    border-radius: 8px;
+    display: flex;
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+
+}
+.decorativeImage2Container {
+    margin: 40px 0px;
+    padding: 10px;
+    background: #F2F5F7;
+    border: 1px solid #EDF5FB;
+    box-shadow: 0px 0px 0px 6px #FBFEFF, 0px 0px 0px 7px rgba(186, 208, 228, 0.5);
+    border-radius: 8px;
+}
+.decorativeImage2Container img, .decorativeImage2upContainer img {
+    border-radius: 4px;
 }
 .decorativeImage3 {
     width: 100%;
@@ -986,7 +1136,7 @@ main {
 }
 /*------Goals Final Section------*/
 .goalItemShell {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 .goalItemSubShell {
     display: flex;
@@ -1044,11 +1194,11 @@ main {
     padding: 10px 0 0 0;
     text-align: left;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 30px;
 }
 .h5Header {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 25px;
     padding: 40px 0 40px 0;
@@ -1087,12 +1237,12 @@ main {
     transition: .25s ease-in-out;
 }
 .prototypeButton h5 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 20px; 
 }
 .reportButton h5 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 20px; 
     text-align: center;
@@ -1134,9 +1284,9 @@ main {
 }
 .olItem {
     text-align: left;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 30px;
     list-style-position: outside;
     font-weight: bold;
@@ -1191,7 +1341,7 @@ main {
     max-width: 80vw;
 }
 .caption {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 15px;
     padding: 0 0 40px 0;
@@ -1210,7 +1360,7 @@ footer {
     justify-content: center;
 }
 .footerContent p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 15px;
     text-align: center;
@@ -1272,7 +1422,7 @@ footer {
     align-self: center;
 }
 .moreWork h5 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 20px;
     text-align: left;
@@ -1291,14 +1441,14 @@ footer {
     border-radius: 5px;
 }
 .workButton h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 18px;
     text-align: left;
     padding: 10px 0 0 0;
 }
 .workButton p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 15px;
     text-align: left;
@@ -1344,7 +1494,7 @@ footer {
     margin: auto 0 auto 0;
 }
 .personaQuote {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 16px; 
     margin: 40px 0 20px 0;
@@ -1355,7 +1505,7 @@ footer {
 }
 .personaDetail li {
     padding: 10px 0 0 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 16px;
     justify-content: space-between;
@@ -1365,7 +1515,7 @@ footer {
     font-weight: 300;
 }
 .personaGoals {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 16px;
     padding: 15px 0 10px 0;
@@ -1375,7 +1525,7 @@ footer {
     padding: 0 0 10px 10px;
 }
 .unorderedList, .unorderedList li {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 18px;
     line-height: 35px;
@@ -1399,7 +1549,7 @@ footer {
     padding: 0 0 20px 0;
 }
 .personaContentTitle h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 35px;
     padding: 40px 15px 0 0;
@@ -1408,7 +1558,7 @@ footer {
     color: #DEDFE1;
 }
 .personaContentTitle h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 30px;
     padding: 45px 15px 0 0;
@@ -1437,18 +1587,18 @@ footer {
     padding: 0 0 35px 0;
 }
 #caption2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 15px;
 }
 #caption3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 15px;
     padding: 0 0 0 15px;
 }
 #caption4 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 15px;
     text-align: center;
@@ -1492,7 +1642,7 @@ footer {
     padding: 5px 0;
 }
 .resumeSummary p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 22px;
     text-align: left;
@@ -1517,7 +1667,7 @@ footer {
     flex-wrap: wrap;
 }
 .resumeItem h4 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 18px;
     text-align: left;
@@ -1537,14 +1687,14 @@ footer {
     font-style: italic;
 }
 .resumeBody h5 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 18px;
     text-align: left;
     color: black; 
 }
 .resumeBody p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 18px;
     text-align: left;
@@ -1552,7 +1702,7 @@ footer {
     line-height: 23px;
 }
 .resumeBody h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 18px;
     text-align: left;
@@ -1563,7 +1713,7 @@ footer {
     margin-left: 20px;
 }
 .resumeBody li {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 18px;
     text-align: left;
@@ -1593,7 +1743,7 @@ footer {
     padding: 10px 0 0 0;
 }
 #roles {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 15px;
     text-align: left;
@@ -1602,7 +1752,7 @@ footer {
 }
 #textWidthSmall {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 #centerMe {
     text-align: center;
@@ -1616,13 +1766,59 @@ footer {
 .fixItem {
     padding: 20px 0 30px 0;
 }
+/* Full-screen modal container */
+.image-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Pointer cursor for modal background */
+}
+
+/* Modal content */
+.image-modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1001;
+    transform: scale(0.8); /* Initial zoom-out state */
+    opacity: 0; /* Initial hidden state */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth animation for opening */
+    pointer-events: none; /* Prevent pointer cursor on modal content */
+}
+
+/* Active state for animation (applies on open only) */
+.image-modal.animate-open .image-modal-content {
+    transform: scale(1); /* Zoom to full size */
+    opacity: 1; /* Fully visible */
+    pointer-events: auto; /* Enable interaction with content if needed */
+}
+
+/* Image inside the modal */
+.image-modal img {
+    max-width: 100%; /* Ensure the image fits horizontally */
+    max-height: 90vh; /* Scale down the image to fit within the viewport height */
+    width: auto;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    cursor: default !important; /* No pointer cursor on the image itself */
+}
+
+
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
 header {
     height: 100%;
-}
-#headerContent {
-    padding: calc(10vh+70px) 0 0 0;
 }
 #myWorkScrollShell {
     padding: 100px 0 10px 0
@@ -1669,7 +1865,7 @@ header {
     pointer-events: all;
 }
 .sideMenu h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     color: rgb(43, 43, 43);
     font-size: 18px;  
@@ -1683,7 +1879,7 @@ header {
     margin: 10px 0;
 }
 .sideMenu p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
     color: rgb(43, 43, 43);
     font-size: 16px;  
@@ -1695,7 +1891,7 @@ header {
     text-align: left;
 }
 .sideMenuList li {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     color: black;
     font-size: 15px; 
@@ -1721,9 +1917,6 @@ header {
 #myWork {
     max-width: 100%;
 }
-.workItemMain {
-    max-width: 850px;
-}
 #aboutContent {
     width: 90%;
 }
@@ -1732,7 +1925,7 @@ header {
 }
 #workShell {
     max-width: 85%;
-    margin: auto;
+    margin: 0 auto;
 }
 #reportInfo {
     width: 90%;
@@ -1797,9 +1990,7 @@ header {
     height: 450px;
     background-size: 70%;
 }
-.reportSummary h5, .reportSummary2 h5, .reportSummaryBig h5 {
-    padding: 20px 0 0 0;
-}
+
 .reportButton h5 {
     padding: 0;
 }
@@ -1840,6 +2031,13 @@ header {
     width: 80%;
     max-width: 800px;
 }
+.workItemSecondary {
+    width: 430px;
+    height: 575px;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+}
 }
 @media screen and (max-width: 1200px) {
 .decorativeImageDesktop3 {
@@ -1849,6 +2047,19 @@ header {
     display: inherit;
     width: 100%;
     padding: 40px 0 0 0;
+}
+.heroContainer {
+    flex-direction: column; /* Stacks image and text vertically */
+    align-items: center;
+    padding: 150px 20px 0px 20px; /* Adjust padding for smaller screens */
+    max-width: 75%;
+}
+#layout2HeroText {
+   max-width: 775px;
+   width: 100%;
+}
+#layout2HeroImage {
+    max-width: 100%;
 }
 }
 @media screen and (max-width: 1000px) {
@@ -1930,13 +2141,17 @@ header {
 }
 .workItemSecondary {
     width: 350px;
-    height: 475px;
+    height: auto;
     max-width: 90%;
     max-height: 90%;
     border-radius: 12px;
 }
 .coverImageSecondary {
     max-height: 475px;
+}
+.secondaryWorkShell {
+    justify-content: center;
+    gap: 40px;
 }
 }
 /*------Mobile------*/
@@ -1945,6 +2160,10 @@ header {
     width: 100%;
     height: auto;
     max-width: 90vw;
+}
+.heroContainer {
+    padding: 150px 20px 0px 20px; 
+    max-width: 90%;
 }
 @media screen and (max-width: 900px) {
 #reportInfo {
@@ -1957,11 +2176,12 @@ header {
     margin: 10px 0;
     text-align: center;
 }   
+.decorativeImage2upContainer {
+    flex: 1 1 100%; /* Stacks the images, each taking full width */
+    max-width: 100%;
+}
 }
 @media screen and (max-width: 800px) {
-#introText h1, #introText h2 {
-    font-size: 25px;
-}
 .menuList {
     flex-direction: column;
 }
@@ -1972,8 +2192,7 @@ header {
     display: none;
 }
 #introText {
-    padding: 10vh 0 0 0;
-    width: 85vw;
+    padding: 100px 24px 0 24px;
 }
 #introText h1 {
     padding: 17px 0 10px 0;
@@ -2125,6 +2344,8 @@ header {
     width: 100%;
     max-width: 90vw;
 }
+#redAccent {
+    font-size: 30px;
 }
 @media screen and (max-width: 550px) {
 #mastheadShellWJ {
@@ -2153,7 +2374,7 @@ header {
     padding: 10vh 0 0 0;
 }
 #introText {
-    padding: 60px 0 0 0;
+    padding: 60px 24px 0 24px;
 }
 }
 @media screen and (max-height: 900px) {
@@ -2162,16 +2383,10 @@ header {
 }
 } 
 @media screen and (min-height: 1250px) {
-header {
-    height: 50vh;
-}
-#headerContent {
-    padding: 20rem 0 0 0;
-}
 #myWorkScrollShell {
     padding: 20rem 0 10px 0
 }
 #workShell {
     max-width: 1200px;
 }
-}}
+}}}
