@@ -1780,7 +1780,6 @@ footer {
     justify-content: center;
     cursor: pointer; /* Pointer cursor for modal background */
 }
-
 /* Modal content */
 .image-modal-content {
     position: relative;
@@ -1795,14 +1794,12 @@ footer {
     transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth animation for opening */
     pointer-events: none; /* Prevent pointer cursor on modal content */
 }
-
 /* Active state for animation (applies on open only) */
 .image-modal.animate-open .image-modal-content {
     transform: scale(1); /* Zoom to full size */
     opacity: 1; /* Fully visible */
     pointer-events: auto; /* Enable interaction with content if needed */
 }
-
 /* Image inside the modal */
 .image-modal img {
     max-width: 100%; /* Ensure the image fits horizontally */
@@ -1813,7 +1810,6 @@ footer {
     border-radius: 8px;
     cursor: default !important; /* No pointer cursor on the image itself */
 }
-
 
 /*------Medium Width------*/
 @media screen and (max-width: 1550px) {
