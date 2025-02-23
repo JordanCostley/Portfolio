@@ -38,6 +38,7 @@ body {
     z-index: 1000;
     transition: .5s ease;
     background-color: rgba(255, 255, 255, 0.75); 
+    z-index: 3000;
 }
 #navLogo {
     height: 42px;    
@@ -78,7 +79,7 @@ nav {
 .menuListDesk a {
     text-decoration: none;
     font-family: 'Inter', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     color: rgb(0, 0, 0);
     font-size: 15px;
     text-transform: uppercase;
@@ -103,6 +104,7 @@ nav {
     justify-content: center;
     transform: translateY(-100%);
     transition: .5s ease;
+    z-index: 2000;
 }
 .menuList {
     list-style: none;
@@ -149,6 +151,7 @@ nav {
     z-index: 9000;
     transition: .25s;
     display: none;
+    z-index: 3100;
 }
 #line1, #line3 {
     width: 25px;
