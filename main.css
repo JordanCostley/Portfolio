@@ -320,7 +320,9 @@ main {
     gap: 20px;
     flex-direction: column;
 }
-
+.workItemContainer {
+    padding: 0px 0px 100px 0px;
+}
 .workItemShell, .workItemShellMain, .workItemShellSecondary {
     transform: scale(1); /* Ensure the default state is set */
     transition: transform 0.25s ease, box-shadow 0.25s ease; /* Include transition for both properties */
@@ -358,7 +360,6 @@ main {
     border-radius: 12px;
 }
 .workItemDetails {
-    max-width: 350px;
     padding: 10px 0;
 }
 .workItemTags {
@@ -377,7 +378,7 @@ main {
     margin: 5px 10px 0 0;
 }
 #myWork {
-    padding: 50px 0 200px 0;
+    padding: 50px 0px 20px 0px;
     max-width: 1600px;
 }
 .secondaryWorkShell {
@@ -404,6 +405,9 @@ main {
 }
 #CINCDeals {
     background-color: #0097B6;
+}
+#CINCLaunchpad {
+    background-color: #BAEAFE;
 }
 #planitCover {
     background-color: #4848D3;
@@ -764,6 +768,10 @@ main {
     text-align: left;
 }
 
+#heroDesc {
+    max-width: 400px;
+    text-wrap: pretty;
+}
 .supportText {
     font-family: 'Inter', sans-serif;
     font-size: 14px; /* Regular text below subheadings */
@@ -782,7 +790,6 @@ main {
 }
 .workItemTags {
     display: flex;
-    gap: 10px; /* Space between tags */
     margin-top: 10px; /* Space above tags */
 }
 
@@ -2058,6 +2065,9 @@ header {
 }
 #layout2HeroImage {
     max-width: 100%;
+}
+#heroDesc {
+    max-width: 800px;
 }
 }
 @media screen and (max-width: 1000px) {
