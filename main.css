@@ -237,6 +237,7 @@ header {
     word-spacing: -1px;
     letter-spacing: -.5px;
     line-height: 120%;
+    text-wrap: pretty;
 }
 #yellowBar {
     font-size: 40px;
