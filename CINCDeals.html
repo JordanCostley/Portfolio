@@ -265,13 +265,23 @@
             navChange.classList.toggle('toggle');        
             }
 
-//nav scroll down change
     
-  const navElement = $('nav');
-    $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-        navElement.addClass('nav-shrink');
-    } else {
+//nav scroll down change    
+const navElement = $('nav');
+$(window).scroll(function () {
+    // Only apply nav-shrink if viewport is wider than 800px
+    if (window.innerWidth > 800) {
+        if ($(this).scrollTop() > 100) {
+            navElement.addClass('nav-shrink');
+        } else {
+            navElement.removeClass('nav-shrink');
+        }
+    }
+});
+
+// Also remove nav-shrink class when window is resized below 800px
+$(window).resize(function() {
+    if (window.innerWidth <= 800) {
         navElement.removeClass('nav-shrink');
     }
 });

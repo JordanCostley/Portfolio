@@ -2242,10 +2242,10 @@ header {
     padding: 15px;
 }
 nav {
-    padding: 10px 30px 10px 30px;    
+    padding: 10px 30px;    
 }
 .navPadding {
-    padding: 10px 30px 10px 30px; 
+    padding: 10px 30px; 
 }
 .goalSummary {
     width: 90%;
