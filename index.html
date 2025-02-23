@@ -14,11 +14,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="theme-color" content="#ffffff">
     <meta property="og:title" content="Jordan Costley | Product Designer">
@@ -64,7 +64,6 @@
                         <ul class="menuListDesk">
                             <a href="#" onclick="goToWork()" alt="scroll to work section"><li class="menuLI">work</li></a>
                             <a href="https://jordancostley.com/about"><li class="menuLI">about</li></a>
-                            <a href="https://jordancostley.com/resume.html"><li class="menuLI">resume</li></a>
                         </ul>
                     </div>
                     <div id="hamMenu">
@@ -79,7 +78,6 @@
                         <ul class="menuList" id="menuListItems">
                             <a href="#" id="strike1" onclick="menuShow();goToWork()" alt="scroll to work section"><li>work</li></a>
                             <a href="https://jordancostley.com/about" id="strike2"><li>about</li></a>
-                            <a href="https://jordancostley.com/resume.html" id="strike4"><li>resume</li></a>
                         </ul>
                     </div>
                 </div>  
@@ -99,7 +97,21 @@
                     <div id="workShell">
                             <div id="myWork">
                                         <div class="workSectionMain"><h3 id="workSectionTitle">My Work</h3>
-                                        <a href="https://jordancostley.com/CINCDeals">
+                                            <a href="https://jordancostley.com/CINCLaunchpad" class="workItemContainer">
+                                                <div class="workItemShellMain">
+                                                    <div class="workItemMain" id="CINCLaunchpad"><img class="coverImageMain" src="images/launchpadcover.png" alt="Screenshot of CINC launchpad home of daily agent tasks"/></div>
+                                                    <div class="workItemDetails">
+                                                            <h2 class="workTitleMain">CINC: Agent Launchpad</h2>
+                                                            <p class="workDesc">A new home to easily learn the system, act on daily tasks, and engage with highly active leads.</p>
+                                                            <div class="workItemTags">
+                                                                <span id="itemTag">Web</span>
+                                                                <span id="itemTag">2024</span>
+                                                                <span id="itemTag">Coming Soon</span>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        <a href="https://jordancostley.com/CINCDeals" class="workItemContainer">
                                             <div class="workItemShellMain">
                                                 <div class="workItemMain" id="CINCDeals"><img class="coverImageMain" src="images/dealscover.png" alt="Screenshot of Deals dashboard for tracking real estate deals within the CINC platform"/></div>
                                                 <div class="workItemDetails">
@@ -148,7 +160,7 @@
                 </div> 
         </div> 
     </main>
-    <div id="blankPadding"></div>
+    <div id="blankPadding"></div>    
 </body>
 <script type="text/javascript">
 
