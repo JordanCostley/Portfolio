@@ -90,7 +90,7 @@
                         <br><br>
                         My design journey started as a graphic design major studying typography and layout design before discovering the world of UX. Studying at Kennesaw State University has allowed me to explore a variety of topics and skills ranging from user research and interface design to prototyping and usability testing.
                         <br><br>
-                        I have a technical background including front-end development as well as ever-growing knowledge about design and technology. When I'm not designing you can usually find me exploring nature and searching for new pizza joints.
+                        I have a technical background including front-end development as well as ever-growing knowledge about design and technology. When I'm not designing you can usually find me exploring nature or rock climbing.
                     </p>
                         <div id="socialIcons">
                             <a href="https://www.linkedin.com/in/jordancostley" target="_blank"><i class="fab fa-linkedin-in"></i></a>
@@ -98,6 +98,17 @@
                         </div>
                 </div>
             </div>
+            <div id="recentMoives">
+                <h3 id="moviesTitle">Some recent movies I've watched</h3>
+            </div>
+            <div id="letterboxd-embed-wrapper-tc" class="letterboxdFeed">Loading...</div>
+            <script>
+            fetch('https://lb-embed-content.bokonon.dev?username=mysticpasta')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('letterboxd-embed-wrapper-tc').innerHTML = data;
+            });
+            </script>
         </div>
         
     </body>

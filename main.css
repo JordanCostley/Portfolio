@@ -4,8 +4,8 @@
     padding: 0;
     vertical-align: baseline;
     background: transparent;
-    text-align: center;   
     font-size: 95%; 
+    font-family: 'Inter', sans-serif;
 }
 body {
     width: 100%;
@@ -511,7 +511,6 @@ main {
     justify-content: center;
     align-items: flex-start;
     width: 63%;
-    height: 70vh;
     margin: 0 auto 0 auto;
     padding: 75px 0 0 0;
 }
@@ -536,6 +535,13 @@ main {
     padding: 0 0 10px 0;
     font-family: Inter, sans-serif;
 }
+#moviesTitle {
+    font-weight: 700;
+    font-size: 23px;
+    text-align: left;
+    padding: 10px 0 10px 0;
+    font-family: Inter, sans-serif;
+}
 #aboutBodyText {
     font-weight: 400;
     color: black;
@@ -544,6 +550,7 @@ main {
     line-height: 29px;
     padding: 0 0 40px 0;
     text-align: left;
+    text-wrap: pretty;
 }
 #aboutReach {
     text-align: left;
@@ -1821,6 +1828,24 @@ footer {
     display: block;
     border-radius: 8px;
     cursor: default !important; /* No pointer cursor on the image itself */
+}
+
+.letterboxdFeed {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto 0 auto;
+    padding-bottom: 100px;
+    text-align: left;
+}
+
+#recentMoives {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto 0 auto;
+    padding-bottom: 100px;
+    text-align: left;
+    padding: 20px 20px;
+    text-align: left;
 }
 
 /*------Medium Width------*/
