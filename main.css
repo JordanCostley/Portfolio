@@ -361,6 +361,8 @@ main {
     max-width: 90%;
     max-height: 90%;
     border-radius: 12px;
+    display: flex;
+    justify-content: center;
 }
 .workItemDetails {
     padding: 10px 0;
