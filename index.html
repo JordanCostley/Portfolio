@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -220,13 +221,22 @@
         navChange.classList.toggle('toggle');      
         }
         
-//nav scroll down change
-    
+//nav scroll down change    
 const navElement = $('nav');
-    $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-        navElement.addClass('nav-shrink');
-    } else {
+$(window).scroll(function () {
+    // Only apply nav-shrink if viewport is wider than 800px
+    if (window.innerWidth > 800) {
+        if ($(this).scrollTop() > 50) {
+            navElement.addClass('nav-shrink');
+        } else {
+            navElement.removeClass('nav-shrink');
+        }
+    }
+});
+
+// Also remove nav-shrink class when window is resized below 800px
+$(window).resize(function() {
+    if (window.innerWidth <= 800) {
         navElement.removeClass('nav-shrink');
     }
 });
@@ -246,6 +256,14 @@ const navElement = $('nav');
             'slow')
         }
     }
+
+//Scroll to work section
+function goToWork() {
+    const workSection = document.getElementById("work");
+    if (workSection) {
+        workSection.scrollIntoView({ behavior: "smooth" });
+    }
+}
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115173517-1"></script>
