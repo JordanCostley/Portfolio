@@ -256,9 +256,13 @@ $(window).resize(function() {
 function goToWork() {
     const workSection = document.getElementById("workSectionTitle");
     if (workSection) {
-        workSection.scrollIntoView({ behavior: "smooth" });
+        const yOffset = -85; // Negative value to move up by 85px
+        const y = workSection.getBoundingClientRect().top + window.scrollY + yOffset;
+
+        window.scrollTo({ top: y, behavior: "smooth" });
     }
 }
+
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115173517-1"></script>
