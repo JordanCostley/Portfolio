@@ -825,7 +825,7 @@ main {
     margin: 0 auto 0 auto;
     justify-content: space-around;
     align-content: stretch;
-    max-width: 1100px;
+    max-width: 950px;
 }
 .reportSummaryBig {
     display: flex;
@@ -928,6 +928,22 @@ main {
     justify-content: center;
     margin: 20px 0;
     max-width: 750px;
+}
+.centerFlexCard p {
+    padding: 0px 0px !important;
+    font-size: 18px;
+}
+.cardTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+}
+.warnIcon {
+    color: #FF8800;
+    width: 20px;
+    height: 20px;
 }
 .centerFlexCard h5 {
     font-family: 'Inter';
@@ -1852,6 +1868,36 @@ footer {
     text-align: left;
     padding: 20px 20px;
     text-align: left;
+}
+.sectionTitle {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #595A5A;
+    padding: 0px 0px 5px !important;
+
+}
+.impactContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+}
+.impactTitle {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #595A5A;
+    padding: 20px 0px 0px;
+
+}
+.impactItem p {
+    font-size: 30px;
+    padding: 15px 0px 0px;
+    font-weight: 600;
 }
 
 /*------Medium Width------*/
