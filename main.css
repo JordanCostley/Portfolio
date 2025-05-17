@@ -9,7 +9,6 @@
 }
 body {
     width: 100%;
-    background-color: rgb(255, 255, 255);
     overflow-x: hidden;
     width: 100vw;
 }
@@ -30,7 +29,18 @@ body {
 }
 html {
     scrollbar-gutter: stable;
-  }  
+  }
+.backgroundGradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1920px;
+    height: 1080px;
+    background: url('images/gradient.png') no-repeat top center;
+    background-size: 100% auto;
+    z-index: -1;
+    pointer-events: none;
+}    
 /*------Header Nav------*/
 #navShell {
     width: 100%;
@@ -38,8 +48,10 @@ html {
     margin: auto;
     position: fixed;
     transition: .5s ease;
-    background-color: rgba(255, 255, 255, 0.75); 
+    background-color: rgba(255, 255, 255, 0.25); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
     z-index: 3000;
+    backdrop-filter: blur(1.5px);
 }
 #navLogo {
     height: 42px;    
@@ -198,8 +210,8 @@ nav {
 header {
     width: 100%;
     height: auto;
-    background-color: white;
     color: rgb(17, 17, 16);
+    position: relative;
 }
 #headerShell {
     width: 100%;
@@ -287,7 +299,6 @@ header {
 /*------Main Content------*/
 main {
     height: auto;
-    background-color: #fff;
     margin: 0 0 100px 0;
 }
 #work {
@@ -501,7 +512,6 @@ main {
 #bodyShell {
     height: auto;
     min-height: 100px;
-    background-color: white;
 }
 #aboutShell {
     width: 100%;
@@ -2521,9 +2531,6 @@ header {
 .summaryP1a, .summaryP2a {
     width: 100%;
     max-width: 90vw;
-}
-#redAccent {
-    font-size: 30px;
 }
 @media screen and (max-width: 550px) {
 #mastheadShellWJ {
