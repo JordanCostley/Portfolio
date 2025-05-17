@@ -903,10 +903,11 @@ main {
 .reportSummary p, .reportSummary2 p, .reportSummaryBig p {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
     padding: 10px 0 0 0; 
     line-height: 30px;
+    text-wrap: pretty;
 }
 .reportSummary h4, .reportSummary2 h4, .reportSummaryBig h4 {
     font-family: 'Inter', sans-serif;
