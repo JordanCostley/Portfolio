@@ -951,10 +951,23 @@ main {
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 4px;
+    gap: 10px;
+}
+.bold {
+    font-weight: 700;
 }
 .warnIcon {
     color: #FF8800;
+    width: 35px;
+    height: 35px;
+}
+.dangerIcon {
+    color: #F55A47;
+    width: 20px;
+    height: 20px;
+}
+.compassIcon {
+    color: #66CEF6;
     width: 20px;
     height: 20px;
 }
