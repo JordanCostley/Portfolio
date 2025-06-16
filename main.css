@@ -956,20 +956,19 @@ main {
 .bold {
     font-weight: 700;
 }
+.warnIcon, .dangerIcon, .compassIcon  {
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+}
 .warnIcon {
     color: #FF8800;
-    width: 35px;
-    height: 35px;
 }
 .dangerIcon {
     color: #F55A47;
-    width: 20px;
-    height: 20px;
 }
 .compassIcon {
     color: #66CEF6;
-    width: 20px;
-    height: 20px;
 }
 .centerFlexCard h5 {
     font-family: 'Inter';
