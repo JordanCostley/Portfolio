@@ -1425,6 +1425,14 @@ footer {
     display: flex;
     justify-content: center;
 }
+.footerHome {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: white !important;
+}
 .footerContent p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
