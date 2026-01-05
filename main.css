@@ -5,7 +5,7 @@
     vertical-align: baseline;
     background: transparent;
     font-size: 95%; 
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
 }
 body {
     width: 100%;
@@ -389,7 +389,7 @@ main {
     border-radius: 6px; 
     background-color: #252525;
     color: white;
-    font-family: 'DM sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 300;
     letter-spacing: -.25px;
@@ -748,47 +748,47 @@ main {
 }
 .heroContainer {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    gap: 40px; /* Space between columns */
+    flex-wrap: wrap; 
+    gap: 40px; 
     align-items: flex-start;
-    padding: 150px 20px 50px 20px; /* Adjusts padding for spacing */
-    max-width: 1500px; /* Restricts content width */
-    margin: 0 auto; /* Centers the container horizontally */
+    padding: 150px 20px 50px 20px; 
+    max-width: 1500px; 
+    margin: 0 auto; 
 }
 
 #layout2HeroImage {
-    flex: 1 1 50%; /* Ensures the image takes 50% of the container width */
+    flex: 1 1 50%; 
     max-width: 75%;
     text-align: center;
 }
 
 .heroImage {
-    width: 100%; /* Scales image to fit container */
+    width: 100%; 
     height: auto;
-    border-radius: 8px; /* Adds rounded corners */
+    border-radius: 8px;
 }
 #layout2HeroText h1 {
-    font-family: 'Inter', sans-serif; /* Ensures the Inter font is used */
-    font-size: 24px; /* Sets the size for "CINC: Deals" */
-    font-weight: 700; /* Bold */
-    margin: 0 0 10px; /* Adds spacing below */
+    font-family: 'Inter', sans-serif; 
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 10px;
     text-align: left;
 }
 
 #layout2HeroText .bodytext {
     font-family: 'Inter', sans-serif;
-    font-size: 20px; /* Regular text below the main heading */
-    font-weight: 400; /* Regular weight */
-    margin: 0 0 20px; /* Adds spacing below */
-    line-height: 1.5; /* Improves readability */
+    font-size: 20px; 
+    font-weight: 400; 
+    margin: 0 0 20px; 
+    line-height: 1.5; 
     text-align: left;
 }
 
 #layout2HeroText h6 {
     font-family: 'Inter', sans-serif;
-    font-size: 14px; /* Subheadings (Company, Team) */
-    font-weight: 700; /* Bold */
-    margin: 20px 0 5px; /* Adds spacing above and below */
+    font-size: 14px;
+    font-weight: 700; 
+    margin: 20px 0 5px;
     text-align: left;
 }
 
@@ -798,33 +798,33 @@ main {
 }
 .supportText {
     font-family: 'Inter', sans-serif;
-    font-size: 16px; /* Regular text below subheadings */
-    font-weight: 400; /* Regular weight */
-    margin: 0 0 10px; /* Adds spacing below */
-    line-height: 1.4; /* Improves readability */
+    font-size: 16px; 
+    font-weight: 400; 
+    margin: 0 0 10px;
+    line-height: 1.4;
     text-align: left;
 }
 .supportTextList {
     font-family: 'Inter', sans-serif;
-    font-size: 16px; /* Regular text below subheadings */
-    font-weight: 400; /* Regular weight */
-    margin: 0 0 5px; /* Adds spacing below */
-    line-height: 1.4; /* Improves readability */
+    font-size: 16px; 
+    font-weight: 400; 
+    margin: 0 0 5px; 
+    line-height: 1.4; 
     text-align: left;
 }
 .workItemTags {
     display: flex;
-    margin-top: 10px; /* Space above tags */
+    margin-top: 10px; 
 }
 
 .itemTag {
     font-family: 'Inter', sans-serif;
-    font-size: 14px; /* Font size for tags */
-    font-weight: 500; /* Medium weight */
-    color: #fff; /* White text */
-    background-color: #252525; /* Black background */
-    padding: 4px 8px; /* Padding inside each tag */
-    border-radius: 4px; /* Rounded corners */
+    font-size: 14px;
+    font-weight: 500; 
+    color: #fff; 
+    background-color: #252525; 
+    padding: 4px 8px; 
+    border-radius: 4px; 
 }
 
 
